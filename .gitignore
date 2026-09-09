@@ -9,3 +9,4 @@ benchmark/cryptobench_atlas_result.json
 benchmark/sifts.tsv
 benchmark/atlas_pdb.txt
 benchmark/cohort.json
+benchmark/heldout_cohort/

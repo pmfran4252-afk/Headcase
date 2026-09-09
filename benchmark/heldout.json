@@ -1,0 +1,290 @@
+[
+  {
+    "uniprot": "O15263",
+    "label_entry": "1fd4_G",
+    "atlas_entry": "1fd3_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 7
+  },
+  {
+    "uniprot": "O07347",
+    "label_entry": "1ffh_A",
+    "atlas_entry": "1ls1_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 10
+  },
+  {
+    "uniprot": "P44859",
+    "label_entry": "1gqz_A",
+    "atlas_entry": "2gke_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 19
+  },
+  {
+    "uniprot": "P02883",
+    "label_entry": "1thv_A",
+    "atlas_entry": "2vi1_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 5
+  },
+  {
+    "uniprot": "P31013",
+    "label_entry": "1tpl_B",
+    "atlas_entry": "2vlf_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 11
+  },
+  {
+    "uniprot": "P33673",
+    "label_entry": "2d05_A",
+    "atlas_entry": "1qgi_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 22
+  },
+  {
+    "uniprot": "Q8Y8D7",
+    "label_entry": "2i1w_B",
+    "atlas_entry": "7zz7_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 20
+  },
+  {
+    "uniprot": "Q8Y8D7",
+    "label_entry": "2i1w_B",
+    "atlas_entry": "2i2f_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 20
+  },
+  {
+    "uniprot": "Q94734",
+    "label_entry": "2ofm_X",
+    "atlas_entry": "2at8_X",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 22
+  },
+  {
+    "uniprot": "Q9X180",
+    "label_entry": "3a0x_A",
+    "atlas_entry": "3a0y_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 21
+  },
+  {
+    "uniprot": "Q9Y5Y6",
+    "label_entry": "3bn9_A",
+    "atlas_entry": "3ncl_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 9
+  },
+  {
+    "uniprot": "Q9X0C0",
+    "label_entry": "3ih2_A",
+    "atlas_entry": "2id6_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 10
+  },
+  {
+    "uniprot": "P0ABQ4",
+    "label_entry": "4eiz_A",
+    "atlas_entry": "3dau_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 54
+  },
+  {
+    "uniprot": "O28344",
+    "label_entry": "4gvr_A",
+    "atlas_entry": "4gvq_C",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 26
+  },
+  {
+    "uniprot": "P81180",
+    "label_entry": "4j4e_F",
+    "atlas_entry": "3czz_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 10
+  },
+  {
+    "uniprot": "Q97W02",
+    "label_entry": "4tqr_A",
+    "atlas_entry": "2rdi_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 6
+  },
+  {
+    "uniprot": "Q38CL4",
+    "label_entry": "5aon_B",
+    "atlas_entry": "6spt_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 15
+  },
+  {
+    "uniprot": "P25081",
+    "label_entry": "5zv0_A",
+    "atlas_entry": "2wfp_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 15
+  },
+  {
+    "uniprot": "P25081",
+    "label_entry": "5zv0_A",
+    "atlas_entry": "3h1w_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 15
+  },
+  {
+    "uniprot": "Q02078",
+    "label_entry": "6byy_B",
+    "atlas_entry": "1egw_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 7
+  },
+  {
+    "uniprot": "Q02078",
+    "label_entry": "6byy_B",
+    "atlas_entry": "1egw_C",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 7
+  },
+  {
+    "uniprot": "Q8RBX6",
+    "label_entry": "6cww_B",
+    "atlas_entry": "1u55_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 8
+  },
+  {
+    "uniprot": "P07206",
+    "label_entry": "6j35_B",
+    "atlas_entry": "6j33_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 8
+  },
+  {
+    "uniprot": "P25924",
+    "label_entry": "6pqz_A",
+    "atlas_entry": "6p5x_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 9
+  },
+  {
+    "uniprot": "P25924",
+    "label_entry": "6pqz_A",
+    "atlas_entry": "6pr1_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 9
+  },
+  {
+    "uniprot": "A0A0H2XGN0",
+    "label_entry": "7ec1_B",
+    "atlas_entry": "7ec1_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 18
+  },
+  {
+    "uniprot": "A0A0H2XGN0",
+    "label_entry": "7ec1_B",
+    "atlas_entry": "7vfk_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 18
+  },
+  {
+    "uniprot": "Q38087",
+    "label_entry": "7f4y_B",
+    "atlas_entry": "3nci_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 17
+  },
+  {
+    "uniprot": "Q92974",
+    "label_entry": "7g8e_B",
+    "atlas_entry": "8bnt_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 5
+  },
+  {
+    "uniprot": "P0A9S1",
+    "label_entry": "7qni_AAA",
+    "atlas_entry": "1rrm_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 50
+  },
+  {
+    "uniprot": "Q6PL18",
+    "label_entry": "7r00_AAA",
+    "atlas_entry": "3dai_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 6
+  },
+  {
+    "uniprot": "P0DTD1",
+    "label_entry": "8dfn_A",
+    "atlas_entry": "6zpe_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 38
+  },
+  {
+    "uniprot": "P0DTD1",
+    "label_entry": "8dfn_A",
+    "atlas_entry": "7k7p_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 38
+  },
+  {
+    "uniprot": "P0DTD1",
+    "label_entry": "8dfn_A",
+    "atlas_entry": "7buy_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 38
+  },
+  {
+    "uniprot": "P0DTD1",
+    "label_entry": "8dfn_A",
+    "atlas_entry": "6yhu_B",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 38
+  },
+  {
+    "uniprot": "P30046",
+    "label_entry": "8vdy_A",
+    "atlas_entry": "1dpt_A",
+    "same_entry": false,
+    "apo_guard": "unchecked",
+    "n_labels": 12
+  }
+]
