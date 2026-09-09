@@ -1,0 +1,178 @@
+[
+  {
+    "atlas_entry": "2pbk_B",
+    "label_entry": "1fl1_B",
+    "uniprot": "Q2HRB6",
+    "n_residues": 228,
+    "n_labels": 21,
+    "cavity_auroc": 0.43685300207039335,
+    "sasa_auroc": 0.3165401426270992,
+    "rmsf_auroc": 0.42650103519668736,
+    "seconds": 42.749900102615356
+  },
+  {
+    "atlas_entry": "2pbk_A",
+    "label_entry": "1fl1_B",
+    "uniprot": "Q2HRB6",
+    "n_residues": 228,
+    "n_labels": 21,
+    "cavity_auroc": 0.3940648723257419,
+    "sasa_auroc": 0.3190706234184495,
+    "rmsf_auroc": 0.5021854152288935,
+    "seconds": 42.581740856170654
+  },
+  {
+    "atlas_entry": "2fos_A",
+    "label_entry": "1lug_A",
+    "uniprot": "P00918",
+    "n_residues": 260,
+    "n_labels": 15,
+    "cavity_auroc": 0.7961904761904762,
+    "sasa_auroc": 0.7804081632653062,
+    "rmsf_auroc": 0.9401360544217687,
+    "seconds": 49.57194709777832
+  },
+  {
+    "atlas_entry": "3bec_A",
+    "label_entry": "1nzo_A",
+    "uniprot": "P0AEB2",
+    "n_residues": 363,
+    "n_labels": 19,
+    "cavity_auroc": 0.9534883720930233,
+    "sasa_auroc": 0.4600673194614443,
+    "rmsf_auroc": 0.3127294981640147,
+    "seconds": 72.94979095458984
+  },
+  {
+    "atlas_entry": "2py5_A",
+    "label_entry": "1xhx_B",
+    "uniprot": "P03680",
+    "n_residues": 575,
+    "n_labels": 15,
+    "cavity_auroc": 0.8051190476190476,
+    "sasa_auroc": 0.47035714285714286,
+    "rmsf_auroc": 0.3701190476190476,
+    "seconds": 138.24501514434814
+  },
+  {
+    "atlas_entry": "2py5_B",
+    "label_entry": "1xhx_B",
+    "uniprot": "P03680",
+    "n_residues": 575,
+    "n_labels": 15,
+    "cavity_auroc": 0.8488095238095238,
+    "sasa_auroc": 0.47559523809523807,
+    "rmsf_auroc": 0.33416666666666667,
+    "seconds": 138.58662700653076
+  },
+  {
+    "atlas_entry": "3cy4_A",
+    "label_entry": "2rl7_A",
+    "uniprot": "P11456",
+    "n_residues": 154,
+    "n_labels": 11,
+    "cavity_auroc": 0.8893833439287985,
+    "sasa_auroc": 0.5378258105530833,
+    "rmsf_auroc": 0.5270184361093452,
+    "seconds": 27.814136028289795
+  },
+  {
+    "atlas_entry": "2wzb_A",
+    "label_entry": "2xe6_A",
+    "uniprot": "P00558",
+    "n_residues": 416,
+    "n_labels": 25,
+    "cavity_auroc": 0.7527365728900256,
+    "sasa_auroc": 0.4333503836317136,
+    "rmsf_auroc": 0.5361636828644502,
+    "seconds": 80.28231501579285
+  },
+  {
+    "atlas_entry": "1lj5_A",
+    "label_entry": "3cvm_B",
+    "uniprot": "P05121",
+    "n_residues": 379,
+    "n_labels": 21,
+    "cavity_auroc": 0.34570364458632613,
+    "sasa_auroc": 0.5170258047353019,
+    "rmsf_auroc": 0.6480446927374302,
+    "seconds": 75.05341219902039
+  },
+  {
+    "atlas_entry": "2h2z_A",
+    "label_entry": "3f9f_A",
+    "uniprot": "P0C6U8",
+    "n_residues": 306,
+    "n_labels": 31,
+    "cavity_auroc": 0.6432844574780059,
+    "sasa_auroc": 0.5727859237536657,
+    "rmsf_auroc": 0.6403519061583578,
+    "seconds": 57.85211181640625
+  },
+  {
+    "atlas_entry": "3rzn_A",
+    "label_entry": "3rwv_A",
+    "uniprot": "Q9NZD2",
+    "n_residues": 209,
+    "n_labels": 18,
+    "cavity_auroc": 0.7219313554392088,
+    "sasa_auroc": 0.21844095404304828,
+    "rmsf_auroc": 0.5255962769051774,
+    "seconds": 40.51877188682556
+  },
+  {
+    "atlas_entry": "2pq8_A",
+    "label_entry": "4dnc_B",
+    "uniprot": "Q9H7Z6",
+    "n_residues": 278,
+    "n_labels": 11,
+    "cavity_auroc": 0.5199182839632278,
+    "sasa_auroc": 0.45965270684371806,
+    "rmsf_auroc": 0.3724889342866871,
+    "seconds": 58.09111309051514
+  },
+  {
+    "atlas_entry": "1r8m_E",
+    "label_entry": "4jmi_A",
+    "uniprot": "Q99418",
+    "n_residues": 203,
+    "n_labels": 11,
+    "cavity_auroc": 0.6429924242424242,
+    "sasa_auroc": 0.4346590909090909,
+    "rmsf_auroc": 0.34990530303030304,
+    "seconds": 40.08285474777222
+  },
+  {
+    "atlas_entry": "6xrx_A",
+    "label_entry": "5fio_B",
+    "uniprot": "P0AEX9",
+    "n_residues": 554,
+    "n_labels": 16,
+    "cavity_auroc": 0.41960966542750927,
+    "sasa_auroc": 0.5866635687732342,
+    "rmsf_auroc": 0.45736524163568776,
+    "seconds": 124.77874302864075
+  },
+  {
+    "atlas_entry": "5b6c_A",
+    "label_entry": "5ftk_A",
+    "uniprot": "P55072",
+    "n_residues": 174,
+    "n_labels": 8,
+    "cavity_auroc": 0.23644578313253012,
+    "sasa_auroc": 0.5451807228915663,
+    "rmsf_auroc": 0.3493975903614458,
+    "seconds": 32.79112672805786
+  },
+  {
+    "atlas_entry": "1sx3_A",
+    "label_entry": "8s32_A",
+    "uniprot": "P0A6F5",
+    "n_residues": 525,
+    "n_labels": 27,
+    "cavity_auroc": 0.8025435073627845,
+    "sasa_auroc": 0.3627100996578908,
+    "rmsf_auroc": 0.24788041053101295,
+    "seconds": 107.7390809059143
+  }
+]

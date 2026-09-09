@@ -106,3 +106,55 @@ this cohort. The run was stopped during the filter pass, before the scoring loop
 was reached, and the only numbers seen were mapped-label counts and join
 z-scores — both inputs to eligibility, neither a result. A fix that restores
 data the method never saw cannot select for a favourable answer.
+
+---
+
+# OUTCOME — recorded after execution, prediction unchanged
+
+**Verdict: REFUTED.** Predicted mean AUROC ≥ 0.72; observed **0.640**, which
+falls in the band this document defined in advance as "the split was noise."
+
+16 entries, **14 UniProt clusters** — the preregistration assumed 25, and half
+the cohort was lost to the join check and identity guard.
+
+| measure | mean | median | 95% CI | >0.5 | p vs 0.5 |
+|---|---|---|---|---|---|
+| **cavity p95 (frozen)** | **0.640** | 0.683 | [0.514, 0.767] | 10/14 | 0.033 |
+| SASA baseline | 0.479 | 0.467 | [0.401, 0.556] | 6/14 | 0.56 |
+| RMSF baseline | 0.480 | 0.461 | [0.377, 0.584] | 6/14 | 0.69 |
+
+Paired: **+0.162 over SASA** (p = 0.037), **+0.160 over RMSF** (p = 0.054).
+
+## What is refuted, and what is not
+
+**Refuted: stratifying by label count.** The ≥10-label stratum scored 0.749 on
+the held-out data, and this test predicted ≥ 0.72 allowing for regression. It
+came back at 0.640 — *below* the pooled 0.690, not above it. There is no
+evidence that label count identifies an applicability regime, and the 0.749
+should be treated as a slice of noise. Reporting it as the method's operating
+range would have been wrong, which is what a prospective test is for.
+
+**Not refuted: the method.** Cavity remains above chance (p = 0.033) and ahead
+of both baselines by ~0.16, on fourteen clusters that were never used for
+anything else. That is consistent with the held-out 0.690 and with the method
+having a single performance level rather than two regimes.
+
+## The honest caveat, and its limit
+
+The interval [0.514, 0.767] spans the refutation band, the pooled 0.690 and the
+0.72 threshold, so this cohort cannot cleanly place the stratum anywhere. That
+was stated before the run, when the expected cohort was 25 clusters; at 14 it is
+worse.
+
+That is a reason to distrust the *precision* of 0.640, not a reason to avoid the
+verdict. The prediction was a point threshold, the point estimate missed it in
+the unfavourable direction, and the pre-specified band is the band. Treating a
+wide interval as grounds to withhold a refutation would make the preregistration
+unfalsifiable, which is the opposite of why it exists.
+
+## One inconsistency worth recording
+
+The stratum boundary was applied to labels **available on the source chain**,
+but scoring uses labels **successfully mapped onto the trajectory**. One cluster
+entered with ≥10 source labels and only 8 mapped. A future version should apply
+the boundary post-mapping.

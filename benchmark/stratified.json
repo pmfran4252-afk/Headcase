@@ -1,1 +1,226 @@
-[]
+[
+  {
+    "uniprot": "Q2HRB6",
+    "label_entry": "1fl1_B",
+    "atlas_entry": "2pbk_B",
+    "n_labels": 21,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q2HRB6",
+    "label_entry": "1fl1_B",
+    "atlas_entry": "2pbk_A",
+    "n_labels": 21,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P00918",
+    "label_entry": "1lug_A",
+    "atlas_entry": "2fos_A",
+    "n_labels": 15,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0AEB2",
+    "label_entry": "1nzo_A",
+    "atlas_entry": "3bec_A",
+    "n_labels": 19,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P69902",
+    "label_entry": "1pt7_A",
+    "atlas_entry": "1q7e_A",
+    "n_labels": 12,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P53350",
+    "label_entry": "1q4k_A",
+    "atlas_entry": "2rku_A",
+    "n_labels": 13,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P00747",
+    "label_entry": "1qrz_C",
+    "atlas_entry": "1krn_A",
+    "n_labels": 37,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P03680",
+    "label_entry": "1xhx_B",
+    "atlas_entry": "2py5_A",
+    "n_labels": 15,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P03680",
+    "label_entry": "1xhx_B",
+    "atlas_entry": "2py5_B",
+    "n_labels": 15,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P12497",
+    "label_entry": "2pwo_B",
+    "atlas_entry": "4jmu_A",
+    "n_labels": 22,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P11456",
+    "label_entry": "2rl7_A",
+    "atlas_entry": "3cy4_A",
+    "n_labels": 11,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P00558",
+    "label_entry": "2xe6_A",
+    "atlas_entry": "2wzb_A",
+    "n_labels": 25,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q96C86",
+    "label_entry": "3bl7_B",
+    "atlas_entry": "3bl9_B",
+    "n_labels": 21,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q96C86",
+    "label_entry": "3bl7_B",
+    "atlas_entry": "3bl9_A",
+    "n_labels": 21,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P05121",
+    "label_entry": "3cvm_B",
+    "atlas_entry": "1lj5_A",
+    "n_labels": 21,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0C6U8",
+    "label_entry": "3f9f_A",
+    "atlas_entry": "2h2z_A",
+    "n_labels": 31,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0C6U8",
+    "label_entry": "3f9f_A",
+    "atlas_entry": "2fyg_A",
+    "n_labels": 31,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q05127",
+    "label_entry": "3l28_F",
+    "atlas_entry": "3fke_A",
+    "n_labels": 18,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q00987",
+    "label_entry": "3lnz_C",
+    "atlas_entry": "3lbl_A",
+    "n_labels": 24,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q06187",
+    "label_entry": "3p08_B",
+    "atlas_entry": "1btk_A",
+    "n_labels": 73,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q9NZD2",
+    "label_entry": "3rwv_A",
+    "atlas_entry": "3rzn_A",
+    "n_labels": 18,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q9H7Z6",
+    "label_entry": "4dnc_B",
+    "atlas_entry": "2pq8_A",
+    "n_labels": 26,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q99418",
+    "label_entry": "4jmi_A",
+    "atlas_entry": "1r8m_E",
+    "n_labels": 11,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q13188",
+    "label_entry": "4lg4_D",
+    "atlas_entry": "4hkd_B",
+    "n_labels": 21,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "Q96EP0",
+    "label_entry": "4ljp_A",
+    "atlas_entry": "4ljo_A",
+    "n_labels": 10,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0AEX9",
+    "label_entry": "5fio_B",
+    "atlas_entry": "6xrx_A",
+    "n_labels": 17,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0AEX9",
+    "label_entry": "5fio_B",
+    "atlas_entry": "6xds_A",
+    "n_labels": 17,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0AEX9",
+    "label_entry": "5fio_B",
+    "atlas_entry": "5hz7_A",
+    "n_labels": 17,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P55072",
+    "label_entry": "5ftk_A",
+    "atlas_entry": "5b6c_A",
+    "n_labels": 30,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P49902",
+    "label_entry": "6ddl_B",
+    "atlas_entry": "5opm_A",
+    "n_labels": 12,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0A6F5",
+    "label_entry": "8s32_A",
+    "atlas_entry": "1sx3_A",
+    "n_labels": 27,
+    "apo_guard": "unchecked"
+  },
+  {
+    "uniprot": "P0A6F5",
+    "label_entry": "8s32_A",
+    "atlas_entry": "1sx3_B",
+    "n_labels": 27,
+    "apo_guard": "unchecked"
+  }
+]
