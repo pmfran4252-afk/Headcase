@@ -1,0 +1,58 @@
+[
+  {
+    "uniprot": "P33673",
+    "entry": "1qgi_A",
+    "auroc": 0.5298245614035088,
+    "n_labels": 19,
+    "rmsd": 2.56
+  },
+  {
+    "uniprot": "Q9X180",
+    "entry": "3a0y_B",
+    "auroc": 0.7513631406761178,
+    "n_labels": 21,
+    "rmsd": 4.49
+  },
+  {
+    "uniprot": "P81180",
+    "entry": "3czz_B",
+    "auroc": 0.6505494505494506,
+    "n_labels": 10,
+    "rmsd": 2.81
+  },
+  {
+    "uniprot": "Q38087",
+    "entry": "3nci_A",
+    "auroc": 0.39197981675740273,
+    "n_labels": 17,
+    "rmsd": 2.56
+  },
+  {
+    "uniprot": "Q9NZD2",
+    "entry": "3rzn_A",
+    "auroc": 0.7219313554392088,
+    "n_labels": 18,
+    "rmsd": 2.09
+  },
+  {
+    "uniprot": "Q9H7Z6",
+    "entry": "2pq8_A",
+    "auroc": 0.5199182839632278,
+    "n_labels": 11,
+    "rmsd": 2.67
+  },
+  {
+    "uniprot": "Q9NG96",
+    "entry": "1kx9_A",
+    "auroc": 0.516151202749141,
+    "n_labels": 15,
+    "rmsd": 2.74
+  },
+  {
+    "uniprot": "P03418",
+    "entry": "4uc8_A",
+    "auroc": 0.4434782608695652,
+    "n_labels": 3,
+    "rmsd": 2.42
+  }
+]
