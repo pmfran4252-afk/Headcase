@@ -413,6 +413,21 @@ def test_summarise_reports_the_absent_share():
     assert abs(s["absent_share"] - 0.2) < 1e-12
 
 
+def test_rank_sites_accepts_a_none_fit_for_an_unfitted_residue():
+    """None in ``fits`` means no fit was attempted, not a fit that failed.
+
+    A caller that gates the dispersion channel on its observability floor never
+    runs Baum-Welch at all, so it has no ExchangeFit to hand over.  Dereferencing
+    that None crashed every entry of the first real-protein benchmark run.
+    """
+    n = 5
+    tail = np.array([1.0, 5.0, 2.0, 3.0, 4.0])
+    ranked = rank_sites(tail=tail, fits=[None] * n)
+    assert len(ranked) == n
+    assert all(np.isnan(s.p_minor) and np.isnan(s.k_ex) for s in ranked)
+    assert all(not s.reliable_fit for s in ranked)
+
+
 def _main() -> int:
     tests = [(k, v) for k, v in sorted(globals().items())
              if k.startswith("test_") and callable(v)]

@@ -35,6 +35,7 @@ Trajectories: ATLAS (Vander Meersche et al., NAR 2024), CC-BY-NC.
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import sys
 import time
@@ -265,16 +266,20 @@ def auroc(scores: np.ndarray, labels: np.ndarray) -> float:
                  / (pos.size * neg.size))
 
 
-def run_entry(zip_path, work, labels_by_pdb) -> Optional[EntryResult]:
+def run_entry(zip_path, work, labels_by_pdb, n_replicas: int = 3) -> Optional[EntryResult]:
     t0 = time.time()
     tag, reps, corresp = load_entry(zip_path, work)
     pdb_id, chain = tag.split("_")
     labels = labels_by_pdb.get(pdb_id.lower())
     if not labels:
         return None
+    reps = reps[:n_replicas]
     n = reps[0].n_residues
 
-    per = [score_replica(r) for r in reps]
+    per = []
+    for j, r in enumerate(reps, 1):
+        per.append(score_replica(r))
+        print(f"    {tag} replica {j}/{len(reps)} done ({time.time()-t0:.0f}s)", flush=True)
     with np.errstate(invalid="ignore"):
         disp = np.nanmean([p[0] for p in per], axis=0)
         tail = np.nanmean([p[1] for p in per], axis=0)
@@ -307,7 +312,8 @@ def main(argv: list) -> int:
     cohort = pathlib.Path(argv[1]) if len(argv) > 1 else here / "atlas_cohort"
     labels_path = pathlib.Path(argv[2]) if len(argv) > 2 else here / "cb_labels.json"
     work = cohort / "_extracted"
-    out_path = here / "cryptobench_atlas_result.json"
+    n_replicas = int(os.environ.get("HEADCASE_REPLICAS", "3"))
+    out_path = here / f"cryptobench_atlas_result_r{n_replicas}.json"
     labels_by_pdb = json.loads(labels_path.read_text())
 
     done = {}
@@ -317,7 +323,7 @@ def main(argv: list) -> int:
         print(f"resuming: {len(done)} entries already scored", flush=True)
 
     zips = sorted(cohort.glob("*.zip"))
-    print(f"CryptoBench x ATLAS: {len(zips)} entries with real trajectories\n", flush=True)
+    print(f"CryptoBench x ATLAS: {len(zips)} entries, {n_replicas} replica(s) each\n", flush=True)
     print(f"{'entry':<9} {'res':>4} {'lab':>4} {'join':>5} {'top-k':>6} {'base':>6} "
           f"{'enrich':>7} {'auroc':>6} {'sec':>5}  blind channels", flush=True)
     print("-" * 88, flush=True)
@@ -329,7 +335,7 @@ def main(argv: list) -> int:
                   f"auroc {d['auroc']:.2f}", flush=True)
             continue
         try:
-            r = run_entry(z, work, labels_by_pdb)
+            r = run_entry(z, work, labels_by_pdb, n_replicas)
         except Exception as exc:                                  # noqa: BLE001
             print(f"{z.stem:<9} FAILED {type(exc).__name__}: {exc}", flush=True)
             continue

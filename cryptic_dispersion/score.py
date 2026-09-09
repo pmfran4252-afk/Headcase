@@ -146,7 +146,12 @@ def rank_sites(
         flags: list[str] = []
         p_minor = k_ex = float("nan")
         reliable = False
-        if fits is not None and i < len(fits):
+        if fits is not None and i < len(fits) and fits[i] is not None:
+            # None is a legitimate entry: it means no fit was attempted, which is
+            # what a caller passes when the observability floor rules the
+            # dispersion channel blind before paying for a Baum-Welch fit.  That
+            # is not the same as a fit that ran and failed, and dereferencing it
+            # crashed the first real-protein run on every single entry.
             f = fits[i]
             p_minor, k_ex, reliable = f.p_minor, f.k_ex, f.reliable
             if not f.reliable and f.note:
