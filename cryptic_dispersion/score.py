@@ -57,24 +57,30 @@ class SiteScore:
         return asdict(self)
 
 
-def _z(values: Optional[np.ndarray], n: int) -> np.ndarray:
-    """Median/MAD z-score, with failed channels held out rather than zeroed.
+def _z(values: Optional[np.ndarray], n: int) -> tuple[np.ndarray, np.ndarray]:
+    """Median/MAD z-score plus a per-residue availability mask.
 
     A channel that could not be computed for a residue is *missing*, not a
     measurement of zero.  Substituting 0.0 before scaling makes a failed fit
     look like a strongly negative result -- and because fits fail most often on
     the sites that open widest, that turns the best candidates into the
-    lowest-ranked ones.  Missing entries score 0 *after* scaling, i.e. neutral.
+    lowest-ranked ones.  Missing entries score 0 *after* scaling, i.e. neutral
+    within the z-distribution.
+
+    The mask is returned because neutral-within-the-distribution is not the same
+    as neutral-in-the-sum.  A weighted score with a fixed denominator still
+    charges the residue that channel's whole weight, which is the identical bug
+    one level up; :func:`rank_sites` uses the mask to renormalise per residue.
     """
     if values is None:
-        return np.zeros(n)
+        return np.zeros(n), np.zeros(n, dtype=bool)
     v = np.asarray(values, dtype=float)
     good = np.isfinite(v)
     out = np.zeros(n)
     if good.sum() < 3:
-        return out
+        return out, np.zeros(n, dtype=bool)
     out[good] = np.nan_to_num(robust_z(v[good]), nan=0.0, posinf=0.0, neginf=0.0)
-    return out
+    return out, good
 
 
 def rank_sites(
@@ -106,12 +112,25 @@ def rank_sites(
         w.update(weights)
     present = {k: (v is not None) for k, v in
                (("dispersion", dispersion), ("tail", tail), ("breathing", breathing))}
-    norm = sum(w[k] for k, ok in present.items() if ok) or 1.0
 
-    zd, zt, zb = _z(dispersion, n), _z(tail, n), _z(breathing, n)
-    total = (w["dispersion"] * zd * present["dispersion"]
-             + w["tail"] * zt * present["tail"]
-             + w["breathing"] * zb * present["breathing"]) / norm
+    zd, md = _z(dispersion, n)
+    zt, mt = _z(tail, n)
+    zb, mb = _z(breathing, n)
+    md = md & present["dispersion"]
+    mt = mt & present["tail"]
+    mb = mb & present["breathing"]
+
+    # Normalise by the weight actually available *for this residue*, not by the
+    # weight available for the run.  With a run-level denominator a residue
+    # whose dispersion fit failed keeps at most 60% of the score an otherwise
+    # identical residue receives -- and dispersion fits fail preferentially on
+    # slow exchange, which is what a real cryptic site is.  The penalty was
+    # therefore correlated with the label, in the direction that buries the
+    # targets.
+    avail = w["dispersion"] * md + w["tail"] * mt + w["breathing"] * mb
+    total = (w["dispersion"] * zd * md
+             + w["tail"] * zt * mt
+             + w["breathing"] * zb * mb) / np.where(avail > 0, avail, 1.0)
 
     residues = list(residues) if residues is not None else list(range(n))
     out: list[SiteScore] = []
@@ -132,6 +151,13 @@ def rank_sites(
         stable = bool(tail_stable[i]) if tail_stable is not None else False
         if tail_stable is not None and not stable and zt[i] > channel_cut:
             flags.append("tail extrapolation not threshold-stable")
+        absent = [name for name, m, ok in
+                  (("dispersion", md, present["dispersion"]),
+                   ("tail", mt, present["tail"]),
+                   ("breathing", mb, present["breathing"]))
+                  if ok and not m[i]]
+        if absent:
+            flags.append("scored without: " + ", ".join(absent))
         if agree == 1 and total[i] > 0:
             flags.append("single-channel hit")
 

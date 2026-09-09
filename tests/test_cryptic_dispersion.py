@@ -292,6 +292,39 @@ def test_adaptive_threshold_fits_a_widely_populated_open_state():
     assert relaxed.threshold < strict.threshold
 
 
+def test_missing_channel_does_not_cost_the_residue_its_weight():
+    """A failed fit must not outrank an identical residue whose fit converged.
+
+    Scoring a missing channel 0 is neutral only *within* the z-distribution.  In
+    a weighted sum whose denominator is fixed for the whole run, the residue
+    still forfeits that channel's entire weight -- and because dispersion fits
+    fail preferentially on slow exchange, i.e. on genuine cryptic sites, the
+    forfeit is correlated with the label in the direction that buries the
+    targets.  The denominator must therefore be per residue.
+    """
+    n = 40
+    rng = np.random.default_rng(0)
+    tail, breath, disp = (rng.normal(0, 1, n) for _ in range(3))
+    tail[10] = tail[20] = breath[10] = breath[20] = 8.0
+    disp[10] = 8.0            # dispersion fit converged
+    disp[20] = np.nan         # dispersion fit failed
+
+    by_res = {s.residue: s for s in rank_sites(disp, tail, breath)}
+    got = by_res[20]
+
+    # Scored on the weight that was actually available: 0.35 + 0.25 = 0.60.
+    expected = (0.35 * got.tail_z + 0.25 * got.breathing_z) / 0.60
+    assert abs(got.score - expected) < 1e-9, (got.score, expected)
+
+    # And strictly better than the un-normalised value the fixed denominator gave.
+    assert got.score > 0.35 * got.tail_z + 0.25 * got.breathing_z
+    assert "scored without: dispersion" in got.flags
+
+    # Two residues with identical available evidence must not be split by the
+    # mere availability of a third channel.
+    assert got.score > 0.9 * by_res[10].score
+
+
 def _main() -> int:
     tests = [(k, v) for k, v in sorted(globals().items())
              if k.startswith("test_") and callable(v)]
