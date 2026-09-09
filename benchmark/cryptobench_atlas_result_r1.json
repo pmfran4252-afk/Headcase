@@ -1,0 +1,240 @@
+[
+  {
+    "tag": "1esw_A",
+    "n_residues": 500,
+    "n_labelled": 12,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.024,
+    "enrichment": 0.0,
+    "auroc": 0.43203551912568305,
+    "absent": 0,
+    "seconds": 218.481675863266,
+    "blind": {
+      "dispersion": 500,
+      "tail": 311
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "1hp1_A",
+    "n_residues": 516,
+    "n_labelled": 10,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.01937984496124031,
+    "enrichment": 0.0,
+    "auroc": 0.44031620553359685,
+    "absent": 0,
+    "seconds": 220.56483697891235,
+    "blind": {
+      "dispersion": 516,
+      "tail": 334
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "1kx9_A",
+    "n_residues": 112,
+    "n_labelled": 15,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.2,
+    "base_rate": 0.13392857142857142,
+    "enrichment": 1.4933333333333334,
+    "auroc": 0.516151202749141,
+    "absent": 0,
+    "seconds": 19.830734968185425,
+    "blind": {
+      "dispersion": 112,
+      "tail": 98
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "1y6i_A",
+    "n_residues": 233,
+    "n_labelled": 17,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.058823529411764705,
+    "base_rate": 0.07296137339055794,
+    "enrichment": 0.8062283737024221,
+    "auroc": 0.49645969498910675,
+    "absent": 0,
+    "seconds": 59.890424966812134,
+    "blind": {
+      "dispersion": 233,
+      "tail": 154
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "2fp1_A",
+    "n_residues": 166,
+    "n_labelled": 16,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0625,
+    "base_rate": 0.0963855421686747,
+    "enrichment": 0.6484375,
+    "auroc": 0.5225,
+    "absent": 0,
+    "seconds": 33.15362095832825,
+    "blind": {
+      "dispersion": 166,
+      "tail": 135
+    },
+    "note": "cif numbering"
+  },
+  {
+    "tag": "2h7g_X",
+    "n_residues": 314,
+    "n_labelled": 5,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.01592356687898089,
+    "enrichment": 0.0,
+    "auroc": 0.5980582524271845,
+    "absent": 0,
+    "seconds": 102.15901589393616,
+    "blind": {
+      "dispersion": 314,
+      "tail": 219
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "2jlq_A",
+    "n_residues": 451,
+    "n_labelled": 22,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.18181818181818182,
+    "base_rate": 0.04878048780487805,
+    "enrichment": 3.727272727272727,
+    "auroc": 0.7557745285018013,
+    "absent": 0,
+    "seconds": 184.10852885246277,
+    "blind": {
+      "dispersion": 451,
+      "tail": 358
+    },
+    "note": "cif numbering"
+  },
+  {
+    "tag": "2po4_A",
+    "n_residues": 1104,
+    "n_labelled": 19,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.017210144927536232,
+    "enrichment": 0.0,
+    "auroc": 0.5167111326703856,
+    "absent": 0,
+    "seconds": 923.2156171798706,
+    "blind": {
+      "dispersion": 1104,
+      "tail": 753
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "3b49_A",
+    "n_residues": 211,
+    "n_labelled": 20,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.1,
+    "base_rate": 0.0947867298578199,
+    "enrichment": 1.0550000000000002,
+    "auroc": 0.6235602094240837,
+    "absent": 0,
+    "seconds": 51.445464849472046,
+    "blind": {
+      "dispersion": 211,
+      "tail": 174
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "3ikw_A",
+    "n_residues": 374,
+    "n_labelled": 11,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.029411764705882353,
+    "enrichment": 0.0,
+    "auroc": 0.47533183070373153,
+    "absent": 0,
+    "seconds": 125.82472229003906,
+    "blind": {
+      "dispersion": 374,
+      "tail": 291
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "3vjz_A",
+    "n_residues": 166,
+    "n_labelled": 3,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.018072289156626505,
+    "enrichment": 0.0,
+    "auroc": 0.43558282208588955,
+    "absent": 0,
+    "seconds": 32.53947401046753,
+    "blind": {
+      "dispersion": 166,
+      "tail": 145
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "4uc8_A",
+    "n_residues": 233,
+    "n_labelled": 3,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.012875536480686695,
+    "enrichment": 0.0,
+    "auroc": 0.4434782608695652,
+    "absent": 0,
+    "seconds": 60.76113200187683,
+    "blind": {
+      "dispersion": 233,
+      "tail": 163
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "5op0_B",
+    "n_residues": 331,
+    "n_labelled": 14,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.04229607250755287,
+    "enrichment": 0.0,
+    "auroc": 0.38553402433528616,
+    "absent": 0,
+    "seconds": 102.24226188659668,
+    "blind": {
+      "dispersion": 331,
+      "tail": 232
+    },
+    "note": "pdb numbering"
+  },
+  {
+    "tag": "6irx_A",
+    "n_residues": 496,
+    "n_labelled": 12,
+    "label_match_rate": 1.0,
+    "top_k_precision": 0.0,
+    "base_rate": 0.024193548387096774,
+    "enrichment": 0.0,
+    "auroc": 0.5287534435261708,
+    "absent": 0,
+    "seconds": 213.88295698165894,
+    "blind": {
+      "dispersion": 496,
+      "tail": 394
+    },
+    "note": "cif numbering"
+  }
+]

@@ -95,3 +95,94 @@ independent evidence and must not later be pooled as though they were.** If an
 independent set is needed it has to come from somewhere CryptoBench did not —
 CryptoSite's original pairs, PocketMiner's held-out set, or fresh apo/holo pairs
 from AHoJ — and the subtraction belongs in the specification, before the freeze.
+
+---
+
+# Result: the pipeline does not beat chance on real proteins
+
+14 proteins, 5,207 residues, 179 labelled cryptic-site residues, one 100 ns
+replica each.
+
+```
+AUROC : 0.39 0.43 0.44 0.44 0.44 0.48 0.50 0.52 0.52 0.52 0.53 0.60 0.62 0.76
+        mean 0.512   median 0.506   sd 0.096   95% CI [0.457, 0.567]
+```
+
+| test | result |
+|---|---|
+| one-sample t-test vs 0.5 | t = +0.47, **p = 0.643** |
+| Wilcoxon signed-rank | **p = 1.000** |
+| sign test | 7/14 above 0.5, **p = 1.000** |
+| median enrichment over base rate | **0.00×** |
+
+**9 of 14 proteins have zero true cryptic residues in the top-k.** The result is
+robust to every sensitivity filter — dropping the entry with a bad join, the two
+underpowered entries, and the single hit all leave the confidence interval
+containing 0.5.
+
+## What was actually tested
+
+Not the three-channel design. It never ran:
+
+| channel | blind on | share |
+|---|---|---|
+| dispersion | 5,207 / 5,207 residues | **100%** |
+| tail | 3,761 / 5,207 residues | **72%** |
+| breathing | 0 / 5,207 residues | 0% |
+
+At 100 ns the observability floors rule out dispersion entirely and the tail
+channel for most residues, exactly as predicted before the run. So this is a
+benchmark of the **protection-factor anomaly alone**, and the finding is that
+one channel does not carry the task. Consensus scoring is untested here, because
+there was nothing to reach consensus with.
+
+## The one real signal
+
+`2jlq_A` scores AUROC 0.756 with 3.73× enrichment. It survives the correct null:
+
+- Circular-shift permutation of the label mask (preserves site size *and* spatial
+  contiguity; residues within a protein are not independent, so Hanley–McNeil is
+  the wrong test): null mean 0.501, sd 0.076, **two-sided p = 0.0029**
+- Bonferroni over 14 entries: **p = 0.041**
+- Its join is the most tightly clustered in the cohort (z = −8.7), so it is not
+  a mapping artefact
+
+One protein in fourteen, marginal after correction. Worth a look, not a claim.
+
+## Join verification, all 14
+
+Mean pairwise Cα distance among mapped residues against random residue sets of
+the same size. Every entry maps 100% of its labels, but mapping is not
+correctness:
+
+| entry | conv | obs Å | rand Å | z |
+|---|---|---|---|---|
+| 1esw_A | pdb | 10.3 | 27.7 | −7.3 |
+| 1hp1_A | pdb | 30.0 | 28.1 | **+0.6 — not clustered** |
+| 1kx9_A | pdb | 11.3 | 16.8 | −4.1 |
+| 1y6i_A | pdb | 10.6 | 22.6 | −6.6 |
+| 2fp1_A | cif | 11.0 | 20.2 | −5.0 |
+| 2h7g_X | pdb | 9.5 | 24.5 | −3.5 |
+| 2jlq_A | cif | 12.4 | 28.5 | −8.7 |
+| 2po4_A | pdb | 11.2 | 39.3 | −10.4 |
+| 3b49_A | pdb | 16.8 | 22.5 | −3.5 |
+| 3ikw_A | pdb | 14.1 | 25.9 | −4.3 |
+| 3vjz_A | pdb | 7.1 | 13.6 | −1.9 (3 labels, underpowered) |
+| 4uc8_A | pdb | 12.4 | 15.8 | −0.8 (3 labels, underpowered) |
+| 5op0_B | pdb | 16.5 | 24.0 | −4.0 |
+| 6irx_A | cif | 11.6 | 30.0 | −5.8 |
+
+`1hp1_A` maps every label and is still not a spatial cluster, which is why the
+match rate alone is not sufficient evidence that a join is right.
+
+## What this does and does not establish
+
+It does **not** refute the method. It establishes that at ATLAS trajectory
+lengths only one channel can speak, and that channel alone does not find cryptic
+sites. Both are consequences of 100 ns being three orders of magnitude short of
+where cryptic pockets open.
+
+The informative next step is not more proteins at this length. It is either a
+longer-timescale ensemble where the other two channels come off the floor, or
+enhanced sampling on a small set — which is what the project README proposed
+spending compute on in the first place.
