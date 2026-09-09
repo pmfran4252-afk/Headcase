@@ -64,3 +64,45 @@ cleanly separate 0.72 from the pooled 0.690** — those intervals overlap.
 Distinguishing them needs roughly 50 clusters, which this data source does not
 contain. A result in the 0.65–0.72 band is therefore genuinely inconclusive
 about stratification, and will be reported as such rather than argued either way.
+
+---
+
+## Amendment 1 — label transfer by alignment (made before any score)
+
+The cohort as first built could not be scored: 28 of 32 entries mapped **zero**
+labels. The cause is a data gap, not the method. SIFTS `pdb_chain_uniprot`
+leaves `PDB_BEG` empty for most rows and the PDBe API returns
+`author_residue_number: None` for the same entries, so no author-to-UniProt
+offset exists for those labelled chains. Tracing it out:
+
+```
+CryptoBench chains with a SIFTS UniProt  : 607
+  ...and >=10 labels                     : 399
+  ...and any ATLAS entry for that UniProt:  28
+  of those 27 clusters, already spent    :  26
+  fresh remaining via SIFTS              :   1   (and its ATLAS entry is known holo)
+```
+
+Via SIFTS the source is exhausted. The 25 fresh clusters are real proteins with
+real trajectories whose labels simply cannot be placed by that route.
+
+**Change:** labels are transferred by aligning the label chain to the ATLAS
+chain directly (`align_labels.py`), which needs no UniProt intermediary. Two
+crystal forms of one protein align at near-identity, so the correspondence is
+exact where it exists. Two guards, fixed here:
+
+- **sequence identity ≥ 0.90** between the two chains, else the pairing is
+  rejected as not the same protein
+- the spatial-clustering join check at z > −2 is unchanged and still applied
+  afterwards; it remains independent of how the mapping was produced, and on the
+  five entries used to validate the aligner it still rejected one (`3bl9_A`,
+  z = −0.1) while the other four came back between −6.6 and −9.7
+
+**Unchanged:** the scoring method, every cohort rule, and the prediction of
+mean AUROC ≥ 0.72.
+
+**Why this is not outcome-driven:** no AUROC has been computed for any entry in
+this cohort. The run was stopped during the filter pass, before the scoring loop
+was reached, and the only numbers seen were mapped-label counts and join
+z-scores — both inputs to eligibility, neither a result. A fix that restores
+data the method never saw cannot select for a favourable answer.

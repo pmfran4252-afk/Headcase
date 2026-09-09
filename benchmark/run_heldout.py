@@ -26,6 +26,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent))
 
 import mdtraj as md
+from align_labels import transfer
 from build_cohort import labels_to_uniprot, sifts_map, uniprot_to_index
 from cryptic_dispersion.cavity import residue_cavity_volume
 from cryptobench_atlas import auroc
@@ -50,12 +51,18 @@ def spatial_z(top, mask, rng, n=400):
 
 
 def main() -> int:
-    cohort = json.loads((HERE / "heldout.json").read_text())
+    import os
+    # Same frozen method, different cohort. Parameterised rather than copied so
+    # the scoring path cannot drift between the two preregistered runs.
+    cohort_file = os.environ.get("HEADCASE_COHORT", "heldout.json")
+    zip_dir = os.environ.get("HEADCASE_ZIPS", "heldout_cohort")
+    out_file = os.environ.get("HEADCASE_OUT", "heldout_result.json")
+    cohort = json.loads((HERE / cohort_file).read_text())
     labels = json.loads((HERE / "cb_labels.json").read_text())
     sifts = sifts_map(HERE / "sifts.tsv")
-    zips = HERE / "heldout_cohort"
+    zips = HERE / zip_dir
     work = zips / "_extracted"
-    out_path = HERE / "heldout_result.json"
+    out_path = HERE / out_file
     rng = np.random.default_rng(0)
 
     done = {}
@@ -82,9 +89,19 @@ def main() -> int:
             continue
         top = md.load(str(d / f"{tag}.pdb"))
         lpdb, lch = e["label_entry"].split("_")
-        up_nums = labels_to_uniprot(labels[lpdb.lower()], lch, lpdb, e["uniprot"], sifts)
+        lab = labels[lpdb.lower()]
+        # SIFTS first; fall back to direct chain alignment, which most entries
+        # need because SIFTS records no author numbering for them (Amendment 1).
+        up_nums = labels_to_uniprot(lab, lch, lpdb, e["uniprot"], sifts)
         u2i = uniprot_to_index(d / f"{tag}_corresp.tsv")
         idx = sorted({u2i[u] for u in up_nums if u in u2i and u2i[u] < top.n_residues})
+        ident = 1.0
+        if not idx:
+            want = {int(x.split("_")[1]) for x in lab
+                    if x.split("_")[0] == lch and x.split("_")[1].lstrip("-").isdigit()}
+            hits, ident, _ = transfer(lpdb, lch, d / f"{tag}_corresp.tsv", want,
+                                      HERE / "pdbcache")
+            idx = sorted({h for h in hits if h < top.n_residues}) if ident >= 0.90 else []
         mask = np.zeros(top.n_residues, bool); mask[idx] = True
         zz = spatial_z(top, mask, rng)
         if len(idx) < MIN_LABELS:

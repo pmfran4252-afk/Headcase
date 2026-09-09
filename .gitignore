@@ -10,3 +10,12 @@ benchmark/sifts.tsv
 benchmark/atlas_pdb.txt
 benchmark/cohort.json
 benchmark/heldout_cohort/
+
+# Fetched benchmark data, by pattern rather than by name. Listing cohort
+# directories individually let two of them be committed by `git add -A`
+# before this rule existed; a new cohort must not be able to repeat that.
+benchmark/*_cohort/
+benchmark/pdbcache/
+benchmark/*.zip
+benchmark/sifts.tsv
+benchmark/atlas_pdb.txt
