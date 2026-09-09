@@ -18,3 +18,10 @@ for t in 1kx9_A 1esw_A 1hp1_A 2fp1_A 1y6i_A 2h7g_X 2jlq_A 2po4_A \
     "https://www.dsimb.inserm.fr/ATLAS/api/ATLAS/analysis/$t"
   echo "$t"
 done
+
+# Cohort construction inputs (see build_cohort.py)
+curl -sSL -o atlas_pdb.txt \
+  https://www.dsimb.inserm.fr/ATLAS/data/download/distributions/2024_11_18_ATLAS_pdb.txt
+curl -sSL -o sifts.tsv.gz \
+  https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_uniprot.tsv.gz
+gunzip -f sifts.tsv.gz

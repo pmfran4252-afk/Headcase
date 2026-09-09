@@ -74,6 +74,8 @@ class EntryResult:
     enrichment: float
     auroc: float
     absent: int
+    baseline_mean_sasa: float = float('nan')
+    baseline_rmsf: float = float('nan')
     seconds: float = 0.0
     blind: dict = field(default_factory=dict)
     note: str = ""
@@ -276,6 +278,13 @@ def run_entry(zip_path, work, labels_by_pdb, n_replicas: int = 3) -> Optional[En
     reps = reps[:n_replicas]
     n = reps[0].n_residues
 
+    import mdtraj as md
+    ref = reps[0]
+    base_sasa = md.shrake_rupley(ref[::5], mode="residue",
+                                 n_sphere_points=SASA_SPHERE_POINTS).mean(0)
+    base_rmsf = md.rmsf(ref[::5], ref[::5], 0,
+                        atom_indices=ref.topology.select("name CA"))
+
     per = []
     for j, r in enumerate(reps, 1):
         per.append(score_replica(r))
@@ -297,13 +306,24 @@ def run_entry(zip_path, work, labels_by_pdb, n_replicas: int = 3) -> Optional[En
     k = int(mask.sum())
     hits = sum(1 for r in order[:k] if mask[r])
     base = k / n
+
+    # Trivial one-line floors, reported next to the pipeline every time. On the
+    # first 13-protein scan the pipeline scored 0.512 while mean SASA alone
+    # scored 0.562, and the report said nothing about it because no floor was
+    # computed. A ceiling without a floor is uninterpretable.
+    def _a(v):
+        o = np.argsort(-v)
+        return auroc(v[o], mask[:len(v)][o])
+
     return EntryResult(
         tag=tag, n_residues=n, n_labelled=k, label_match_rate=rate,
         top_k_precision=hits / k, base_rate=base,
         enrichment=(hits / k) / base if base else float("nan"),
         auroc=auroc(np.array([s.score for s in ranked]),
                     np.array([mask[r] for r in order])),
-        absent=summary["counts"][ABSENT], seconds=time.time() - t0,
+        absent=summary["counts"][ABSENT],
+        baseline_mean_sasa=_a(base_sasa), baseline_rmsf=_a(base_rmsf),
+        seconds=time.time() - t0,
         blind=summary["blind_by_channel"], note=note)
 
 
@@ -325,7 +345,7 @@ def main(argv: list) -> int:
     zips = sorted(cohort.glob("*.zip"))
     print(f"CryptoBench x ATLAS: {len(zips)} entries, {n_replicas} replica(s) each\n", flush=True)
     print(f"{'entry':<9} {'res':>4} {'lab':>4} {'join':>5} {'top-k':>6} {'base':>6} "
-          f"{'enrich':>7} {'auroc':>6} {'sec':>5}  blind channels", flush=True)
+          f"{'enrich':>7} {'auroc':>6} {'sasa':>6} {'rmsf':>6} {'sec':>5}", flush=True)
     print("-" * 88, flush=True)
 
     for z in zips:
@@ -362,6 +382,14 @@ def main(argv: list) -> int:
         print(f"  entries with AUROC > 0.5         : {sum(x > 0.5 for x in a)}/{len(a)}", flush=True)
         print(f"  median label join rate           : "
               f"{np.median([d['label_match_rate'] for d in ok]):.0%}", flush=True)
+        bs = [d.get("baseline_mean_sasa", float("nan")) for d in ok]
+        br = [d.get("baseline_rmsf", float("nan")) for d in ok]
+        print(f"  BASELINE mean SASA alone         : {np.nanmean(bs):.3f}", flush=True)
+        print(f"  BASELINE RMSF alone              : {np.nanmean(br):.3f}", flush=True)
+        from build_cohort import detectable_effect
+        print(f"\n  at n={len(ok)}, 80% power reaches a mean AUROC of "
+              f"{detectable_effect(len(ok)):.3f}; anything smaller is "
+              f"underpowered, not absent.", flush=True)
         print(f"\nwrote {out_path}", flush=True)
     return 0
 

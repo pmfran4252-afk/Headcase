@@ -6,3 +6,6 @@ __pycache__/
 benchmark/atlas_cohort/
 benchmark/cb_labels.json
 benchmark/cryptobench_atlas_result.json
+benchmark/sifts.tsv
+benchmark/atlas_pdb.txt
+benchmark/cohort.json
