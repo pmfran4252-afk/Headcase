@@ -22,6 +22,10 @@ from cryptic_dispersion.exchange import (  # noqa: E402
 from cryptic_dispersion.hdx import (  # noqa: E402
     AmideEnvironment, breathing_anomaly, ensemble_ln_pf, rate_averaged_ln_pf,
 )
+from cryptic_dispersion.observability import (  # noqa: E402
+    ABSENT, BLIND, NEGATIVE, SCORED, SEEN, ResidueStatus, assess, breathing_floor,
+    dispersion_floor, summarise, tail_floor, tail_status,
+)
 from cryptic_dispersion.observables import robust_z, slow_projection  # noqa: E402
 from cryptic_dispersion.score import rank_sites  # noqa: E402
 from cryptic_dispersion.tails import autocorr_time, decluster, fit_tail  # noqa: E402
@@ -323,6 +327,90 @@ def test_missing_channel_does_not_cost_the_residue_its_weight():
     # Two residues with identical available evidence must not be split by the
     # mere availability of a third channel.
     assert got.score > 0.9 * by_res[10].score
+
+
+def test_tail_floor_is_stricter_than_the_dispersion_floor():
+    """The channel documented as surviving undersampling needs a faster rate.
+
+    Both floors come from E[transitions] = T p_A p_B k_ex.  Dispersion needs 8
+    transitions; the tail fit needs 25 independent excursions, and declustering
+    with a gap of one autocorrelation time bounds the excursion count by the
+    number of open/close cycles.  So the tail channel's floor is 25/4 times
+    dispersion's, not below it.  This test exists so the inversion cannot be
+    silently reintroduced by changing min_clusters.
+    """
+    d = dispersion_floor(80.0, 0.05, min_transitions=8)
+    t = tail_floor(80.0, 0.05, min_clusters=25)
+    assert t > d
+    assert abs(t / d - 25.0 / 4.0) < 1e-9
+
+    # And the breathing channel, being a time average, escapes the rate floor
+    # entirely -- it needs occupied frames, not completed round trips.
+    assert breathing_floor(8000, tau_frames=10.0) < 0.05
+
+
+def test_a_successful_tail_fit_is_not_evidence_that_anything_opened():
+    """A generalised Pareto fits thermal noise perfectly well.
+
+    This is the failure that lets a rigid residue be reported as a cryptic site:
+    the site never leaves the closed state, the tail fit succeeds on the noise,
+    and a confident return level comes back.  `ok` means a fit was supportable,
+    never that an opening was observed.
+    """
+    rng = np.random.default_rng(0)
+    pure_noise = rng.normal(0.0, 1.0, 8000)
+    f = fit_tail(pure_noise)
+    assert f.ok, "a GPD does fit noise -- that is the point of this test"
+    assert np.isfinite(f.return_level(1e-3))
+
+
+def test_a_refused_tail_fit_is_blind_not_a_negative():
+    """fit_tail walks its threshold to the median before refusing.
+
+    So a refusal reports that the trajectory could not supply enough independent
+    excursions.  That is a statement about sampling, not about the site, and
+    calling it a negative would turn undersampling into evidence of rigidity.
+    """
+    obs, _ = two_state_trajectory(8000, 10.0, 0.10, 1e9, delta=3.0, noise=0.3, seed=1)
+    assert not fit_tail(obs).ok, "expected this rate to leave too few excursions"
+    st = tail_status(obs, total_time_ns=80.0)
+    assert st.status == BLIND
+    assert "median" in st.note
+
+
+def test_absent_residues_are_ranked_last_but_never_dropped():
+    """Observability is correlated with the thing being ranked.
+
+    The slower a site opens the more likely it is both a genuine cryptic pocket
+    and invisible, so excluding unobservable residues would state an enrichment
+    conditional on observability.  They stay in the list, sorted after every
+    residue that was actually observed, carrying their outcome.
+    """
+    n = 6
+    tail = np.array([1.0, 9.0, 2.0, 3.0, 4.0, 5.0])
+    breath = np.array([1.0, 9.0, 2.0, 3.0, 4.0, 5.0])
+    blind = ResidueStatus(0, ABSENT, {})
+    seen = [ResidueStatus(i, SCORED, {}) for i in range(n)]
+    seen[1] = blind                         # the top scorer was never observable
+
+    ranked = rank_sites(tail=tail, breathing=breath, statuses=seen)
+    assert len(ranked) == n, "an unobservable residue must be counted, not dropped"
+    assert ranked[-1].residue == 1
+    assert ranked[-1].outcome == ABSENT
+    assert ranked[0].outcome == SCORED
+    # Its score is still reported; only its position reflects that it means nothing.
+    assert ranked[-1].score > ranked[0].score
+
+
+def test_summarise_reports_the_absent_share():
+    """Abstention accounting: the share that could not be judged is part of the result."""
+    statuses = ([ResidueStatus(i, SCORED, {}) for i in range(6)]
+                + [ResidueStatus(i, NEGATIVE, {}) for i in range(6, 8)]
+                + [ResidueStatus(i, ABSENT, {}) for i in range(8, 10)])
+    s = summarise(statuses)
+    assert s["n_residues"] == 10
+    assert s["counts"][SCORED] == 6 and s["counts"][ABSENT] == 2
+    assert abs(s["absent_share"] - 0.2) < 1e-12
 
 
 def _main() -> int:

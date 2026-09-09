@@ -33,6 +33,7 @@ from typing import Optional, Sequence
 import numpy as np
 
 from .exchange import ExchangeFit, exchange_contrast, fit_two_state
+from .observability import ABSENT, SCORED, ResidueStatus, summarise
 from .observables import robust_z
 from .tails import fit_tail, latent_openness, threshold_stability
 
@@ -51,6 +52,7 @@ class SiteScore:
     k_ex: float = float("nan")
     reliable_fit: bool = False
     tail_stable: bool = False
+    outcome: str = SCORED           # SCORED | NEGATIVE | ABSENT
     flags: list[str] = field(default_factory=list)
 
     def as_dict(self) -> dict:
@@ -92,6 +94,7 @@ def rank_sites(
     channel_cut: float = 1.5,
     fits: Optional[Sequence[ExchangeFit]] = None,
     tail_stable: Optional[Sequence[bool]] = None,
+    statuses: Optional[Sequence[ResidueStatus]] = None,
 ) -> list[SiteScore]:
     """Combine per-residue channel values into a ranked list.
 
@@ -148,6 +151,12 @@ def rank_sites(
             p_minor, k_ex, reliable = f.p_minor, f.k_ex, f.reliable
             if not f.reliable and f.note:
                 flags.append(f"fit: {f.note}")
+        outcome = SCORED
+        if statuses is not None and i < len(statuses):
+            outcome = statuses[i].outcome
+            blind = statuses[i].blind_channels
+            if blind:
+                flags.append("blind: " + ", ".join(blind))
         stable = bool(tail_stable[i]) if tail_stable is not None else False
         if tail_stable is not None and not stable and zt[i] > channel_cut:
             flags.append("tail extrapolation not threshold-stable")
@@ -165,10 +174,17 @@ def rank_sites(
             residue=int(residues[i]), score=float(total[i]),
             dispersion_z=float(zd[i]), tail_z=float(zt[i]), breathing_z=float(zb[i]),
             n_channels=agree, p_minor=float(p_minor), k_ex=float(k_ex),
-            reliable_fit=bool(reliable), tail_stable=stable, flags=flags,
+            reliable_fit=bool(reliable), tail_stable=stable, outcome=outcome,
+            flags=flags,
         ))
 
-    out.sort(key=lambda s: s.score, reverse=True)
+    # A residue no channel could have seen carries no evidence either way, so it
+    # sorts after everything that was actually observed rather than competing on
+    # a score that means nothing.  It stays in the list: dropping it would state
+    # the ranking conditional on observability, and observability is correlated
+    # with the thing being ranked -- the slower a site opens, the more likely it
+    # is both a genuine cryptic pocket and invisible at this trajectory length.
+    out.sort(key=lambda s: (s.outcome == ABSENT, -s.score))
     return out
 
 

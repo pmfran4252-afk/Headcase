@@ -43,6 +43,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from cryptic_dispersion.exchange import detectability_limit, exchange_contrast, fit_two_state
 from cryptic_dispersion.hdx import AmideEnvironment, breathing_anomaly
+from cryptic_dispersion.observability import ABSENT, SCORED, assess, summarise
 from cryptic_dispersion.score import rank_sites
 from cryptic_dispersion.tails import latent_openness, threshold_stability
 
@@ -164,17 +165,35 @@ def main() -> int:
     breath = breathing_anomaly(env)
     independence_check(obs, vol, env)
 
-    disp, tails, stable, fits = [], [], [], []
+    disp, tails, stable, fits, statuses = [], [], [], [], []
     for i in range(N_RES):
         f = fit_two_state(obs[:, i], dt_ps=DT_PS)
         fits.append(f)
         disp.append(exchange_contrast(f) if f.reliable else float("nan"))
         tails.append(latent_openness(vol[:, i], target_population=1e-3))
         stable.append(bool(threshold_stability(vol[:, i])["stable"]))
+        statuses.append(assess(i, fit=f, openness=vol[:, i],
+                               contacts=env.n_contacts[:, i], total_time_ns=TOTAL_NS))
 
     ranked = rank_sites(np.array(disp), np.array(tails), breath,
-                        fits=fits, tail_stable=stable)
+                        fits=fits, tail_stable=stable, statuses=statuses)
     order = [s.residue for s in ranked]
+
+    # What could this trajectory have judged at all?  Report it before any
+    # ranking, because a ranking over the observable subset alone is an
+    # enrichment conditional on observability -- and observability here is
+    # correlated with the thing being ranked.
+    summary = summarise(statuses)
+    print("what this trajectory could judge")
+    print(f"  {summary['counts'][SCORED]:>2} residues scored, "
+          f"{summary['counts'].get('NEGATIVE', 0):>2} informative negatives, "
+          f"{summary['counts'][ABSENT]:>2} absent "
+          f"({summary['absent_share']:.0%} of the protein)")
+    for name, count in sorted(summary["blind_by_channel"].items()):
+        note = next(st.channels[name].note for st in statuses
+                    if name in st.channels and st.channels[name].note)
+        print(f"  {name:<11} blind on {count:>2}/{N_RES} residues -- {note}")
+    print()
 
     print(f"Synthetic protein: {N_RES} residues, {TOTAL_NS:.0f} ns at {DT_PS:.0f} ps")
     print(f"Dispersion channel can resolve k_ex >= {detectability_limit(TOTAL_NS, 0.05):.1e} s^-1 "

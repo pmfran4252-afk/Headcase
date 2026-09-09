@@ -21,6 +21,10 @@ from .exchange import (
 )
 from .hdx import AmideEnvironment, amide_environment, breathing_anomaly, ln_protection_factor
 from .observables import Projection, contact_number, project_all, robust_z, slow_projection
+from .observability import (ABSENT, BLIND, NEGATIVE, NO_SIGNAL, SCORED, SEEN,
+                            ChannelStatus, ResidueStatus, assess,
+                            breathing_floor, dispersion_floor, summarise,
+                            tail_floor)
 from .score import SiteScore, analyse, rank_sites
 from .tails import TailFit, fit_tail, latent_openness, threshold_stability
 
