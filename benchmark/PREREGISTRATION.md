@@ -79,3 +79,46 @@ all of CryptoBench sits inside Loki's spent cohorts. A result here is evidence
 that cavity volume ranks cryptic-site residues in this data. It is not evidence
 of transfer to a different label set, a different force field, or a prospective
 target, and it must not be pooled with Loki's results as independent.
+
+---
+
+# OUTCOME — recorded after execution, prediction unchanged
+
+**Verdict: PARTIAL.** Predicted mean AUROC ≥ 0.70; observed **0.690**.
+
+29 entries, **24 UniProt clusters** (the unit of analysis — several entries are
+the same protein in different crystal forms and are not independent).
+
+| measure | mean | median | 95% CI | >0.5 | p vs 0.5 |
+|---|---|---|---|---|---|
+| **cavity p95 (frozen)** | **0.690** | 0.745 | [0.601, 0.778] | 19/24 | 1.9e-04 |
+| SASA baseline | 0.498 | 0.456 | [0.426, 0.570] | 9/24 | 0.96 |
+| RMSF baseline | 0.529 | 0.534 | [0.451, 0.607] | 14/24 | 0.45 |
+
+Paired against its floors: **+0.192 over SASA** (p = 0.0011) and **+0.161 over
+RMSF** (p = 0.0060). Wilcoxon against chance p = 4.3e-04; sign test 19/24,
+p = 0.0066.
+
+So the effect is real and clearly separated from both baselines, and the
+prediction was still missed. Per this document's own terms — "0.60–0.70: real
+but weaker than claimed; report the shortfall, do not re-tune and re-report" —
+the shortfall is the result.
+
+The drop from the tuning set's 0.827 to 0.690 is the regression this
+preregistration anticipated, which is why it predicted 0.70 rather than 0.827.
+It anticipated the direction and still overshot the magnitude.
+
+## An applicability signal, logged for a future preregistration only
+
+| stratum | clusters | mean AUROC |
+|---|---|---|
+| ≥ 10 labelled residues | 15 | 0.749 |
+| < 10 labelled residues | 9 | 0.592 |
+
+Spearman against label count rho = +0.35 (p = 0.098), against protein size
+rho = +0.40 (p = 0.054).
+
+**This does not rescue the result.** Re-slicing the held-out cohort after seeing
+it and reporting 0.749 is precisely the manoeuvre this file exists to prevent.
+It is recorded as a hypothesis for a *separate* prospective test with the
+stratum boundary fixed in advance, and the headline number stays 0.690.
