@@ -32,14 +32,31 @@ from cryptobench_atlas import auroc, load_corresp, map_labels
 STRIDE = 2
 
 
-def protein_topology(top_pdb: pathlib.Path, out: pathlib.Path) -> pathlib.Path:
-    """Write a topology matching the protein-only trajectory, if not already."""
+def matching_topology(top_pdb: pathlib.Path, xtc: pathlib.Path,
+                      out: pathlib.Path) -> pathlib.Path:
+    """Return a topology whose atom count matches this trajectory.
+
+    The trajectory contents changed between runs -- the first wrote protein
+    only, later ones keep the probes so occupancy can be measured -- and an
+    analysis that assumes either shape breaks on the other. This asks the
+    trajectory how many atoms it has and adapts, rather than assuming.
+
+    That assumption has now caused three separate failures: a full solvated
+    topology written beside a protein-only trajectory, a residue-name filter
+    defeated by the PDB format truncating BENZ to BEN, and a protein-only
+    slice applied to a trajectory that contains probes.
+    """
     full = md.load(str(top_pdb))
-    sel = full.topology.select("protein")
-    if full.n_atoms == len(sel):
+    with md.formats.XTCTrajectoryFile(str(xtc)) as f:
+        n_traj = f.read(n_frames=1)[0].shape[1]
+    if full.n_atoms == n_traj:
         return top_pdb
-    full.atom_slice(sel).save_pdb(str(out))
-    return out
+    sel = full.topology.select("protein")
+    if len(sel) == n_traj:
+        full.atom_slice(sel).save_pdb(str(out))
+        return out
+    raise ValueError(f"topology {full.n_atoms} atoms, protein {len(sel)}, "
+                     f"trajectory {n_traj}: no consistent selection")
 
 
 def probe_occupancy(traj, cutoff=5.0):
@@ -117,7 +134,9 @@ def compare(tag, extracted, cosolv_dir, labels, label_entry):
     out["before_ns"] = float(before.time[-1] / 1000.0)
 
     # AFTER: cosolvent
-    topo = protein_topology(cos / f"{tag}_cosolv_top.pdb", cos / f"{tag}_protein_top.pdb")
+    topo = matching_topology(cos / f"{tag}_cosolv_top.pdb",
+                             cos / f"{tag}_cosolv.xtc",
+                             cos / f"{tag}_protein_top.pdb")
     after = md.load(str(cos / f"{tag}_cosolv.xtc"), top=str(topo))[::STRIDE]
     ca, ser = cavity_p95(after)
     n = min(len(ca), len(mask))

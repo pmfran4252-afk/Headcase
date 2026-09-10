@@ -8,6 +8,23 @@
     "after_ns": 19.979999542236328,
     "delta": -0.00840336134453784,
     "mean_cavity_before": 3.5365853658536586,
-    "mean_cavity_after": 3.909756097560969
+    "mean_cavity_after": 3.909756097560969,
+    "n_probes_in_traj": 0
+  },
+  {
+    "tag": "1egw_B",
+    "n_labels": 7,
+    "before_auroc": 0.1836734693877551,
+    "before_ns": 100.0,
+    "after_auroc": 0.3673469387755102,
+    "after_ns": 19.979999542236328,
+    "delta": 0.1836734693877551,
+    "mean_cavity_before": 20.961038961038962,
+    "mean_cavity_after": 14.377165354330694,
+    "n_probes_in_traj": 50,
+    "occupancy_auroc": 0.4163265306122449,
+    "occ_at_site": 0.49885714285714283,
+    "occ_elsewhere": 0.5707142857142858,
+    "occ_enrichment": 0.8740926157697119
   }
 ]
