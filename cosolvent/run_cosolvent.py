@@ -91,8 +91,16 @@ def run(tag, extracted, out_dir, ns=20.0, conc_M=0.25, seed=0):
     sim.reporters.append(app.StateDataReporter(
         str(out_dir / f"{tag}_cosolv.log"), int(1000 * u.picosecond / DT),
         step=True, time=True, potentialEnergy=True, temperature=True, speed=True))
+    # The topology written here must describe the ATOMS IN THE TRAJECTORY, not
+    # the whole solvated system. Writing the full topology alongside a
+    # protein-only XTC produces files that cannot be opened together at all --
+    # 13,391 atoms against 610 in the first run -- and the mismatch is invisible
+    # until analysis, long after the compute is spent.
+    sub = app.Modeller(mod.topology, mod.positions)
+    sub.delete([a for a in sub.topology.atoms() if a.index not in set(prot)])
     with open(out_dir / f"{tag}_cosolv_top.pdb", "w") as fh:
-        app.PDBFile.writeFile(mod.topology, mod.positions, fh, keepIds=True)
+        app.PDBFile.writeFile(sub.topology, sub.positions, fh, keepIds=True)
+    assert sub.topology.getNumAtoms() == len(prot), "topology/trajectory mismatch"
 
     steps = int(ns * u.nanoseconds / DT)
     print(f"[{tag}] production {ns:.0f} ns ({steps} steps)", flush=True)
