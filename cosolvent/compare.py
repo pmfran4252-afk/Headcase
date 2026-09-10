@@ -42,8 +42,45 @@ def protein_topology(top_pdb: pathlib.Path, out: pathlib.Path) -> pathlib.Path:
     return out
 
 
+def probe_occupancy(traj, cutoff=5.0):
+    """Per-residue fraction of frames with a benzene carbon within ``cutoff`` A.
+
+    This is the actual readout of a cosolvent experiment, and treating it only
+    as a control undersells it. FTMap and CryptoSite rank sites by where
+    hydrophobic probes accumulate, not by how far the backbone moved: a probe
+    that parks in a shallow apolar dent is reporting a druggable hot spot even
+    when the pocket never fully opens. Cavity volume asks whether the site
+    opened; occupancy asks whether anything wanted to bind there.
+
+    Returns ``(occupancy, n_probe_residues)``; occupancy is all zeros when the
+    trajectory contains no probes, which is how the first run was written.
+    """
+    from scipy.spatial import cKDTree
+    top = traj.topology
+    probe = [a.index for a in top.atoms
+             if a.residue.name in ("BENZ", "BEN") and a.element.symbol == "C"]
+    prot = [a.index for a in top.atoms
+            if a.residue.name not in ("BENZ", "BEN") and a.element.symbol != "H"]
+    n_res = traj.n_residues
+    occ = np.zeros(n_res)
+    if not probe:
+        return occ, 0
+    res_of = np.array([top.atom(i).residue.index for i in prot])
+    for f in range(traj.n_frames):
+        tree = cKDTree(traj.xyz[f, probe, :] * 10.0)
+        hit = tree.query_ball_point(traj.xyz[f, prot, :] * 10.0, cutoff)
+        touched = {res_of[k] for k, h in enumerate(hit) if h}
+        for r in touched:
+            occ[r] += 1
+    return occ / traj.n_frames, len({top.atom(i).residue.index for i in probe})
+
+
 def cavity_p95(traj) -> np.ndarray:
-    heavy = [a.index for a in traj.topology.atoms if a.element.symbol != "H"]
+    # Protein heavy atoms only: probes must not be treated as protein when
+    # detecting cavities, or a benzene sitting in a pocket fills the very void
+    # the detector is looking for.
+    heavy = [a.index for a in traj.topology.atoms
+             if a.element.symbol != "H" and a.residue.name not in ("BENZ", "BEN")]
     el = [traj.topology.atom(i).element.symbol for i in heavy]
     res = np.array([traj.topology.atom(i).residue.index for i in heavy])
     ser = np.array([residue_cavity_volume(traj.xyz[f, heavy, :] * 10.0, el, res,
@@ -89,6 +126,17 @@ def compare(tag, extracted, cosolv_dir, labels, label_entry):
     out["delta"] = out["after_auroc"] - out["before_auroc"]
     out["mean_cavity_before"] = float(np.mean(cb))
     out["mean_cavity_after"] = float(np.mean(ca))
+
+    # The control, and a candidate observable in its own right.
+    occ, n_probes = probe_occupancy(after)
+    out["n_probes_in_traj"] = int(n_probes)
+    if n_probes:
+        m = min(len(occ), len(mask))
+        out["occupancy_auroc"] = auroc(occ[:m], mask[:m])
+        out["occ_at_site"] = float(occ[:m][mask[:m]].mean())
+        out["occ_elsewhere"] = float(occ[:m][~mask[:m]].mean())
+        out["occ_enrichment"] = (out["occ_at_site"] /
+                                 max(out["occ_elsewhere"], 1e-9))
     return out
 
 
@@ -104,7 +152,7 @@ if __name__ == "__main__":
                "2pbk_A": ("1fl1_B", B / "strat_cohort/_extracted")}
     rows = []
     print(f"{'tag':<9} {'lab':>4} {'before':>7} {'after':>7} {'delta':>7} "
-          f"{'ns':>6} {'cav_b':>7} {'cav_a':>7}")
+          f"{'occAUC':>7} {'occ@site':>9} {'enrich':>7} {'ns':>6}")
     for tag, (le, ex) in TARGETS.items():
         if not (SP / "cosolv_out" / f"{tag}_cosolv.xtc").exists():
             print(f"{tag:<9} (not finished)"); continue
@@ -113,9 +161,12 @@ if __name__ == "__main__":
         except Exception as exc:                                  # noqa: BLE001
             print(f"{tag:<9} FAILED {type(exc).__name__}: {exc}"); continue
         rows.append(r)
+        oa = r.get("occupancy_auroc"); os_ = r.get("occ_at_site"); en = r.get("occ_enrichment")
         print(f"{r['tag']:<9} {r['n_labels']:>4} {r['before_auroc']:>7.3f} "
-              f"{r['after_auroc']:>7.3f} {r['delta']:>+7.3f} {r['after_ns']:>6.1f} "
-              f"{r['mean_cavity_before']:>7.1f} {r['mean_cavity_after']:>7.1f}")
+              f"{r['after_auroc']:>7.3f} {r['delta']:>+7.3f} "
+              f"{('%.3f'%oa) if oa is not None else '   n/a':>7} "
+              f"{('%.3f'%os_) if os_ is not None else '     n/a':>9} "
+              f"{('%.2f'%en) if en is not None else '   n/a':>7} {r['after_ns']:>6.1f}")
     if rows:
         (HERE / "cosolvent_result.json").write_text(json.dumps(rows, indent=2))
         d = np.array([r["delta"] for r in rows])

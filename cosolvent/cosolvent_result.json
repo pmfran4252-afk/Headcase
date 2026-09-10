@@ -1,0 +1,13 @@
+[
+  {
+    "tag": "1fd3_A",
+    "n_labels": 7,
+    "before_auroc": 0.3907563025210084,
+    "before_ns": 100.0,
+    "after_auroc": 0.38235294117647056,
+    "after_ns": 19.979999542236328,
+    "delta": -0.00840336134453784,
+    "mean_cavity_before": 3.5365853658536586,
+    "mean_cavity_after": 3.909756097560969
+  }
+]

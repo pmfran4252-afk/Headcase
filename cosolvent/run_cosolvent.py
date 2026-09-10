@@ -82,9 +82,14 @@ def run(tag, extracted, out_dir, ns=20.0, conc_M=0.25, seed=0):
     sim.context.setVelocitiesToTemperature(TEMP)
     sim.step(int(100 * u.picosecond / DT))                      # equilibration
 
-    # Protein-only trajectory, so the existing cavity detector reads it unchanged.
+    # Protein AND probes. Writing protein only makes a null result
+    # uninterpretable: "the probes did not open the site" and "the probes never
+    # bound" produce identical data. Probe occupancy is the control that
+    # separates them, and it costs a few percent of trajectory size. The
+    # analysis selects protein atoms itself, so the detector still sees exactly
+    # what it saw on the unbiased trajectories.
     prot = [a.index for a in mod.topology.atoms()
-            if a.residue.name not in ("HOH", "WAT", "NA", "CL", "BENZ")]
+            if a.residue.name not in ("HOH", "WAT", "NA", "CL", "SOD", "CLA")]
     sim.reporters.append(app.XTCReporter(str(out_dir / f"{tag}_cosolv.xtc"),
                                          int(REPORT_PS * u.picosecond / DT),
                                          atomSubset=prot))
@@ -96,8 +101,9 @@ def run(tag, extracted, out_dir, ns=20.0, conc_M=0.25, seed=0):
     # protein-only XTC produces files that cannot be opened together at all --
     # 13,391 atoms against 610 in the first run -- and the mismatch is invisible
     # until analysis, long after the compute is spent.
+    keep = set(prot)
     sub = app.Modeller(mod.topology, mod.positions)
-    sub.delete([a for a in sub.topology.atoms() if a.index not in set(prot)])
+    sub.delete([a for a in sub.topology.atoms() if a.index not in keep])
     with open(out_dir / f"{tag}_cosolv_top.pdb", "w") as fh:
         app.PDBFile.writeFile(sub.topology, sub.positions, fh, keepIds=True)
     assert sub.topology.getNumAtoms() == len(prot), "topology/trajectory mismatch"
