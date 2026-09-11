@@ -64,3 +64,71 @@ all. The diagnostic proteins are 41–228 residues, so most run faster.
 ```sh
 python cosolvent/run_cosolvent.py 1fd3_A <extracted_dir> <out_dir> 20 0.25
 ```
+
+---
+
+# RESULT: the hypothesis is refuted, a different signal appeared
+
+Four proteins, 20 ns benzene at 0.25 M each, ~45 GPU-hours.
+
+```
+tag        lab  before   after   delta  occAUC  occ@site  enrich
+1fd3_A       7   0.391   0.382  -0.008     n/a       n/a     n/a
+1egw_B       7   0.184   0.367  +0.184   0.416     0.499    0.87
+1u55_A       8   0.424   0.410  -0.015   0.760     0.553    1.91
+2pbk_A      21   0.418   0.440  +0.022   0.702     0.492    2.07
+```
+
+## Cosolvent does not rescue cavity detection
+
+Mean delta **+0.046, p = 0.399**. Three of four remain below chance after the
+intervention. The proposed mechanism — probes pry the pocket open, the void
+detector then sees it — is **not supported**.
+
+## Probe occupancy outperforms cavity on the same trajectories
+
+| | occupancy AUROC | cavity (after) |
+|---|---|---|
+| 1egw_B | 0.416 | 0.367 |
+| 1u55_A | 0.760 | 0.410 |
+| 2pbk_A | 0.702 | 0.440 |
+| **mean** | **0.626** | **0.406** |
+
+Paired difference **+0.220** (p = 0.133, n = 3 — underpowered, but occupancy
+wins in all three). Enrichment at the labelled site reaches 1.91× and 2.07× in
+two of three.
+
+`1u55_A` is the clean case: benzene occupied the cryptic pocket nearly twice as
+often as the rest of the protein while the pocket never opened enough for a
+grid-based detector to register it — cavity 0.410, occupancy 0.760, one
+trajectory.
+
+**Probe binding and pocket opening are separable events, and at 20 ns only the
+binding is detectable.** The intervention was half right: changing the input
+helped, but the quantity being read out was wrong.
+
+## Status
+
+Not a result. n = 3, p = 0.133, and the cases disagree in magnitude (0.760
+against 0.416). This is the same shape as the ≥10-label stratum that looked like
+0.749 and returned 0.588 when tested properly.
+
+What distinguishes it from a fishing expedition: occupancy was promoted from
+control to observable **before any of this data existed**, on the grounds that
+FTMap and CryptoSite already rank sites that way. It is a surviving prediction,
+not a pattern found by sweeping.
+
+## What a real test looks like
+
+Preregister **probe occupancy** as the primary readout — ≥0.25 M, ≥50 ns,
+multiple replicas — on a fresh cohort of UniProt clusters never scored here,
+with the threshold stated first. Everything needed exists: the MD setup, the
+occupancy metric, the label machinery, the wall and join filters, and the habit
+of declaring the number before running.
+
+## A methodological note worth keeping
+
+`2pbk_A` was inspected at 4.8 of 20 ns and reported cavity 0.528 / occupancy
+0.612. Finished, it reads 0.440 / 0.702 — both wrong, in opposite directions.
+Partial trajectories mislead in whichever direction the early frames happen to
+fall, and were flagged unreliable at the time rather than after.

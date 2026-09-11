@@ -42,5 +42,21 @@
     "occ_at_site": 0.5529999999999999,
     "occ_elsewhere": 0.2901666666666667,
     "occ_enrichment": 1.9058012636415849
+  },
+  {
+    "tag": "2pbk_A",
+    "n_labels": 21,
+    "before_auroc": 0.41798941798941797,
+    "before_ns": 100.0,
+    "after_auroc": 0.44030365769496205,
+    "after_ns": 19.979999542236328,
+    "delta": 0.02231423970554408,
+    "mean_cavity_before": 24.714912280701753,
+    "mean_cavity_after": 16.971708185053377,
+    "n_probes_in_traj": 53,
+    "occupancy_auroc": 0.7023234414538763,
+    "occ_at_site": 0.4924761904761905,
+    "occ_elsewhere": 0.23771014492753625,
+    "occ_enrichment": 2.0717508317800966
   }
 ]
