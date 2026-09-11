@@ -26,5 +26,21 @@
     "occ_at_site": 0.49885714285714283,
     "occ_elsewhere": 0.5707142857142858,
     "occ_enrichment": 0.8740926157697119
+  },
+  {
+    "tag": "1u55_A",
+    "n_labels": 8,
+    "before_auroc": 0.42430555555555555,
+    "before_ns": 100.0,
+    "after_auroc": 0.4097222222222222,
+    "after_ns": 19.979999542236328,
+    "delta": -0.014583333333333337,
+    "mean_cavity_before": 19.20212765957447,
+    "mean_cavity_after": 18.988821138211375,
+    "n_probes_in_traj": 58,
+    "occupancy_auroc": 0.7597222222222222,
+    "occ_at_site": 0.5529999999999999,
+    "occ_elsewhere": 0.2901666666666667,
+    "occ_enrichment": 1.9058012636415849
   }
 ]
