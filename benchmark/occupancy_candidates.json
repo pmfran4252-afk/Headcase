@@ -1,0 +1,4652 @@
+[
+  {
+    "uniprot": "P10807",
+    "apo": "1a4u_B",
+    "n_labels": 40,
+    "pRMSD": 2.5
+  },
+  {
+    "uniprot": "P04958",
+    "apo": "1a8d_A",
+    "n_labels": 11,
+    "pRMSD": 2.9
+  },
+  {
+    "uniprot": "O05701",
+    "apo": "1ad1_A",
+    "n_labels": 20,
+    "pRMSD": 3.16
+  },
+  {
+    "uniprot": "P32396",
+    "apo": "1ak1_A",
+    "n_labels": 17,
+    "pRMSD": 2.02
+  },
+  {
+    "uniprot": "P00730",
+    "apo": "1arl_A",
+    "n_labels": 17,
+    "pRMSD": 2.39
+  },
+  {
+    "uniprot": "P10538",
+    "apo": "1bfn_A",
+    "n_labels": 15,
+    "pRMSD": 3.1
+  },
+  {
+    "uniprot": "P14061",
+    "apo": "1bhs_A",
+    "n_labels": 51,
+    "pRMSD": 2.96
+  },
+  {
+    "uniprot": "P13000",
+    "apo": "1byi_A",
+    "n_labels": 22,
+    "pRMSD": 2.84
+  },
+  {
+    "uniprot": "P18031",
+    "apo": "1bzj_A",
+    "n_labels": 56,
+    "pRMSD": 6.2
+  },
+  {
+    "uniprot": "P11926",
+    "apo": "1d7k_A",
+    "n_labels": 18,
+    "pRMSD": 3.65
+  },
+  {
+    "uniprot": "P0A9B2",
+    "apo": "1dc6_A",
+    "n_labels": 11,
+    "pRMSD": 2.2
+  },
+  {
+    "uniprot": "P07102",
+    "apo": "1dkl_A",
+    "n_labels": 16,
+    "pRMSD": 2.58
+  },
+  {
+    "uniprot": "P07267",
+    "apo": "1dpj_A",
+    "n_labels": 29,
+    "pRMSD": 2.84
+  },
+  {
+    "uniprot": "P55915",
+    "apo": "1dq2_A",
+    "n_labels": 11,
+    "pRMSD": 3.38
+  },
+  {
+    "uniprot": "P9WQN9",
+    "apo": "1dqz_A",
+    "n_labels": 26,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "O59952",
+    "apo": "1dte_A",
+    "n_labels": 19,
+    "pRMSD": 3.99
+  },
+  {
+    "uniprot": "Q9P4R4",
+    "apo": "1e5l_B",
+    "n_labels": 41,
+    "pRMSD": 4.17
+  },
+  {
+    "uniprot": "Q06520",
+    "apo": "1efh_B",
+    "n_labels": 19,
+    "pRMSD": 4.28
+  },
+  {
+    "uniprot": "P90551",
+    "apo": "1evy_A",
+    "n_labels": 33,
+    "pRMSD": 2.32
+  },
+  {
+    "uniprot": "P77173",
+    "apo": "1f47_B",
+    "n_labels": 14,
+    "pRMSD": 2.07
+  },
+  {
+    "uniprot": "Q13526",
+    "apo": "1f8a_B",
+    "n_labels": 18,
+    "pRMSD": 3.69
+  },
+  {
+    "uniprot": "Q5ZXE0",
+    "apo": "1fd9_A",
+    "n_labels": 14,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "P00746",
+    "apo": "1fdp_A",
+    "n_labels": 27,
+    "pRMSD": 4.83
+  },
+  {
+    "uniprot": "Q02763",
+    "apo": "1fvr_A",
+    "n_labels": 35,
+    "pRMSD": 5.65
+  },
+  {
+    "uniprot": "Q58504",
+    "apo": "1fwk_C",
+    "n_labels": 13,
+    "pRMSD": 2.43
+  },
+  {
+    "uniprot": "Q93K97",
+    "apo": "1g0s_B",
+    "n_labels": 16,
+    "pRMSD": 2.33
+  },
+  {
+    "uniprot": "P00459",
+    "apo": "1g1m_A",
+    "n_labels": 28,
+    "pRMSD": 3.82
+  },
+  {
+    "uniprot": "P02766",
+    "apo": "1g1o_A",
+    "n_labels": 18,
+    "pRMSD": 4.85
+  },
+  {
+    "uniprot": "P15879",
+    "apo": "1g24_C",
+    "n_labels": 26,
+    "pRMSD": 2.39
+  },
+  {
+    "uniprot": "P27000",
+    "apo": "1g59_A",
+    "n_labels": 15,
+    "pRMSD": 2.74
+  },
+  {
+    "uniprot": "P24670",
+    "apo": "1gqn_A",
+    "n_labels": 17,
+    "pRMSD": 2.96
+  },
+  {
+    "uniprot": "Q8KKG0",
+    "apo": "1h3g_B",
+    "n_labels": 20,
+    "pRMSD": 3.28
+  },
+  {
+    "uniprot": "P08617",
+    "apo": "1hav_A",
+    "n_labels": 16,
+    "pRMSD": 2.31
+  },
+  {
+    "uniprot": "P18902",
+    "apo": "1hbq_A",
+    "n_labels": 20,
+    "pRMSD": 2.03
+  },
+  {
+    "uniprot": "O29428",
+    "apo": "1i0r_B",
+    "n_labels": 24,
+    "pRMSD": 2.74
+  },
+  {
+    "uniprot": "Q63537",
+    "apo": "1i7n_A",
+    "n_labels": 25,
+    "pRMSD": 2.5
+  },
+  {
+    "uniprot": "P00900",
+    "apo": "1i7s_D",
+    "n_labels": 13,
+    "pRMSD": 2.59
+  },
+  {
+    "uniprot": "P61316",
+    "apo": "1iwl_A",
+    "n_labels": 37,
+    "pRMSD": 3.6
+  },
+  {
+    "uniprot": "Q8IXJ6",
+    "apo": "1j8f_C",
+    "n_labels": 59,
+    "pRMSD": 4.21
+  },
+  {
+    "uniprot": "O58403",
+    "apo": "1jfl_A",
+    "n_labels": 17,
+    "pRMSD": 2.49
+  },
+  {
+    "uniprot": "P06744",
+    "apo": "1jlh_A",
+    "n_labels": 17,
+    "pRMSD": 2.08
+  },
+  {
+    "uniprot": "O34508",
+    "apo": "1jpm_A",
+    "n_labels": 11,
+    "pRMSD": 2.51
+  },
+  {
+    "uniprot": "Q8DR49",
+    "apo": "1k47_D",
+    "n_labels": 14,
+    "pRMSD": 2.04
+  },
+  {
+    "uniprot": "P0A752",
+    "apo": "1k4k_D",
+    "n_labels": 28,
+    "pRMSD": 3.67
+  },
+  {
+    "uniprot": "P52061",
+    "apo": "1k7k_A",
+    "n_labels": 24,
+    "pRMSD": 2.57
+  },
+  {
+    "uniprot": "P00803",
+    "apo": "1kn9_D",
+    "n_labels": 17,
+    "pRMSD": 2.56
+  },
+  {
+    "uniprot": "P0A9J4",
+    "apo": "1ks9_A",
+    "n_labels": 30,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "O43924",
+    "apo": "1ksg_B",
+    "n_labels": 31,
+    "pRMSD": 2.77
+  },
+  {
+    "uniprot": "P97571",
+    "apo": "1kxr_A",
+    "n_labels": 19,
+    "pRMSD": 2.32
+  },
+  {
+    "uniprot": "P36419",
+    "apo": "1l0w_B",
+    "n_labels": 29,
+    "pRMSD": 2.92
+  },
+  {
+    "uniprot": "P29241",
+    "apo": "1lbe_B",
+    "n_labels": 20,
+    "pRMSD": 3.02
+  },
+  {
+    "uniprot": "P0A006",
+    "apo": "1lju_A",
+    "n_labels": 10,
+    "pRMSD": 3.86
+  },
+  {
+    "uniprot": "P12758",
+    "apo": "1lx7_A",
+    "n_labels": 16,
+    "pRMSD": 3.37
+  },
+  {
+    "uniprot": "P0DJQ7",
+    "apo": "1m1z_A",
+    "n_labels": 12,
+    "pRMSD": 2.1
+  },
+  {
+    "uniprot": "P0A794",
+    "apo": "1m5w_D",
+    "n_labels": 21,
+    "pRMSD": 4.15
+  },
+  {
+    "uniprot": "Q8WTS6",
+    "apo": "1muf_A",
+    "n_labels": 15,
+    "pRMSD": 2.74
+  },
+  {
+    "uniprot": "P11904",
+    "apo": "1mwk_A",
+    "n_labels": 21,
+    "pRMSD": 2.94
+  },
+  {
+    "uniprot": "Q93IC2",
+    "apo": "1mwr_A",
+    "n_labels": 18,
+    "pRMSD": 2.05
+  },
+  {
+    "uniprot": "O74866",
+    "apo": "1n05_A",
+    "n_labels": 36,
+    "pRMSD": 5.47
+  },
+  {
+    "uniprot": "P33038",
+    "apo": "1naw_B",
+    "n_labels": 39,
+    "pRMSD": 5.61
+  },
+  {
+    "uniprot": "Q93009",
+    "apo": "1nbf_B",
+    "n_labels": 29,
+    "pRMSD": 4.31
+  },
+  {
+    "uniprot": "P23946",
+    "apo": "1nn6_A",
+    "n_labels": 20,
+    "pRMSD": 3.48
+  },
+  {
+    "uniprot": "P00489",
+    "apo": "1nok_A",
+    "n_labels": 10,
+    "pRMSD": 2.38
+  },
+  {
+    "uniprot": "P44801",
+    "apo": "1nwh_B",
+    "n_labels": 24,
+    "pRMSD": 2.4
+  },
+  {
+    "uniprot": "Q8GIQ0",
+    "apo": "1nxm_A",
+    "n_labels": 20,
+    "pRMSD": 3.51
+  },
+  {
+    "uniprot": "Q9WYT0",
+    "apo": "1o24_A",
+    "n_labels": 10,
+    "pRMSD": 10.69
+  },
+  {
+    "uniprot": "Q9S5Y7",
+    "apo": "1o62_A",
+    "n_labels": 17,
+    "pRMSD": 2.81
+  },
+  {
+    "uniprot": "P0AG82",
+    "apo": "1oib_B",
+    "n_labels": 14,
+    "pRMSD": 2.67
+  },
+  {
+    "uniprot": "Q9ES89",
+    "apo": "1omx_A",
+    "n_labels": 22,
+    "pRMSD": 2.66
+  },
+  {
+    "uniprot": "P39900",
+    "apo": "1os2_B",
+    "n_labels": 11,
+    "pRMSD": 2.02
+  },
+  {
+    "uniprot": "Q5SIY4",
+    "apo": "1osj_A",
+    "n_labels": 34,
+    "pRMSD": 2.82
+  },
+  {
+    "uniprot": "P08069",
+    "apo": "1p4o_B",
+    "n_labels": 28,
+    "pRMSD": 3.86
+  },
+  {
+    "uniprot": "Q47898",
+    "apo": "1p4v_A",
+    "n_labels": 16,
+    "pRMSD": 2.37
+  },
+  {
+    "uniprot": "P43876",
+    "apo": "1p74_A",
+    "n_labels": 14,
+    "pRMSD": 2.88
+  },
+  {
+    "uniprot": "Q9HAB8",
+    "apo": "1p9o_A",
+    "n_labels": 16,
+    "pRMSD": 3.45
+  },
+  {
+    "uniprot": "P46925",
+    "apo": "1pfz_C",
+    "n_labels": 43,
+    "pRMSD": 4.32
+  },
+  {
+    "uniprot": "P0A434",
+    "apo": "1pta_A",
+    "n_labels": 15,
+    "pRMSD": 6.59
+  },
+  {
+    "uniprot": "P17900",
+    "apo": "1pu5_C",
+    "n_labels": 11,
+    "pRMSD": 3.17
+  },
+  {
+    "uniprot": "Q29599",
+    "apo": "1px5_B",
+    "n_labels": 15,
+    "pRMSD": 4.15
+  },
+  {
+    "uniprot": "Q53752",
+    "apo": "1py3_C",
+    "n_labels": 14,
+    "pRMSD": 2.88
+  },
+  {
+    "uniprot": "Q56366",
+    "apo": "1qht_A",
+    "n_labels": 18,
+    "pRMSD": 3.85
+  },
+  {
+    "uniprot": "Q47644",
+    "apo": "1qoh_F",
+    "n_labels": 10,
+    "pRMSD": 3.93
+  },
+  {
+    "uniprot": "Q79PF6",
+    "apo": "1r8j_A",
+    "n_labels": 10,
+    "pRMSD": 3.5
+  },
+  {
+    "uniprot": "Q9S400",
+    "apo": "1rf5_D",
+    "n_labels": 16,
+    "pRMSD": 3.62
+  },
+  {
+    "uniprot": "P36888",
+    "apo": "1rjb_A",
+    "n_labels": 16,
+    "pRMSD": 2.14
+  },
+  {
+    "uniprot": "P06202",
+    "apo": "1rkm_A",
+    "n_labels": 11,
+    "pRMSD": 2.65
+  },
+  {
+    "uniprot": "P9WN95",
+    "apo": "1rq2_B",
+    "n_labels": 21,
+    "pRMSD": 4.5
+  },
+  {
+    "uniprot": "Q8RLY5",
+    "apo": "1s2l_C",
+    "n_labels": 14,
+    "pRMSD": 2.8
+  },
+  {
+    "uniprot": "P09601",
+    "apo": "1s8c_C",
+    "n_labels": 28,
+    "pRMSD": 2.79
+  },
+  {
+    "uniprot": "Q70ET3",
+    "apo": "1sh0_A",
+    "n_labels": 17,
+    "pRMSD": 2.93
+  },
+  {
+    "uniprot": "P08200",
+    "apo": "1sjs_A",
+    "n_labels": 31,
+    "pRMSD": 2.81
+  },
+  {
+    "uniprot": "P00644",
+    "apo": "1snd_B",
+    "n_labels": 13,
+    "pRMSD": 3.86
+  },
+  {
+    "uniprot": "A0A0H2URW2",
+    "apo": "1sqs_B",
+    "n_labels": 16,
+    "pRMSD": 2.13
+  },
+  {
+    "uniprot": "P38424",
+    "apo": "1sul_A",
+    "n_labels": 15,
+    "pRMSD": 2.97
+  },
+  {
+    "uniprot": "O76074",
+    "apo": "1t9r_A",
+    "n_labels": 18,
+    "pRMSD": 4.71
+  },
+  {
+    "uniprot": "P24058",
+    "apo": "1tjv_D",
+    "n_labels": 14,
+    "pRMSD": 4.09
+  },
+  {
+    "uniprot": "Q9WZC3",
+    "apo": "1tmi_B",
+    "n_labels": 11,
+    "pRMSD": 2.54
+  },
+  {
+    "uniprot": "Q9QZ85",
+    "apo": "1tqd_A",
+    "n_labels": 21,
+    "pRMSD": 2.59
+  },
+  {
+    "uniprot": "P33590",
+    "apo": "1uiu_A",
+    "n_labels": 15,
+    "pRMSD": 2.93
+  },
+  {
+    "uniprot": "P56122",
+    "apo": "1umf_D",
+    "n_labels": 17,
+    "pRMSD": 2.29
+  },
+  {
+    "uniprot": "Q8GZD5",
+    "apo": "1un1_B",
+    "n_labels": 10,
+    "pRMSD": 4.27
+  },
+  {
+    "uniprot": "P02925",
+    "apo": "1urp_C",
+    "n_labels": 16,
+    "pRMSD": 2.87
+  },
+  {
+    "uniprot": "P84155",
+    "apo": "1vju_B",
+    "n_labels": 10,
+    "pRMSD": 2.16
+  },
+  {
+    "uniprot": "P35968",
+    "apo": "1vr2_A",
+    "n_labels": 34,
+    "pRMSD": 3.21
+  },
+  {
+    "uniprot": "Q9WYH8",
+    "apo": "1vr6_A",
+    "n_labels": 16,
+    "pRMSD": 2.7
+  },
+  {
+    "uniprot": "Q48485",
+    "apo": "1wam_A",
+    "n_labels": 15,
+    "pRMSD": 3.64
+  },
+  {
+    "uniprot": "Q5SJV7",
+    "apo": "1wjg_A",
+    "n_labels": 24,
+    "pRMSD": 2.52
+  },
+  {
+    "uniprot": "P18843",
+    "apo": "1wxe_A",
+    "n_labels": 14,
+    "pRMSD": 2.43
+  },
+  {
+    "uniprot": "P07062",
+    "apo": "1wyc_A",
+    "n_labels": 21,
+    "pRMSD": 2.55
+  },
+  {
+    "uniprot": "O57946",
+    "apo": "1x0m_A",
+    "n_labels": 10,
+    "pRMSD": 2.17
+  },
+  {
+    "uniprot": "P32099",
+    "apo": "1x2g_C",
+    "n_labels": 15,
+    "pRMSD": 2.04
+  },
+  {
+    "uniprot": "P15121",
+    "apo": "1xgd_A",
+    "n_labels": 51,
+    "pRMSD": 4.26
+  },
+  {
+    "uniprot": "O33839",
+    "apo": "1xjf_A",
+    "n_labels": 15,
+    "pRMSD": 2.03
+  },
+  {
+    "uniprot": "P96084",
+    "apo": "1xqv_A",
+    "n_labels": 22,
+    "pRMSD": 2.9
+  },
+  {
+    "uniprot": "P11309",
+    "apo": "1xqz_A",
+    "n_labels": 26,
+    "pRMSD": 2.92
+  },
+  {
+    "uniprot": "P60301",
+    "apo": "1xt3_B",
+    "n_labels": 14,
+    "pRMSD": 4.33
+  },
+  {
+    "uniprot": "P01555",
+    "apo": "1xtc_A",
+    "n_labels": 18,
+    "pRMSD": 2.25
+  },
+  {
+    "uniprot": "O06553",
+    "apo": "1xxo_A",
+    "n_labels": 17,
+    "pRMSD": 4.14
+  },
+  {
+    "uniprot": "Q13153",
+    "apo": "1yhv_A",
+    "n_labels": 26,
+    "pRMSD": 3.78
+  },
+  {
+    "uniprot": "P9WP23",
+    "apo": "1yl5_B",
+    "n_labels": 32,
+    "pRMSD": 3.63
+  },
+  {
+    "uniprot": "P00492",
+    "apo": "1z7g_D",
+    "n_labels": 33,
+    "pRMSD": 3.33
+  },
+  {
+    "uniprot": "Q9M9P3",
+    "apo": "1z90_B",
+    "n_labels": 27,
+    "pRMSD": 2.04
+  },
+  {
+    "uniprot": "P08567",
+    "apo": "1zm0_A",
+    "n_labels": 11,
+    "pRMSD": 2.7
+  },
+  {
+    "uniprot": "P07741",
+    "apo": "1zn9_A",
+    "n_labels": 17,
+    "pRMSD": 3.16
+  },
+  {
+    "uniprot": "P9WIL5",
+    "apo": "2a88_A",
+    "n_labels": 15,
+    "pRMSD": 3.14
+  },
+  {
+    "uniprot": "P0A7F3",
+    "apo": "2air_H",
+    "n_labels": 26,
+    "pRMSD": 8.51
+  },
+  {
+    "uniprot": "P08799",
+    "apo": "2aka_A",
+    "n_labels": 32,
+    "pRMSD": 3.71
+  },
+  {
+    "uniprot": "P03372",
+    "apo": "2b23_B",
+    "n_labels": 64,
+    "pRMSD": 4.61
+  },
+  {
+    "uniprot": "P0AEG4",
+    "apo": "2b3s_A",
+    "n_labels": 36,
+    "pRMSD": 7.61
+  },
+  {
+    "uniprot": "Q96F10",
+    "apo": "2bei_B",
+    "n_labels": 27,
+    "pRMSD": 2.87
+  },
+  {
+    "uniprot": "O96013",
+    "apo": "2bva_A",
+    "n_labels": 18,
+    "pRMSD": 2.66
+  },
+  {
+    "uniprot": "Q9RX51",
+    "apo": "2by3_A",
+    "n_labels": 10,
+    "pRMSD": 2.84
+  },
+  {
+    "uniprot": "Q8WSF8",
+    "apo": "2byp_D",
+    "n_labels": 18,
+    "pRMSD": 3.66
+  },
+  {
+    "uniprot": "P02701",
+    "apo": "2cam_A",
+    "n_labels": 22,
+    "pRMSD": 3.41
+  },
+  {
+    "uniprot": "P56965",
+    "apo": "2ci4_A",
+    "n_labels": 15,
+    "pRMSD": 3.23
+  },
+  {
+    "uniprot": "P35790",
+    "apo": "2ckq_B",
+    "n_labels": 17,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "O43809",
+    "apo": "2cl3_A",
+    "n_labels": 12,
+    "pRMSD": 2.44
+  },
+  {
+    "uniprot": "O58462",
+    "apo": "2czd_B",
+    "n_labels": 21,
+    "pRMSD": 3.54
+  },
+  {
+    "uniprot": "P04058",
+    "apo": "2dfp_A",
+    "n_labels": 36,
+    "pRMSD": 3.02
+  },
+  {
+    "uniprot": "Q12051",
+    "apo": "2dh4_B",
+    "n_labels": 16,
+    "pRMSD": 3.35
+  },
+  {
+    "uniprot": "P26512",
+    "apo": "2dtj_A",
+    "n_labels": 12,
+    "pRMSD": 2.08
+  },
+  {
+    "uniprot": "O59188",
+    "apo": "2e1c_A",
+    "n_labels": 17,
+    "pRMSD": 5.41
+  },
+  {
+    "uniprot": "Q96Y14",
+    "apo": "2e2o_A",
+    "n_labels": 14,
+    "pRMSD": 2.02
+  },
+  {
+    "uniprot": "P25440",
+    "apo": "2e3k_B",
+    "n_labels": 21,
+    "pRMSD": 2.9
+  },
+  {
+    "uniprot": "Q9Y5P4",
+    "apo": "2e3m_A",
+    "n_labels": 25,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "O57883",
+    "apo": "2e64_B",
+    "n_labels": 20,
+    "pRMSD": 3.02
+  },
+  {
+    "uniprot": "Q6ST21",
+    "apo": "2epl_X",
+    "n_labels": 11,
+    "pRMSD": 2.25
+  },
+  {
+    "uniprot": "Q9HBL8",
+    "apo": "2exx_B",
+    "n_labels": 39,
+    "pRMSD": 5.43
+  },
+  {
+    "uniprot": "P0A6I0",
+    "apo": "2fem_A",
+    "n_labels": 18,
+    "pRMSD": 2.57
+  },
+  {
+    "uniprot": "P18000",
+    "apo": "2fhz_B",
+    "n_labels": 14,
+    "pRMSD": 2.58
+  },
+  {
+    "uniprot": "O00294",
+    "apo": "2fim_A",
+    "n_labels": 10,
+    "pRMSD": 2.41
+  },
+  {
+    "uniprot": "P34174",
+    "apo": "2fjy_A",
+    "n_labels": 21,
+    "pRMSD": 5.52
+  },
+  {
+    "uniprot": "Q79FX8",
+    "apo": "2fk7_A",
+    "n_labels": 16,
+    "pRMSD": 2.65
+  },
+  {
+    "uniprot": "Q9X053",
+    "apo": "2fn9_A",
+    "n_labels": 13,
+    "pRMSD": 2.39
+  },
+  {
+    "uniprot": "P29373",
+    "apo": "2frs_B",
+    "n_labels": 11,
+    "pRMSD": 2.62
+  },
+  {
+    "uniprot": "P22629",
+    "apo": "2g5l_A",
+    "n_labels": 38,
+    "pRMSD": 5.03
+  },
+  {
+    "uniprot": "P15925",
+    "apo": "2gcb_A",
+    "n_labels": 26,
+    "pRMSD": 2.4
+  },
+  {
+    "uniprot": "Q8GSD2",
+    "apo": "2gme_B",
+    "n_labels": 14,
+    "pRMSD": 3.09
+  },
+  {
+    "uniprot": "P54646",
+    "apo": "2h6d_A",
+    "n_labels": 20,
+    "pRMSD": 3.52
+  },
+  {
+    "uniprot": "P00183",
+    "apo": "2h7s_A",
+    "n_labels": 11,
+    "pRMSD": 2.62
+  },
+  {
+    "uniprot": "P07774",
+    "apo": "2h98_B",
+    "n_labels": 13,
+    "pRMSD": 2.22
+  },
+  {
+    "uniprot": "Q9Y2J2",
+    "apo": "2he7_A",
+    "n_labels": 32,
+    "pRMSD": 3.86
+  },
+  {
+    "uniprot": "A0A0H2URJ7",
+    "apo": "2heu_C",
+    "n_labels": 14,
+    "pRMSD": 2.95
+  },
+  {
+    "uniprot": "Q9KK62",
+    "apo": "2hf0_A",
+    "n_labels": 25,
+    "pRMSD": 2.72
+  },
+  {
+    "uniprot": "O15648",
+    "apo": "2hig_A",
+    "n_labels": 17,
+    "pRMSD": 2.69
+  },
+  {
+    "uniprot": "C9V488",
+    "apo": "2hq8_B",
+    "n_labels": 22,
+    "pRMSD": 3.33
+  },
+  {
+    "uniprot": "A5KBL5",
+    "apo": "2hvg_B",
+    "n_labels": 13,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "P00519",
+    "apo": "2hyy_A",
+    "n_labels": 11,
+    "pRMSD": 5.79
+  },
+  {
+    "uniprot": "P9WPZ9",
+    "apo": "2i3a_D",
+    "n_labels": 11,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "P23467",
+    "apo": "2i3r_A",
+    "n_labels": 22,
+    "pRMSD": 3.23
+  },
+  {
+    "uniprot": "P55263",
+    "apo": "2i6a_B",
+    "n_labels": 15,
+    "pRMSD": 3.01
+  },
+  {
+    "uniprot": "P13255",
+    "apo": "2idj_A",
+    "n_labels": 21,
+    "pRMSD": 2.25
+  },
+  {
+    "uniprot": "P9WPY3",
+    "apo": "2iyt_A",
+    "n_labels": 19,
+    "pRMSD": 5.69
+  },
+  {
+    "uniprot": "O69762",
+    "apo": "2j5i_J",
+    "n_labels": 20,
+    "pRMSD": 2.13
+  },
+  {
+    "uniprot": "P50440",
+    "apo": "2jdw_A",
+    "n_labels": 10,
+    "pRMSD": 2.12
+  },
+  {
+    "uniprot": "Q836J0",
+    "apo": "2jfp_A",
+    "n_labels": 17,
+    "pRMSD": 2.29
+  },
+  {
+    "uniprot": "Q9ZLT0",
+    "apo": "2jfy_B",
+    "n_labels": 16,
+    "pRMSD": 2.89
+  },
+  {
+    "uniprot": "P0A0B9",
+    "apo": "2jgv_C",
+    "n_labels": 24,
+    "pRMSD": 2.22
+  },
+  {
+    "uniprot": "P04062",
+    "apo": "2nt1_A",
+    "n_labels": 11,
+    "pRMSD": 4.77
+  },
+  {
+    "uniprot": "Q8XNB2",
+    "apo": "2nvp_A",
+    "n_labels": 10,
+    "pRMSD": 2.04
+  },
+  {
+    "uniprot": "Q84BQ9",
+    "apo": "2nxj_A",
+    "n_labels": 21,
+    "pRMSD": 2.09
+  },
+  {
+    "uniprot": "Q9NWZ3",
+    "apo": "2o8y_A",
+    "n_labels": 25,
+    "pRMSD": 2.48
+  },
+  {
+    "uniprot": "Q9UR08",
+    "apo": "2oa6_B",
+    "n_labels": 25,
+    "pRMSD": 2.88
+  },
+  {
+    "uniprot": "P40409",
+    "apo": "2phz_A",
+    "n_labels": 17,
+    "pRMSD": 2.88
+  },
+  {
+    "uniprot": "P9WID5",
+    "apo": "2pkf_A",
+    "n_labels": 18,
+    "pRMSD": 2.17
+  },
+  {
+    "uniprot": "P27652",
+    "apo": "2psf_B",
+    "n_labels": 28,
+    "pRMSD": 3.12
+  },
+  {
+    "uniprot": "P61889",
+    "apo": "2pwz_G",
+    "n_labels": 31,
+    "pRMSD": 2.04
+  },
+  {
+    "uniprot": "P9WIC1",
+    "apo": "2qbv_A",
+    "n_labels": 14,
+    "pRMSD": 3.78
+  },
+  {
+    "uniprot": "Q5CYL9",
+    "apo": "2qg5_D",
+    "n_labels": 15,
+    "pRMSD": 2.46
+  },
+  {
+    "uniprot": "Q8N5Z0",
+    "apo": "2qlr_A",
+    "n_labels": 35,
+    "pRMSD": 4.7
+  },
+  {
+    "uniprot": "Q9T0I8",
+    "apo": "2qsu_A",
+    "n_labels": 17,
+    "pRMSD": 3.61
+  },
+  {
+    "uniprot": "Q58F21",
+    "apo": "2rfj_B",
+    "n_labels": 18,
+    "pRMSD": 5.02
+  },
+  {
+    "uniprot": "P62937",
+    "apo": "2rmb_O",
+    "n_labels": 21,
+    "pRMSD": 8.48
+  },
+  {
+    "uniprot": "Q5SJA1",
+    "apo": "2v6m_D",
+    "n_labels": 34,
+    "pRMSD": 2.31
+  },
+  {
+    "uniprot": "P30044",
+    "apo": "2vl2_C",
+    "n_labels": 10,
+    "pRMSD": 3.03
+  },
+  {
+    "uniprot": "O69262",
+    "apo": "2vrk_B",
+    "n_labels": 16,
+    "pRMSD": 3.65
+  },
+  {
+    "uniprot": "O15151",
+    "apo": "2vyr_A",
+    "n_labels": 21,
+    "pRMSD": 4.11
+  },
+  {
+    "uniprot": "P51955",
+    "apo": "2w5h_A",
+    "n_labels": 25,
+    "pRMSD": 2.68
+  },
+  {
+    "uniprot": "Q9X0C6",
+    "apo": "2w6r_A",
+    "n_labels": 33,
+    "pRMSD": 3.59
+  },
+  {
+    "uniprot": "P51649",
+    "apo": "2w8n_A",
+    "n_labels": 11,
+    "pRMSD": 4.27
+  },
+  {
+    "uniprot": "P13955",
+    "apo": "2w9t_A",
+    "n_labels": 36,
+    "pRMSD": 3.48
+  },
+  {
+    "uniprot": "P19097",
+    "apo": "2was_B",
+    "n_labels": 15,
+    "pRMSD": 2.1
+  },
+  {
+    "uniprot": "A4D0H5",
+    "apo": "2wet_A",
+    "n_labels": 16,
+    "pRMSD": 3.43
+  },
+  {
+    "uniprot": "Q58L87",
+    "apo": "2wgb_A",
+    "n_labels": 12,
+    "pRMSD": 4.73
+  },
+  {
+    "uniprot": "P06672",
+    "apo": "2wvh_X",
+    "n_labels": 18,
+    "pRMSD": 3.15
+  },
+  {
+    "uniprot": "Q8A5N9",
+    "apo": "2wvy_B",
+    "n_labels": 10,
+    "pRMSD": 3.03
+  },
+  {
+    "uniprot": "P36776",
+    "apo": "2x36_D",
+    "n_labels": 17,
+    "pRMSD": 4.47
+  },
+  {
+    "uniprot": "Q9BQ69",
+    "apo": "2x47_A",
+    "n_labels": 26,
+    "pRMSD": 2.82
+  },
+  {
+    "uniprot": "P07788",
+    "apo": "2x87_A",
+    "n_labels": 13,
+    "pRMSD": 2.39
+  },
+  {
+    "uniprot": "P0A3F4",
+    "apo": "2xbp_A",
+    "n_labels": 20,
+    "pRMSD": 5.04
+  },
+  {
+    "uniprot": "Q10740",
+    "apo": "2xq0_A",
+    "n_labels": 10,
+    "pRMSD": 2.42
+  },
+  {
+    "uniprot": "Q2CEE3",
+    "apo": "2xsa_A",
+    "n_labels": 15,
+    "pRMSD": 2.69
+  },
+  {
+    "uniprot": "Q9UG22",
+    "apo": "2xtp_A",
+    "n_labels": 24,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "P16442",
+    "apo": "2y7a_B",
+    "n_labels": 30,
+    "pRMSD": 3.15
+  },
+  {
+    "uniprot": "Q9UM73",
+    "apo": "2yjr_A",
+    "n_labels": 33,
+    "pRMSD": 3.74
+  },
+  {
+    "uniprot": "Q5SI28",
+    "apo": "2ywb_A",
+    "n_labels": 12,
+    "pRMSD": 2.3
+  },
+  {
+    "uniprot": "Q5SJP8",
+    "apo": "2yyg_A",
+    "n_labels": 27,
+    "pRMSD": 3.23
+  },
+  {
+    "uniprot": "D0VWQ0",
+    "apo": "2yz7_C",
+    "n_labels": 12,
+    "pRMSD": 2.24
+  },
+  {
+    "uniprot": "P30405",
+    "apo": "2z6w_B",
+    "n_labels": 26,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "Q8T6J6",
+    "apo": "2zcg_A",
+    "n_labels": 14,
+    "pRMSD": 2.88
+  },
+  {
+    "uniprot": "Q6WY08",
+    "apo": "2zgu_A",
+    "n_labels": 10,
+    "pRMSD": 2.51
+  },
+  {
+    "uniprot": "O57950",
+    "apo": "2zsu_B",
+    "n_labels": 24,
+    "pRMSD": 2.67
+  },
+  {
+    "uniprot": "P55892",
+    "apo": "2zvy_A",
+    "n_labels": 20,
+    "pRMSD": 5.12
+  },
+  {
+    "uniprot": "Q9Y6E0",
+    "apo": "3a7g_A",
+    "n_labels": 22,
+    "pRMSD": 2.34
+  },
+  {
+    "uniprot": "Q5SKR5",
+    "apo": "3asy_A",
+    "n_labels": 17,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "Q2SZE4",
+    "apo": "3b1o_B",
+    "n_labels": 18,
+    "pRMSD": 2.37
+  },
+  {
+    "uniprot": "Q08AH3",
+    "apo": "3b7w_A",
+    "n_labels": 24,
+    "pRMSD": 4.32
+  },
+  {
+    "uniprot": "P04035",
+    "apo": "3bgl_C",
+    "n_labels": 10,
+    "pRMSD": 2.66
+  },
+  {
+    "uniprot": "P25114",
+    "apo": "3bif_A",
+    "n_labels": 22,
+    "pRMSD": 2.12
+  },
+  {
+    "uniprot": "Q8PDA8",
+    "apo": "3bk9_H",
+    "n_labels": 10,
+    "pRMSD": 5.09
+  },
+  {
+    "uniprot": "Q460N3",
+    "apo": "3blj_B",
+    "n_labels": 20,
+    "pRMSD": 2.65
+  },
+  {
+    "uniprot": "P00734",
+    "apo": "3bv9_B",
+    "n_labels": 28,
+    "pRMSD": 5.26
+  },
+  {
+    "uniprot": "A0A8U0WQ78",
+    "apo": "3cab_A",
+    "n_labels": 19,
+    "pRMSD": 2.95
+  },
+  {
+    "uniprot": "P07858",
+    "apo": "3cbj_A",
+    "n_labels": 18,
+    "pRMSD": 2.59
+  },
+  {
+    "uniprot": "Q873X9",
+    "apo": "3chf_B",
+    "n_labels": 11,
+    "pRMSD": 2.34
+  },
+  {
+    "uniprot": "O35795",
+    "apo": "3cj1_A",
+    "n_labels": 13,
+    "pRMSD": 2.68
+  },
+  {
+    "uniprot": "Q8KND7",
+    "apo": "3d0r_B",
+    "n_labels": 44,
+    "pRMSD": 2.83
+  },
+  {
+    "uniprot": "A3FQ16",
+    "apo": "3dfa_A",
+    "n_labels": 19,
+    "pRMSD": 2.14
+  },
+  {
+    "uniprot": "Q16651",
+    "apo": "3dfj_A",
+    "n_labels": 26,
+    "pRMSD": 2.58
+  },
+  {
+    "uniprot": "Q15047",
+    "apo": "3dlm_A",
+    "n_labels": 19,
+    "pRMSD": 2.74
+  },
+  {
+    "uniprot": "P00634",
+    "apo": "3dpc_B",
+    "n_labels": 11,
+    "pRMSD": 4.08
+  },
+  {
+    "uniprot": "P33334",
+    "apo": "3e9p_A",
+    "n_labels": 28,
+    "pRMSD": 3.94
+  },
+  {
+    "uniprot": "Q3JRA0",
+    "apo": "3f0f_B",
+    "n_labels": 11,
+    "pRMSD": 2.9
+  },
+  {
+    "uniprot": "Q8A3I2",
+    "apo": "3f4k_A",
+    "n_labels": 19,
+    "pRMSD": 2.62
+  },
+  {
+    "uniprot": "P15273",
+    "apo": "3f99_A",
+    "n_labels": 17,
+    "pRMSD": 2.63
+  },
+  {
+    "uniprot": "Q93AT8",
+    "apo": "3ffe_A",
+    "n_labels": 13,
+    "pRMSD": 2.37
+  },
+  {
+    "uniprot": "Q9HL57",
+    "apo": "3fix_B",
+    "n_labels": 23,
+    "pRMSD": 3.03
+  },
+  {
+    "uniprot": "Q5SM60",
+    "apo": "3fut_A",
+    "n_labels": 22,
+    "pRMSD": 3.35
+  },
+  {
+    "uniprot": "Q14289",
+    "apo": "3fzo_A",
+    "n_labels": 34,
+    "pRMSD": 3.9
+  },
+  {
+    "uniprot": "Q9EVJ6",
+    "apo": "3g56_B",
+    "n_labels": 23,
+    "pRMSD": 2.2
+  },
+  {
+    "uniprot": "P08179",
+    "apo": "3gar_A",
+    "n_labels": 22,
+    "pRMSD": 3.24
+  },
+  {
+    "uniprot": "P0C0Y5",
+    "apo": "3gdg_B",
+    "n_labels": 32,
+    "pRMSD": 2.5
+  },
+  {
+    "uniprot": "P03962",
+    "apo": "3gdr_A",
+    "n_labels": 20,
+    "pRMSD": 3.58
+  },
+  {
+    "uniprot": "Q5S3I3",
+    "apo": "3gl0_C",
+    "n_labels": 15,
+    "pRMSD": 4.13
+  },
+  {
+    "uniprot": "Q14790",
+    "apo": "3h11_B",
+    "n_labels": 11,
+    "pRMSD": 2.09
+  },
+  {
+    "uniprot": "P0A6P9",
+    "apo": "3h8a_B",
+    "n_labels": 18,
+    "pRMSD": 3.14
+  },
+  {
+    "uniprot": "P20701",
+    "apo": "3hi6_A",
+    "n_labels": 27,
+    "pRMSD": 5.09
+  },
+  {
+    "uniprot": "P26281",
+    "apo": "3hsj_A",
+    "n_labels": 24,
+    "pRMSD": 5.54
+  },
+  {
+    "uniprot": "P33650",
+    "apo": "3i8s_B",
+    "n_labels": 16,
+    "pRMSD": 3.14
+  },
+  {
+    "uniprot": "P35557",
+    "apo": "3idh_A",
+    "n_labels": 22,
+    "pRMSD": 2.81
+  },
+  {
+    "uniprot": "Q7KZI7",
+    "apo": "3iec_B",
+    "n_labels": 23,
+    "pRMSD": 2.39
+  },
+  {
+    "uniprot": "Q75WH8",
+    "apo": "3ity_C",
+    "n_labels": 13,
+    "pRMSD": 3.06
+  },
+  {
+    "uniprot": "Q9X6R4",
+    "apo": "3iun_A",
+    "n_labels": 10,
+    "pRMSD": 3.24
+  },
+  {
+    "uniprot": "O75530",
+    "apo": "3jzg_A",
+    "n_labels": 12,
+    "pRMSD": 2.14
+  },
+  {
+    "uniprot": "B0B0V1",
+    "apo": "3k01_A",
+    "n_labels": 28,
+    "pRMSD": 2.48
+  },
+  {
+    "uniprot": "Q3ACS5",
+    "apo": "3kje_A",
+    "n_labels": 19,
+    "pRMSD": 3.41
+  },
+  {
+    "uniprot": "A7ASX7",
+    "apo": "3kjr_B",
+    "n_labels": 15,
+    "pRMSD": 2.42
+  },
+  {
+    "uniprot": "Q15562",
+    "apo": "3l15_A",
+    "n_labels": 11,
+    "pRMSD": 2.4
+  },
+  {
+    "uniprot": "P0A4U6",
+    "apo": "3la7_A",
+    "n_labels": 12,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "P06239",
+    "apo": "3lck_A",
+    "n_labels": 34,
+    "pRMSD": 3.6
+  },
+  {
+    "uniprot": "P9WKD1",
+    "apo": "3lo7_A",
+    "n_labels": 27,
+    "pRMSD": 3.19
+  },
+  {
+    "uniprot": "P23890",
+    "apo": "3ly8_A",
+    "n_labels": 11,
+    "pRMSD": 3.31
+  },
+  {
+    "uniprot": "B7GNN8",
+    "apo": "3mo4_A",
+    "n_labels": 13,
+    "pRMSD": 2.91
+  },
+  {
+    "uniprot": "P35914",
+    "apo": "3mp4_D",
+    "n_labels": 29,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "Q2G1N4",
+    "apo": "3mwg_B",
+    "n_labels": 16,
+    "pRMSD": 3.6
+  },
+  {
+    "uniprot": "Q72GF3",
+    "apo": "3mwk_A",
+    "n_labels": 17,
+    "pRMSD": 2.4
+  },
+  {
+    "uniprot": "Q52VH2",
+    "apo": "3n2w_B",
+    "n_labels": 10,
+    "pRMSD": 2.42
+  },
+  {
+    "uniprot": "O68183",
+    "apo": "3n4u_A",
+    "n_labels": 20,
+    "pRMSD": 2.61
+  },
+  {
+    "uniprot": "Q9S7E4",
+    "apo": "3naq_A",
+    "n_labels": 32,
+    "pRMSD": 2.83
+  },
+  {
+    "uniprot": "O15530",
+    "apo": "3nax_A",
+    "n_labels": 23,
+    "pRMSD": 4.05
+  },
+  {
+    "uniprot": "P56817",
+    "apo": "3nsh_B",
+    "n_labels": 10,
+    "pRMSD": 5.21
+  },
+  {
+    "uniprot": "C6F3U5",
+    "apo": "3nx1_B",
+    "n_labels": 10,
+    "pRMSD": 2.32
+  },
+  {
+    "uniprot": "Q9VUG1",
+    "apo": "3odn_A",
+    "n_labels": 19,
+    "pRMSD": 2.19
+  },
+  {
+    "uniprot": "Q9AQ22",
+    "apo": "3ofj_A",
+    "n_labels": 20,
+    "pRMSD": 2.44
+  },
+  {
+    "uniprot": "P06746",
+    "apo": "3ogu_A",
+    "n_labels": 21,
+    "pRMSD": 2.96
+  },
+  {
+    "uniprot": "P71079",
+    "apo": "3oic_D",
+    "n_labels": 34,
+    "pRMSD": 5.32
+  },
+  {
+    "uniprot": "P00749",
+    "apo": "3oy6_U",
+    "n_labels": 21,
+    "pRMSD": 2.01
+  },
+  {
+    "uniprot": "Q1EMV2",
+    "apo": "3p3i_F",
+    "n_labels": 10,
+    "pRMSD": 2.05
+  },
+  {
+    "uniprot": "P15090",
+    "apo": "3p6e_A",
+    "n_labels": 11,
+    "pRMSD": 2.25
+  },
+  {
+    "uniprot": "O53512",
+    "apo": "3pfp_A",
+    "n_labels": 29,
+    "pRMSD": 3.91
+  },
+  {
+    "uniprot": "Q75WT9",
+    "apo": "3phz_A",
+    "n_labels": 20,
+    "pRMSD": 2.98
+  },
+  {
+    "uniprot": "A0A0J9WZA6",
+    "apo": "3pid_A",
+    "n_labels": 13,
+    "pRMSD": 2.52
+  },
+  {
+    "uniprot": "P26393",
+    "apo": "3pkq_B",
+    "n_labels": 18,
+    "pRMSD": 2.97
+  },
+  {
+    "uniprot": "P00791",
+    "apo": "3psg_A",
+    "n_labels": 40,
+    "pRMSD": 2.83
+  },
+  {
+    "uniprot": "P06612",
+    "apo": "3px7_A",
+    "n_labels": 17,
+    "pRMSD": 3.86
+  },
+  {
+    "uniprot": "P08581",
+    "apo": "3q6u_A",
+    "n_labels": 48,
+    "pRMSD": 5.08
+  },
+  {
+    "uniprot": "P60472",
+    "apo": "3qas_A",
+    "n_labels": 61,
+    "pRMSD": 4.18
+  },
+  {
+    "uniprot": "P9WFX5",
+    "apo": "3qr9_B",
+    "n_labels": 36,
+    "pRMSD": 4.01
+  },
+  {
+    "uniprot": "P38230",
+    "apo": "3qwa_B",
+    "n_labels": 32,
+    "pRMSD": 2.81
+  },
+  {
+    "uniprot": "Q2G036",
+    "apo": "3qwd_J",
+    "n_labels": 20,
+    "pRMSD": 4.32
+  },
+  {
+    "uniprot": "Q9RCF6",
+    "apo": "3r5s_A",
+    "n_labels": 21,
+    "pRMSD": 2.4
+  },
+  {
+    "uniprot": "P18895",
+    "apo": "3rbh_A",
+    "n_labels": 13,
+    "pRMSD": 5.04
+  },
+  {
+    "uniprot": "P08603",
+    "apo": "3rj3_F",
+    "n_labels": 14,
+    "pRMSD": 2.95
+  },
+  {
+    "uniprot": "Q9Y2Q3",
+    "apo": "3rpp_B",
+    "n_labels": 21,
+    "pRMSD": 3.67
+  },
+  {
+    "uniprot": "A0A6L8PEJ7",
+    "apo": "3sr3_A",
+    "n_labels": 13,
+    "pRMSD": 3.55
+  },
+  {
+    "uniprot": "P0A881",
+    "apo": "3ssx_R",
+    "n_labels": 13,
+    "pRMSD": 4.19
+  },
+  {
+    "uniprot": "P9WFX1",
+    "apo": "3st6_C",
+    "n_labels": 30,
+    "pRMSD": 2.9
+  },
+  {
+    "uniprot": "P9WNP5",
+    "apo": "3t8b_A",
+    "n_labels": 15,
+    "pRMSD": 2.03
+  },
+  {
+    "uniprot": "P23874",
+    "apo": "3tpe_A",
+    "n_labels": 25,
+    "pRMSD": 4.27
+  },
+  {
+    "uniprot": "P39644",
+    "apo": "3u49_A",
+    "n_labels": 30,
+    "pRMSD": 2.2
+  },
+  {
+    "uniprot": "P38998",
+    "apo": "3ugk_A",
+    "n_labels": 38,
+    "pRMSD": 2.59
+  },
+  {
+    "uniprot": "Q3L181",
+    "apo": "3uyi_A",
+    "n_labels": 18,
+    "pRMSD": 6.1
+  },
+  {
+    "uniprot": "Q9UDY8",
+    "apo": "3v55_A",
+    "n_labels": 29,
+    "pRMSD": 3.03
+  },
+  {
+    "uniprot": "Q92N93",
+    "apo": "3vc7_B",
+    "n_labels": 29,
+    "pRMSD": 2.06
+  },
+  {
+    "uniprot": "Q15JG1",
+    "apo": "3vdm_B",
+    "n_labels": 17,
+    "pRMSD": 3.26
+  },
+  {
+    "uniprot": "A4YI54",
+    "apo": "3ve9_B",
+    "n_labels": 17,
+    "pRMSD": 2.11
+  },
+  {
+    "uniprot": "B1VZT1",
+    "apo": "3vgm_A",
+    "n_labels": 19,
+    "pRMSD": 2.74
+  },
+  {
+    "uniprot": "P37268",
+    "apo": "3vjb_D",
+    "n_labels": 26,
+    "pRMSD": 3.48
+  },
+  {
+    "uniprot": "Q72498",
+    "apo": "3vq9_A",
+    "n_labels": 10,
+    "pRMSD": 3.24
+  },
+  {
+    "uniprot": "Q2FY21",
+    "apo": "3vsk_B",
+    "n_labels": 17,
+    "pRMSD": 2.09
+  },
+  {
+    "uniprot": "A0A0F6AY66",
+    "apo": "3vw1_A",
+    "n_labels": 19,
+    "pRMSD": 3.51
+  },
+  {
+    "uniprot": "Q9NYA1",
+    "apo": "3vzc_A",
+    "n_labels": 22,
+    "pRMSD": 2.7
+  },
+  {
+    "uniprot": "Q9NR97",
+    "apo": "3w3g_A",
+    "n_labels": 18,
+    "pRMSD": 3.02
+  },
+  {
+    "uniprot": "P09382",
+    "apo": "3w59_D",
+    "n_labels": 17,
+    "pRMSD": 4.26
+  },
+  {
+    "uniprot": "Q5SL35",
+    "apo": "3w90_A",
+    "n_labels": 19,
+    "pRMSD": 3.55
+  },
+  {
+    "uniprot": "Q67PI3",
+    "apo": "3wb9_C",
+    "n_labels": 28,
+    "pRMSD": 2.12
+  },
+  {
+    "uniprot": "E0XN39",
+    "apo": "3wdw_A",
+    "n_labels": 10,
+    "pRMSD": 2.85
+  },
+  {
+    "uniprot": "M1VAN7",
+    "apo": "3wmg_A",
+    "n_labels": 27,
+    "pRMSD": 2.87
+  },
+  {
+    "uniprot": "D3KVM3",
+    "apo": "3wxl_D",
+    "n_labels": 14,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "A0A0C6DRW4",
+    "apo": "3x0x_E",
+    "n_labels": 20,
+    "pRMSD": 2.43
+  },
+  {
+    "uniprot": "Q14145",
+    "apo": "3zgc_A",
+    "n_labels": 19,
+    "pRMSD": 4.11
+  },
+  {
+    "uniprot": "P9WNS1",
+    "apo": "3zhz_B",
+    "n_labels": 44,
+    "pRMSD": 4.84
+  },
+  {
+    "uniprot": "Q74FY6",
+    "apo": "4aal_A",
+    "n_labels": 11,
+    "pRMSD": 2.34
+  },
+  {
+    "uniprot": "P17169",
+    "apo": "4amv_B",
+    "n_labels": 15,
+    "pRMSD": 2.13
+  },
+  {
+    "uniprot": "Q7NWG4",
+    "apo": "4ba4_A",
+    "n_labels": 18,
+    "pRMSD": 2.37
+  },
+  {
+    "uniprot": "Q8TX37",
+    "apo": "4bg8_A",
+    "n_labels": 16,
+    "pRMSD": 3.22
+  },
+  {
+    "uniprot": "Q9VWX8",
+    "apo": "4by5_B",
+    "n_labels": 17,
+    "pRMSD": 2.51
+  },
+  {
+    "uniprot": "P27708",
+    "apo": "4c6b_A",
+    "n_labels": 21,
+    "pRMSD": 2.46
+  },
+  {
+    "uniprot": "P9WJ61",
+    "apo": "4cmw_B",
+    "n_labels": 19,
+    "pRMSD": 2.38
+  },
+  {
+    "uniprot": "Q9WYL6",
+    "apo": "4con_A",
+    "n_labels": 12,
+    "pRMSD": 2.01
+  },
+  {
+    "uniprot": "A2RP81",
+    "apo": "4d2o_B",
+    "n_labels": 14,
+    "pRMSD": 2.08
+  },
+  {
+    "uniprot": "O87170",
+    "apo": "4d8l_A",
+    "n_labels": 18,
+    "pRMSD": 3.09
+  },
+  {
+    "uniprot": "A0A0H2ZD98",
+    "apo": "4dmz_B",
+    "n_labels": 10,
+    "pRMSD": 2.82
+  },
+  {
+    "uniprot": "Q00972",
+    "apo": "4e00_A",
+    "n_labels": 20,
+    "pRMSD": 5.09
+  },
+  {
+    "uniprot": "Q74P24",
+    "apo": "4ei8_A",
+    "n_labels": 25,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "P03252",
+    "apo": "4ekf_A",
+    "n_labels": 12,
+    "pRMSD": 2.28
+  },
+  {
+    "uniprot": "Q9HZN8",
+    "apo": "4esh_A",
+    "n_labels": 14,
+    "pRMSD": 4.0
+  },
+  {
+    "uniprot": "P04629",
+    "apo": "4f0i_A",
+    "n_labels": 36,
+    "pRMSD": 3.53
+  },
+  {
+    "uniprot": "P65248",
+    "apo": "4f4i_B",
+    "n_labels": 15,
+    "pRMSD": 2.24
+  },
+  {
+    "uniprot": "P00509",
+    "apo": "4f5h_B",
+    "n_labels": 22,
+    "pRMSD": 2.56
+  },
+  {
+    "uniprot": "Q2T230",
+    "apo": "4f7d_B",
+    "n_labels": 22,
+    "pRMSD": 3.43
+  },
+  {
+    "uniprot": "Q000H7",
+    "apo": "4faf_A",
+    "n_labels": 13,
+    "pRMSD": 2.21
+  },
+  {
+    "uniprot": "A0A0H3JWU6",
+    "apo": "4fkm_B",
+    "n_labels": 16,
+    "pRMSD": 2.24
+  },
+  {
+    "uniprot": "P03367",
+    "apo": "4fl8_A",
+    "n_labels": 10,
+    "pRMSD": 6.47
+  },
+  {
+    "uniprot": "Q4MV79",
+    "apo": "4gf1_B",
+    "n_labels": 13,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "Q13432",
+    "apo": "4goj_C",
+    "n_labels": 21,
+    "pRMSD": 2.13
+  },
+  {
+    "uniprot": "Q16658",
+    "apo": "4goy_A",
+    "n_labels": 26,
+    "pRMSD": 3.43
+  },
+  {
+    "uniprot": "P18669",
+    "apo": "4gpi_C",
+    "n_labels": 24,
+    "pRMSD": 3.6
+  },
+  {
+    "uniprot": "Q96LA8",
+    "apo": "4hc4_A",
+    "n_labels": 28,
+    "pRMSD": 4.04
+  },
+  {
+    "uniprot": "Q6B0I6",
+    "apo": "4hon_B",
+    "n_labels": 23,
+    "pRMSD": 4.57
+  },
+  {
+    "uniprot": "P24182",
+    "apo": "4hr7_A",
+    "n_labels": 17,
+    "pRMSD": 3.35
+  },
+  {
+    "uniprot": "Q07912",
+    "apo": "4hzr_A",
+    "n_labels": 26,
+    "pRMSD": 2.15
+  },
+  {
+    "uniprot": "P00512",
+    "apo": "4i36_D",
+    "n_labels": 10,
+    "pRMSD": 2.88
+  },
+  {
+    "uniprot": "Q13523",
+    "apo": "4ian_B",
+    "n_labels": 27,
+    "pRMSD": 2.8
+  },
+  {
+    "uniprot": "Q5KYD1",
+    "apo": "4ikv_A",
+    "n_labels": 10,
+    "pRMSD": 2.19
+  },
+  {
+    "uniprot": "P32357",
+    "apo": "4ilg_A",
+    "n_labels": 42,
+    "pRMSD": 4.57
+  },
+  {
+    "uniprot": "Q9I6N5",
+    "apo": "4iws_A",
+    "n_labels": 32,
+    "pRMSD": 2.68
+  },
+  {
+    "uniprot": "P09142",
+    "apo": "4j2p_A",
+    "n_labels": 12,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "P33284",
+    "apo": "4jax_F",
+    "n_labels": 15,
+    "pRMSD": 2.12
+  },
+  {
+    "uniprot": "P40732",
+    "apo": "4jf0_A",
+    "n_labels": 13,
+    "pRMSD": 5.32
+  },
+  {
+    "uniprot": "Q8DCF5",
+    "apo": "4jfr_C",
+    "n_labels": 14,
+    "pRMSD": 2.34
+  },
+  {
+    "uniprot": "C5AP93",
+    "apo": "4jyc_C",
+    "n_labels": 21,
+    "pRMSD": 3.95
+  },
+  {
+    "uniprot": "P41365",
+    "apo": "4k6g_A",
+    "n_labels": 11,
+    "pRMSD": 4.56
+  },
+  {
+    "uniprot": "P07814",
+    "apo": "4k86_A",
+    "n_labels": 39,
+    "pRMSD": 3.7
+  },
+  {
+    "uniprot": "Q3TBT3",
+    "apo": "4kc0_A",
+    "n_labels": 13,
+    "pRMSD": 4.01
+  },
+  {
+    "uniprot": "P9WNX1",
+    "apo": "4klx_A",
+    "n_labels": 22,
+    "pRMSD": 2.21
+  },
+  {
+    "uniprot": "P14207",
+    "apo": "4kmy_A",
+    "n_labels": 20,
+    "pRMSD": 2.97
+  },
+  {
+    "uniprot": "Q13976",
+    "apo": "4ku8_A",
+    "n_labels": 21,
+    "pRMSD": 4.9
+  },
+  {
+    "uniprot": "P9WQH5",
+    "apo": "4l6w_A",
+    "n_labels": 15,
+    "pRMSD": 3.78
+  },
+  {
+    "uniprot": "P00947",
+    "apo": "4l7k_C",
+    "n_labels": 21,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "Q9F1Y6",
+    "apo": "4la5_A",
+    "n_labels": 20,
+    "pRMSD": 2.17
+  },
+  {
+    "uniprot": "G9MBV2",
+    "apo": "4m23_B",
+    "n_labels": 13,
+    "pRMSD": 2.17
+  },
+  {
+    "uniprot": "Q9QZL0",
+    "apo": "4m66_A",
+    "n_labels": 26,
+    "pRMSD": 2.45
+  },
+  {
+    "uniprot": "Q53685",
+    "apo": "4m7p_A",
+    "n_labels": 29,
+    "pRMSD": 4.43
+  },
+  {
+    "uniprot": "B4E6Z1",
+    "apo": "4mow_A",
+    "n_labels": 35,
+    "pRMSD": 3.4
+  },
+  {
+    "uniprot": "Q9UBS5",
+    "apo": "4mqe_A",
+    "n_labels": 16,
+    "pRMSD": 2.77
+  },
+  {
+    "uniprot": "P69905",
+    "apo": "4mqj_A",
+    "n_labels": 19,
+    "pRMSD": 6.06
+  },
+  {
+    "uniprot": "Q8NB16",
+    "apo": "4mwi_A",
+    "n_labels": 29,
+    "pRMSD": 2.66
+  },
+  {
+    "uniprot": "P04637",
+    "apo": "4mzi_A",
+    "n_labels": 24,
+    "pRMSD": 3.84
+  },
+  {
+    "uniprot": "Q8N1G2",
+    "apo": "4n4a_A",
+    "n_labels": 37,
+    "pRMSD": 3.03
+  },
+  {
+    "uniprot": "P19793",
+    "apo": "4n5g_B",
+    "n_labels": 33,
+    "pRMSD": 5.65
+  },
+  {
+    "uniprot": "Q9ZC36",
+    "apo": "4n8j_A",
+    "n_labels": 38,
+    "pRMSD": 3.8
+  },
+  {
+    "uniprot": "P69834",
+    "apo": "4nai_A",
+    "n_labels": 19,
+    "pRMSD": 2.09
+  },
+  {
+    "uniprot": "P27694",
+    "apo": "4nb3_B",
+    "n_labels": 14,
+    "pRMSD": 3.08
+  },
+  {
+    "uniprot": "Q9X1X0",
+    "apo": "4nzv_B",
+    "n_labels": 18,
+    "pRMSD": 4.95
+  },
+  {
+    "uniprot": "Q21FJ0",
+    "apo": "4ok2_B",
+    "n_labels": 14,
+    "pRMSD": 2.8
+  },
+  {
+    "uniprot": "C9K1X5",
+    "apo": "4omg_A",
+    "n_labels": 25,
+    "pRMSD": 3.7
+  },
+  {
+    "uniprot": "P24627",
+    "apo": "4oqo_B",
+    "n_labels": 19,
+    "pRMSD": 3.25
+  },
+  {
+    "uniprot": "P41222",
+    "apo": "4os8_B",
+    "n_labels": 18,
+    "pRMSD": 3.26
+  },
+  {
+    "uniprot": "Q96PN6",
+    "apo": "4oyz_A",
+    "n_labels": 35,
+    "pRMSD": 2.79
+  },
+  {
+    "uniprot": "P9WQ35",
+    "apo": "4p2f_A",
+    "n_labels": 10,
+    "pRMSD": 2.9
+  },
+  {
+    "uniprot": "P0A9V1",
+    "apo": "4p32_A",
+    "n_labels": 20,
+    "pRMSD": 2.25
+  },
+  {
+    "uniprot": "A0QTQ5",
+    "apo": "4pfs_B",
+    "n_labels": 15,
+    "pRMSD": 2.34
+  },
+  {
+    "uniprot": "Q9H2K2",
+    "apo": "4pnt_D",
+    "n_labels": 32,
+    "pRMSD": 3.56
+  },
+  {
+    "uniprot": "P28720",
+    "apo": "4pun_A",
+    "n_labels": 29,
+    "pRMSD": 2.86
+  },
+  {
+    "uniprot": "Q7L266",
+    "apo": "4pvr_A",
+    "n_labels": 10,
+    "pRMSD": 2.41
+  },
+  {
+    "uniprot": "Q9H4A3",
+    "apo": "4pwn_A",
+    "n_labels": 22,
+    "pRMSD": 3.97
+  },
+  {
+    "uniprot": "A0A0H3MBV9",
+    "apo": "4qas_A",
+    "n_labels": 22,
+    "pRMSD": 4.07
+  },
+  {
+    "uniprot": "A0ABM6N567",
+    "apo": "4qfk_A",
+    "n_labels": 11,
+    "pRMSD": 2.58
+  },
+  {
+    "uniprot": "Q9HGR1",
+    "apo": "4qvk_B",
+    "n_labels": 25,
+    "pRMSD": 2.47
+  },
+  {
+    "uniprot": "Q13451",
+    "apo": "4r0x_A",
+    "n_labels": 29,
+    "pRMSD": 2.82
+  },
+  {
+    "uniprot": "Q8AAN6",
+    "apo": "4r1m_C",
+    "n_labels": 22,
+    "pRMSD": 4.62
+  },
+  {
+    "uniprot": "Q9KKS5",
+    "apo": "4r7t_C",
+    "n_labels": 19,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "Q9ZGC0",
+    "apo": "4rie_B",
+    "n_labels": 21,
+    "pRMSD": 3.0
+  },
+  {
+    "uniprot": "A9CGI0",
+    "apo": "4rjz_A",
+    "n_labels": 17,
+    "pRMSD": 2.53
+  },
+  {
+    "uniprot": "Q9HIN1",
+    "apo": "4rks_A",
+    "n_labels": 15,
+    "pRMSD": 3.69
+  },
+  {
+    "uniprot": "P9WJJ5",
+    "apo": "4rpi_D",
+    "n_labels": 14,
+    "pRMSD": 3.12
+  },
+  {
+    "uniprot": "O53146",
+    "apo": "4rvs_A",
+    "n_labels": 35,
+    "pRMSD": 3.12
+  },
+  {
+    "uniprot": "O95819",
+    "apo": "4rvt_B",
+    "n_labels": 31,
+    "pRMSD": 4.56
+  },
+  {
+    "uniprot": "P9WGR1",
+    "apo": "4trm_E",
+    "n_labels": 26,
+    "pRMSD": 3.09
+  },
+  {
+    "uniprot": "Q5ZVH3",
+    "apo": "4ttp_A",
+    "n_labels": 16,
+    "pRMSD": 2.18
+  },
+  {
+    "uniprot": "O28597",
+    "apo": "4twi_A",
+    "n_labels": 25,
+    "pRMSD": 3.54
+  },
+  {
+    "uniprot": "G2NFJ9",
+    "apo": "4tyv_A",
+    "n_labels": 10,
+    "pRMSD": 2.87
+  },
+  {
+    "uniprot": "Q9KVG7",
+    "apo": "4u0m_B",
+    "n_labels": 17,
+    "pRMSD": 2.54
+  },
+  {
+    "uniprot": "O13833",
+    "apo": "4ud4_B",
+    "n_labels": 21,
+    "pRMSD": 2.47
+  },
+  {
+    "uniprot": "O96445",
+    "apo": "4uum_A",
+    "n_labels": 34,
+    "pRMSD": 2.43
+  },
+  {
+    "uniprot": "Q6P988",
+    "apo": "4wbh_A",
+    "n_labels": 17,
+    "pRMSD": 3.2
+  },
+  {
+    "uniprot": "Q13231",
+    "apo": "4wjx_A",
+    "n_labels": 19,
+    "pRMSD": 2.18
+  },
+  {
+    "uniprot": "C7Q5P8",
+    "apo": "4x1o_A",
+    "n_labels": 24,
+    "pRMSD": 2.32
+  },
+  {
+    "uniprot": "Q9ZAG3",
+    "apo": "4xbx_B",
+    "n_labels": 12,
+    "pRMSD": 2.15
+  },
+  {
+    "uniprot": "P43405",
+    "apo": "4xg2_A",
+    "n_labels": 34,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "Q0P864",
+    "apo": "4xmq_B",
+    "n_labels": 17,
+    "pRMSD": 3.03
+  },
+  {
+    "uniprot": "O32323",
+    "apo": "4xrg_A",
+    "n_labels": 10,
+    "pRMSD": 2.21
+  },
+  {
+    "uniprot": "P15056",
+    "apo": "4xv1_B",
+    "n_labels": 30,
+    "pRMSD": 3.65
+  },
+  {
+    "uniprot": "B1L7P8",
+    "apo": "4yaj_B",
+    "n_labels": 24,
+    "pRMSD": 2.99
+  },
+  {
+    "uniprot": "Q5HSJ4",
+    "apo": "4yb7_D",
+    "n_labels": 10,
+    "pRMSD": 2.19
+  },
+  {
+    "uniprot": "P21553",
+    "apo": "4ybo_A",
+    "n_labels": 26,
+    "pRMSD": 2.37
+  },
+  {
+    "uniprot": "F9VNG5",
+    "apo": "4ydr_A",
+    "n_labels": 38,
+    "pRMSD": 2.4
+  },
+  {
+    "uniprot": "Q5NEQ5",
+    "apo": "4yeg_A",
+    "n_labels": 20,
+    "pRMSD": 3.35
+  },
+  {
+    "uniprot": "Q58734",
+    "apo": "4yt8_B",
+    "n_labels": 34,
+    "pRMSD": 2.49
+  },
+  {
+    "uniprot": "P21675",
+    "apo": "4yyn_A",
+    "n_labels": 18,
+    "pRMSD": 2.53
+  },
+  {
+    "uniprot": "P49327",
+    "apo": "4z49_A",
+    "n_labels": 25,
+    "pRMSD": 2.36
+  },
+  {
+    "uniprot": "Q97UL5",
+    "apo": "4z7c_A",
+    "n_labels": 17,
+    "pRMSD": 2.31
+  },
+  {
+    "uniprot": "A0R6F1",
+    "apo": "4zky_B",
+    "n_labels": 19,
+    "pRMSD": 3.43
+  },
+  {
+    "uniprot": "Q92AS9",
+    "apo": "4zoe_B",
+    "n_labels": 15,
+    "pRMSD": 3.7
+  },
+  {
+    "uniprot": "Q8ILQ7",
+    "apo": "4zxg_A",
+    "n_labels": 15,
+    "pRMSD": 2.33
+  },
+  {
+    "uniprot": "Q9A8X3",
+    "apo": "5a03_A",
+    "n_labels": 10,
+    "pRMSD": 2.79
+  },
+  {
+    "uniprot": "O43353",
+    "apo": "5ar2_B",
+    "n_labels": 28,
+    "pRMSD": 3.68
+  },
+  {
+    "uniprot": "I6WU39",
+    "apo": "5b0e_B",
+    "n_labels": 21,
+    "pRMSD": 3.33
+  },
+  {
+    "uniprot": "P36924",
+    "apo": "5bca_A",
+    "n_labels": 28,
+    "pRMSD": 3.39
+  },
+  {
+    "uniprot": "Q12314",
+    "apo": "5c74_A",
+    "n_labels": 24,
+    "pRMSD": 4.08
+  },
+  {
+    "uniprot": "Q9U1E1",
+    "apo": "5caa_A",
+    "n_labels": 13,
+    "pRMSD": 3.17
+  },
+  {
+    "uniprot": "P53590",
+    "apo": "5cae_B",
+    "n_labels": 19,
+    "pRMSD": 2.16
+  },
+  {
+    "uniprot": "P37957",
+    "apo": "5ct4_B",
+    "n_labels": 18,
+    "pRMSD": 2.69
+  },
+  {
+    "uniprot": "P96856",
+    "apo": "5cxg_D",
+    "n_labels": 22,
+    "pRMSD": 2.31
+  },
+  {
+    "uniprot": "Q8TCU6",
+    "apo": "5d27_A",
+    "n_labels": 10,
+    "pRMSD": 2.33
+  },
+  {
+    "uniprot": "D5X329",
+    "apo": "5d4o_C",
+    "n_labels": 13,
+    "pRMSD": 5.13
+  },
+  {
+    "uniprot": "K7WDL7",
+    "apo": "5dcw_A",
+    "n_labels": 41,
+    "pRMSD": 3.26
+  },
+  {
+    "uniprot": "Q06755",
+    "apo": "5ddt_B",
+    "n_labels": 19,
+    "pRMSD": 4.67
+  },
+  {
+    "uniprot": "A6V1E4",
+    "apo": "5dem_A",
+    "n_labels": 19,
+    "pRMSD": 3.22
+  },
+  {
+    "uniprot": "Q6E7K0",
+    "apo": "5dov_B",
+    "n_labels": 34,
+    "pRMSD": 2.28
+  },
+  {
+    "uniprot": "Q9RFC8",
+    "apo": "5duo_C",
+    "n_labels": 24,
+    "pRMSD": 3.69
+  },
+  {
+    "uniprot": "P08659",
+    "apo": "5dv9_A",
+    "n_labels": 30,
+    "pRMSD": 2.99
+  },
+  {
+    "uniprot": "I6Y9J2",
+    "apo": "5dzp_B",
+    "n_labels": 21,
+    "pRMSD": 2.92
+  },
+  {
+    "uniprot": "P12004",
+    "apo": "5e0v_A",
+    "n_labels": 15,
+    "pRMSD": 2.07
+  },
+  {
+    "uniprot": "A0A140N890",
+    "apo": "5ell_B",
+    "n_labels": 18,
+    "pRMSD": 2.27
+  },
+  {
+    "uniprot": "Q2UNX8",
+    "apo": "5eo7_A",
+    "n_labels": 12,
+    "pRMSD": 4.19
+  },
+  {
+    "uniprot": "A0A0H3AER7",
+    "apo": "5ey7_B",
+    "n_labels": 26,
+    "pRMSD": 4.38
+  },
+  {
+    "uniprot": "P63705",
+    "apo": "5f2m_D",
+    "n_labels": 28,
+    "pRMSD": 3.14
+  },
+  {
+    "uniprot": "Q12931",
+    "apo": "5f3k_B",
+    "n_labels": 15,
+    "pRMSD": 3.95
+  },
+  {
+    "uniprot": "P09391",
+    "apo": "5f5j_A",
+    "n_labels": 28,
+    "pRMSD": 3.38
+  },
+  {
+    "uniprot": "Q8YAF1",
+    "apo": "5f7q_C",
+    "n_labels": 15,
+    "pRMSD": 2.31
+  },
+  {
+    "uniprot": "C9ZP98",
+    "apo": "5fsu_B",
+    "n_labels": 27,
+    "pRMSD": 3.12
+  },
+  {
+    "uniprot": "A0QUZ2",
+    "apo": "5ggc_A",
+    "n_labels": 18,
+    "pRMSD": 2.56
+  },
+  {
+    "uniprot": "B4EKB3",
+    "apo": "5giz_B",
+    "n_labels": 21,
+    "pRMSD": 3.99
+  },
+  {
+    "uniprot": "P56192",
+    "apo": "5gl7_A",
+    "n_labels": 11,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "A0A072ZPM2",
+    "apo": "5gmc_A",
+    "n_labels": 23,
+    "pRMSD": 3.57
+  },
+  {
+    "uniprot": "A3LWG4",
+    "apo": "5gmo_A",
+    "n_labels": 31,
+    "pRMSD": 3.04
+  },
+  {
+    "uniprot": "Q8ZNP4",
+    "apo": "5h61_B",
+    "n_labels": 13,
+    "pRMSD": 2.26
+  },
+  {
+    "uniprot": "G7ITU5",
+    "apo": "5h8k_I",
+    "n_labels": 11,
+    "pRMSD": 3.38
+  },
+  {
+    "uniprot": "Q7YT09",
+    "apo": "5h9k_A",
+    "n_labels": 25,
+    "pRMSD": 3.08
+  },
+  {
+    "uniprot": "P34736",
+    "apo": "5hgx_A",
+    "n_labels": 14,
+    "pRMSD": 2.14
+  },
+  {
+    "uniprot": "F6KV61",
+    "apo": "5hij_A",
+    "n_labels": 21,
+    "pRMSD": 2.09
+  },
+  {
+    "uniprot": "J7GQ11",
+    "apo": "5hsi_A",
+    "n_labels": 17,
+    "pRMSD": 2.97
+  },
+  {
+    "uniprot": "P9WME9",
+    "apo": "5hsm_A",
+    "n_labels": 10,
+    "pRMSD": 2.74
+  },
+  {
+    "uniprot": "Q4PRK9",
+    "apo": "5hto_E",
+    "n_labels": 33,
+    "pRMSD": 2.45
+  },
+  {
+    "uniprot": "B8XA40",
+    "apo": "5hxq_C",
+    "n_labels": 13,
+    "pRMSD": 2.46
+  },
+  {
+    "uniprot": "P35439",
+    "apo": "5i59_A",
+    "n_labels": 16,
+    "pRMSD": 2.47
+  },
+  {
+    "uniprot": "Q47396",
+    "apo": "5igh_A",
+    "n_labels": 24,
+    "pRMSD": 3.73
+  },
+  {
+    "uniprot": "P20138",
+    "apo": "5ihb_A",
+    "n_labels": 15,
+    "pRMSD": 3.55
+  },
+  {
+    "uniprot": "Q40577",
+    "apo": "5ilk_A",
+    "n_labels": 14,
+    "pRMSD": 2.22
+  },
+  {
+    "uniprot": "Q99XG5",
+    "apo": "5iwi_A",
+    "n_labels": 10,
+    "pRMSD": 3.0
+  },
+  {
+    "uniprot": "P03433",
+    "apo": "5jht_A",
+    "n_labels": 16,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "Q1D4I5",
+    "apo": "5k7f_A",
+    "n_labels": 11,
+    "pRMSD": 2.08
+  },
+  {
+    "uniprot": "A0A1B0UHJ4",
+    "apo": "5kcg_B",
+    "n_labels": 17,
+    "pRMSD": 2.82
+  },
+  {
+    "uniprot": "G9VYV4",
+    "apo": "5l45_A",
+    "n_labels": 20,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "Q8EP31",
+    "apo": "5lcc_A",
+    "n_labels": 26,
+    "pRMSD": 2.99
+  },
+  {
+    "uniprot": "P37025",
+    "apo": "5ldi_B",
+    "n_labels": 15,
+    "pRMSD": 8.33
+  },
+  {
+    "uniprot": "Q9WVG6",
+    "apo": "5lgr_B",
+    "n_labels": 13,
+    "pRMSD": 2.55
+  },
+  {
+    "uniprot": "P04964",
+    "apo": "5loc_A",
+    "n_labels": 36,
+    "pRMSD": 3.79
+  },
+  {
+    "uniprot": "P22734",
+    "apo": "5lqj_C",
+    "n_labels": 35,
+    "pRMSD": 3.93
+  },
+  {
+    "uniprot": "O60502",
+    "apo": "5m7r_A",
+    "n_labels": 24,
+    "pRMSD": 2.53
+  },
+  {
+    "uniprot": "Q0P8Q4",
+    "apo": "5mbt_C",
+    "n_labels": 14,
+    "pRMSD": 2.72
+  },
+  {
+    "uniprot": "P08191",
+    "apo": "5mca_A",
+    "n_labels": 20,
+    "pRMSD": 2.82
+  },
+  {
+    "uniprot": "B0L7B0",
+    "apo": "5mkb_B",
+    "n_labels": 10,
+    "pRMSD": 2.07
+  },
+  {
+    "uniprot": "A0A0E3URV8",
+    "apo": "5nch_B",
+    "n_labels": 14,
+    "pRMSD": 4.33
+  },
+  {
+    "uniprot": "P09960",
+    "apo": "5nia_A",
+    "n_labels": 24,
+    "pRMSD": 2.46
+  },
+  {
+    "uniprot": "P0DP23",
+    "apo": "5nin_B",
+    "n_labels": 21,
+    "pRMSD": 5.51
+  },
+  {
+    "uniprot": "P14769",
+    "apo": "5nr9_B",
+    "n_labels": 19,
+    "pRMSD": 3.54
+  },
+  {
+    "uniprot": "P9WMC1",
+    "apo": "5nz1_G",
+    "n_labels": 36,
+    "pRMSD": 3.37
+  },
+  {
+    "uniprot": "Q4QDU3",
+    "apo": "5nzm_A",
+    "n_labels": 29,
+    "pRMSD": 2.62
+  },
+  {
+    "uniprot": "Q6PJP8",
+    "apo": "5nzx_A",
+    "n_labels": 12,
+    "pRMSD": 2.28
+  },
+  {
+    "uniprot": "Q3L8N0",
+    "apo": "5o1m_A",
+    "n_labels": 12,
+    "pRMSD": 3.93
+  },
+  {
+    "uniprot": "A0A0D3RJT7",
+    "apo": "5ojx_A",
+    "n_labels": 15,
+    "pRMSD": 4.53
+  },
+  {
+    "uniprot": "Q7LBC6",
+    "apo": "5rar_B",
+    "n_labels": 25,
+    "pRMSD": 4.52
+  },
+  {
+    "uniprot": "A0R723",
+    "apo": "5t2v_A",
+    "n_labels": 34,
+    "pRMSD": 4.13
+  },
+  {
+    "uniprot": "Q12866",
+    "apo": "5tc0_B",
+    "n_labels": 28,
+    "pRMSD": 2.58
+  },
+  {
+    "uniprot": "A0A059T4A1",
+    "apo": "5th0_E",
+    "n_labels": 14,
+    "pRMSD": 3.24
+  },
+  {
+    "uniprot": "A0A0H3KHT8",
+    "apo": "5tqv_A",
+    "n_labels": 30,
+    "pRMSD": 3.02
+  },
+  {
+    "uniprot": "P12493",
+    "apo": "5tsx_F",
+    "n_labels": 16,
+    "pRMSD": 2.17
+  },
+  {
+    "uniprot": "A0A247D6Y2",
+    "apo": "5tvi_V",
+    "n_labels": 16,
+    "pRMSD": 2.38
+  },
+  {
+    "uniprot": "O24146",
+    "apo": "5u95_B",
+    "n_labels": 36,
+    "pRMSD": 6.46
+  },
+  {
+    "uniprot": "P00441",
+    "apo": "5u9m_A",
+    "n_labels": 19,
+    "pRMSD": 8.38
+  },
+  {
+    "uniprot": "A0A125SA29",
+    "apo": "5ujp_A",
+    "n_labels": 12,
+    "pRMSD": 3.16
+  },
+  {
+    "uniprot": "A0A0H3EUF3",
+    "apo": "5uxa_A",
+    "n_labels": 25,
+    "pRMSD": 2.99
+  },
+  {
+    "uniprot": "Q38C91",
+    "apo": "5v49_A",
+    "n_labels": 32,
+    "pRMSD": 4.31
+  },
+  {
+    "uniprot": "P07470",
+    "apo": "5w97_j",
+    "n_labels": 10,
+    "pRMSD": 3.59
+  },
+  {
+    "uniprot": "P50053",
+    "apo": "5wbm_B",
+    "n_labels": 13,
+    "pRMSD": 2.05
+  },
+  {
+    "uniprot": "P14925",
+    "apo": "5wm0_A",
+    "n_labels": 10,
+    "pRMSD": 2.33
+  },
+  {
+    "uniprot": "O53623",
+    "apo": "5wm9_B",
+    "n_labels": 13,
+    "pRMSD": 2.74
+  },
+  {
+    "uniprot": "P14583",
+    "apo": "5x6z_D",
+    "n_labels": 18,
+    "pRMSD": 4.16
+  },
+  {
+    "uniprot": "P45040",
+    "apo": "5xcw_X",
+    "n_labels": 12,
+    "pRMSD": 2.54
+  },
+  {
+    "uniprot": "B6V7E4",
+    "apo": "5xvv_E",
+    "n_labels": 16,
+    "pRMSD": 2.09
+  },
+  {
+    "uniprot": "P38800",
+    "apo": "5yqp_A",
+    "n_labels": 25,
+    "pRMSD": 2.08
+  },
+  {
+    "uniprot": "Q92AS8",
+    "apo": "5ysb_B",
+    "n_labels": 14,
+    "pRMSD": 2.42
+  },
+  {
+    "uniprot": "P30822",
+    "apo": "5ytb_C",
+    "n_labels": 22,
+    "pRMSD": 2.37
+  },
+  {
+    "uniprot": "Q975F9",
+    "apo": "5z0a_B",
+    "n_labels": 18,
+    "pRMSD": 2.08
+  },
+  {
+    "uniprot": "Q6W7J7",
+    "apo": "5z18_C",
+    "n_labels": 14,
+    "pRMSD": 2.13
+  },
+  {
+    "uniprot": "V5TDZ4",
+    "apo": "5z43_A",
+    "n_labels": 23,
+    "pRMSD": 2.52
+  },
+  {
+    "uniprot": "Q8RDL3",
+    "apo": "5z67_A",
+    "n_labels": 19,
+    "pRMSD": 2.63
+  },
+  {
+    "uniprot": "O31518",
+    "apo": "5z6c_A",
+    "n_labels": 10,
+    "pRMSD": 2.43
+  },
+  {
+    "uniprot": "Q7VL18",
+    "apo": "5za4_A",
+    "n_labels": 22,
+    "pRMSD": 3.19
+  },
+  {
+    "uniprot": "Q31LX1",
+    "apo": "5ze7_B",
+    "n_labels": 37,
+    "pRMSD": 3.28
+  },
+  {
+    "uniprot": "Q09328",
+    "apo": "5zic_B",
+    "n_labels": 16,
+    "pRMSD": 4.08
+  },
+  {
+    "uniprot": "Q9L1E4",
+    "apo": "5zj4_D",
+    "n_labels": 11,
+    "pRMSD": 2.26
+  },
+  {
+    "uniprot": "Q9R1A9",
+    "apo": "6a45_B",
+    "n_labels": 13,
+    "pRMSD": 2.51
+  },
+  {
+    "uniprot": "A0A1P8VSL7",
+    "apo": "6a98_C",
+    "n_labels": 13,
+    "pRMSD": 2.94
+  },
+  {
+    "uniprot": "P36639",
+    "apo": "6aa3_A",
+    "n_labels": 21,
+    "pRMSD": 3.39
+  },
+  {
+    "uniprot": "Q9NXA8",
+    "apo": "6ace_A",
+    "n_labels": 17,
+    "pRMSD": 4.26
+  },
+  {
+    "uniprot": "Q6GEZ3",
+    "apo": "6aib_A",
+    "n_labels": 17,
+    "pRMSD": 2.67
+  },
+  {
+    "uniprot": "Q0PC20",
+    "apo": "6aym_A",
+    "n_labels": 23,
+    "pRMSD": 2.06
+  },
+  {
+    "uniprot": "O75874",
+    "apo": "6bkx_B",
+    "n_labels": 26,
+    "pRMSD": 4.54
+  },
+  {
+    "uniprot": "Q06124",
+    "apo": "6bn5_B",
+    "n_labels": 13,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "Q4KCZ3",
+    "apo": "6bzi_C",
+    "n_labels": 13,
+    "pRMSD": 3.92
+  },
+  {
+    "uniprot": "Q92871",
+    "apo": "6cfs_A",
+    "n_labels": 14,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "Q02127",
+    "apo": "6cjf_A",
+    "n_labels": 21,
+    "pRMSD": 2.87
+  },
+  {
+    "uniprot": "Q12888",
+    "apo": "6co1_F",
+    "n_labels": 10,
+    "pRMSD": 3.07
+  },
+  {
+    "uniprot": "Q92918",
+    "apo": "6cqe_B",
+    "n_labels": 26,
+    "pRMSD": 2.96
+  },
+  {
+    "uniprot": "Q99986",
+    "apo": "6csw_C",
+    "n_labels": 23,
+    "pRMSD": 2.68
+  },
+  {
+    "uniprot": "C1JZ07",
+    "apo": "6cwm_A",
+    "n_labels": 11,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "A0A077EFA5",
+    "apo": "6cy1_A",
+    "n_labels": 17,
+    "pRMSD": 2.32
+  },
+  {
+    "uniprot": "Q9KL03",
+    "apo": "6dau_E",
+    "n_labels": 35,
+    "pRMSD": 6.1
+  },
+  {
+    "uniprot": "G4FGN8",
+    "apo": "6dtr_A",
+    "n_labels": 11,
+    "pRMSD": 2.84
+  },
+  {
+    "uniprot": "Q86W50",
+    "apo": "6du4_A",
+    "n_labels": 26,
+    "pRMSD": 2.6
+  },
+  {
+    "uniprot": "A0A0H2WY27",
+    "apo": "6dz8_A",
+    "n_labels": 17,
+    "pRMSD": 2.34
+  },
+  {
+    "uniprot": "P46976",
+    "apo": "6eqj_A",
+    "n_labels": 15,
+    "pRMSD": 2.59
+  },
+  {
+    "uniprot": "P51449",
+    "apo": "6esn_A",
+    "n_labels": 30,
+    "pRMSD": 6.37
+  },
+  {
+    "uniprot": "D9ISE0",
+    "apo": "6ezr_A",
+    "n_labels": 16,
+    "pRMSD": 2.06
+  },
+  {
+    "uniprot": "Q8N371",
+    "apo": "6f4m_A",
+    "n_labels": 28,
+    "pRMSD": 4.06
+  },
+  {
+    "uniprot": "P56463",
+    "apo": "6f52_A",
+    "n_labels": 15,
+    "pRMSD": 2.03
+  },
+  {
+    "uniprot": "P07260",
+    "apo": "6fc2_C",
+    "n_labels": 12,
+    "pRMSD": 2.62
+  },
+  {
+    "uniprot": "W8U368",
+    "apo": "6fgj_B",
+    "n_labels": 17,
+    "pRMSD": 2.22
+  },
+  {
+    "uniprot": "Q84HF5",
+    "apo": "6fp0_A",
+    "n_labels": 18,
+    "pRMSD": 2.18
+  },
+  {
+    "uniprot": "O60885",
+    "apo": "6g0s_A",
+    "n_labels": 22,
+    "pRMSD": 10.74
+  },
+  {
+    "uniprot": "P52732",
+    "apo": "6g6y_A",
+    "n_labels": 22,
+    "pRMSD": 3.31
+  },
+  {
+    "uniprot": "K5B7F3",
+    "apo": "6g80_B",
+    "n_labels": 31,
+    "pRMSD": 2.28
+  },
+  {
+    "uniprot": "P14779",
+    "apo": "6h1o_B",
+    "n_labels": 13,
+    "pRMSD": 3.25
+  },
+  {
+    "uniprot": "Q980A5",
+    "apo": "6h6k_A",
+    "n_labels": 14,
+    "pRMSD": 5.86
+  },
+  {
+    "uniprot": "Q96RU2",
+    "apo": "6hei_A",
+    "n_labels": 26,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "P04925",
+    "apo": "6her_A",
+    "n_labels": 12,
+    "pRMSD": 3.79
+  },
+  {
+    "uniprot": "P01011",
+    "apo": "6hgd_A",
+    "n_labels": 12,
+    "pRMSD": 3.34
+  },
+  {
+    "uniprot": "Q96RI1",
+    "apo": "6hl0_A",
+    "n_labels": 62,
+    "pRMSD": 5.03
+  },
+  {
+    "uniprot": "G3XD46",
+    "apo": "6hr4_A",
+    "n_labels": 32,
+    "pRMSD": 4.39
+  },
+  {
+    "uniprot": "Q6P4V5",
+    "apo": "6hrv_A",
+    "n_labels": 19,
+    "pRMSD": 3.62
+  },
+  {
+    "uniprot": "Q04771",
+    "apo": "6i1s_A",
+    "n_labels": 30,
+    "pRMSD": 5.37
+  },
+  {
+    "uniprot": "P34913",
+    "apo": "6i5g_B",
+    "n_labels": 16,
+    "pRMSD": 2.07
+  },
+  {
+    "uniprot": "P32890",
+    "apo": "6ial_F",
+    "n_labels": 14,
+    "pRMSD": 3.46
+  },
+  {
+    "uniprot": "G4XDR8",
+    "apo": "6ih8_C",
+    "n_labels": 28,
+    "pRMSD": 2.44
+  },
+  {
+    "uniprot": "Q6VAB4",
+    "apo": "6inf_A",
+    "n_labels": 15,
+    "pRMSD": 3.34
+  },
+  {
+    "uniprot": "P15374",
+    "apo": "6isu_A",
+    "n_labels": 20,
+    "pRMSD": 2.7
+  },
+  {
+    "uniprot": "A0A096P8D3",
+    "apo": "6ixl_C",
+    "n_labels": 21,
+    "pRMSD": 3.48
+  },
+  {
+    "uniprot": "A3EYF7",
+    "apo": "6iz9_A",
+    "n_labels": 11,
+    "pRMSD": 3.28
+  },
+  {
+    "uniprot": "O67224",
+    "apo": "6j1h_A",
+    "n_labels": 30,
+    "pRMSD": 2.66
+  },
+  {
+    "uniprot": "P31677",
+    "apo": "6jak_C",
+    "n_labels": 22,
+    "pRMSD": 3.16
+  },
+  {
+    "uniprot": "Q53008",
+    "apo": "6jhm_D",
+    "n_labels": 10,
+    "pRMSD": 2.06
+  },
+  {
+    "uniprot": "Q53TZ2",
+    "apo": "6jnj_A",
+    "n_labels": 14,
+    "pRMSD": 2.03
+  },
+  {
+    "uniprot": "M9SC49",
+    "apo": "6jp2_A",
+    "n_labels": 20,
+    "pRMSD": 3.04
+  },
+  {
+    "uniprot": "Q5FA94",
+    "apo": "6jti_D",
+    "n_labels": 15,
+    "pRMSD": 2.16
+  },
+  {
+    "uniprot": "P9WNV1",
+    "apo": "6ksc_A",
+    "n_labels": 10,
+    "pRMSD": 2.03
+  },
+  {
+    "uniprot": "A0A679G4U8",
+    "apo": "6ksu_A",
+    "n_labels": 13,
+    "pRMSD": 2.65
+  },
+  {
+    "uniprot": "P97784",
+    "apo": "6kx4_A",
+    "n_labels": 20,
+    "pRMSD": 2.63
+  },
+  {
+    "uniprot": "O15075",
+    "apo": "6kyq_A",
+    "n_labels": 22,
+    "pRMSD": 3.02
+  },
+  {
+    "uniprot": "M1HE54",
+    "apo": "6l61_A",
+    "n_labels": 25,
+    "pRMSD": 2.27
+  },
+  {
+    "uniprot": "Q15119",
+    "apo": "6lio_B",
+    "n_labels": 21,
+    "pRMSD": 2.77
+  },
+  {
+    "uniprot": "A0A0A1HA03",
+    "apo": "6llg_A",
+    "n_labels": 18,
+    "pRMSD": 2.09
+  },
+  {
+    "uniprot": "A0A0H2XBX7",
+    "apo": "6ltf_A",
+    "n_labels": 30,
+    "pRMSD": 3.16
+  },
+  {
+    "uniprot": "P02911",
+    "apo": "6mkx_A",
+    "n_labels": 16,
+    "pRMSD": 3.17
+  },
+  {
+    "uniprot": "P10121",
+    "apo": "6n5j_B",
+    "n_labels": 21,
+    "pRMSD": 2.41
+  },
+  {
+    "uniprot": "E4N096",
+    "apo": "6na3_A",
+    "n_labels": 14,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "Q5C9L2",
+    "apo": "6nei_B",
+    "n_labels": 23,
+    "pRMSD": 2.73
+  },
+  {
+    "uniprot": "Q9HY79",
+    "apo": "6nlf_F",
+    "n_labels": 12,
+    "pRMSD": 2.32
+  },
+  {
+    "uniprot": "P49419",
+    "apo": "6o4f_H",
+    "n_labels": 11,
+    "pRMSD": 5.69
+  },
+  {
+    "uniprot": "P14324",
+    "apo": "6oah_F",
+    "n_labels": 22,
+    "pRMSD": 3.46
+  },
+  {
+    "uniprot": "Q1HRL7",
+    "apo": "6opb_D",
+    "n_labels": 29,
+    "pRMSD": 4.04
+  },
+  {
+    "uniprot": "P61088",
+    "apo": "6p5b_C",
+    "n_labels": 10,
+    "pRMSD": 3.29
+  },
+  {
+    "uniprot": "P43408",
+    "apo": "6pk5_A",
+    "n_labels": 20,
+    "pRMSD": 3.81
+  },
+  {
+    "uniprot": "T1KUK4",
+    "apo": "6pnt_A",
+    "n_labels": 17,
+    "pRMSD": 2.58
+  },
+  {
+    "uniprot": "Q8IUN9",
+    "apo": "6puv_A",
+    "n_labels": 11,
+    "pRMSD": 4.47
+  },
+  {
+    "uniprot": "L0E4H0",
+    "apo": "6pvg_A",
+    "n_labels": 30,
+    "pRMSD": 2.15
+  },
+  {
+    "uniprot": "P48730",
+    "apo": "6pxo_A",
+    "n_labels": 29,
+    "pRMSD": 7.11
+  },
+  {
+    "uniprot": "P51570",
+    "apo": "6q8z_D",
+    "n_labels": 16,
+    "pRMSD": 2.3
+  },
+  {
+    "uniprot": "O14733",
+    "apo": "6qfl_A",
+    "n_labels": 54,
+    "pRMSD": 3.25
+  },
+  {
+    "uniprot": "P04632",
+    "apo": "6qlb_C",
+    "n_labels": 10,
+    "pRMSD": 2.24
+  },
+  {
+    "uniprot": "P02754",
+    "apo": "6qpe_A",
+    "n_labels": 21,
+    "pRMSD": 3.22
+  },
+  {
+    "uniprot": "P04977",
+    "apo": "6ro0_G",
+    "n_labels": 24,
+    "pRMSD": 2.42
+  },
+  {
+    "uniprot": "B7GTV0",
+    "apo": "6rxd_A",
+    "n_labels": 21,
+    "pRMSD": 2.21
+  },
+  {
+    "uniprot": "K7RJ88",
+    "apo": "6s3p_A",
+    "n_labels": 25,
+    "pRMSD": 3.87
+  },
+  {
+    "uniprot": "A0A385TZ63",
+    "apo": "6slk_C",
+    "n_labels": 18,
+    "pRMSD": 2.59
+  },
+  {
+    "uniprot": "P00959",
+    "apo": "6spo_A",
+    "n_labels": 13,
+    "pRMSD": 2.41
+  },
+  {
+    "uniprot": "A8FAR5",
+    "apo": "6sui_A",
+    "n_labels": 22,
+    "pRMSD": 2.14
+  },
+  {
+    "uniprot": "P50286",
+    "apo": "6syh_A",
+    "n_labels": 15,
+    "pRMSD": 2.86
+  },
+  {
+    "uniprot": "Q4WAR0",
+    "apo": "6tn3_A",
+    "n_labels": 35,
+    "pRMSD": 2.49
+  },
+  {
+    "uniprot": "Q8Z6A3",
+    "apo": "6tyo_B",
+    "n_labels": 12,
+    "pRMSD": 2.31
+  },
+  {
+    "uniprot": "Q8VHK9",
+    "apo": "6up2_A",
+    "n_labels": 17,
+    "pRMSD": 3.58
+  },
+  {
+    "uniprot": "D9N168",
+    "apo": "6ur2_A",
+    "n_labels": 19,
+    "pRMSD": 3.52
+  },
+  {
+    "uniprot": "A0QTG2",
+    "apo": "6uw3_A",
+    "n_labels": 18,
+    "pRMSD": 2.76
+  },
+  {
+    "uniprot": "Q9BYC5",
+    "apo": "6vle_A",
+    "n_labels": 19,
+    "pRMSD": 2.44
+  },
+  {
+    "uniprot": "D2W2Z5",
+    "apo": "6vtg_C",
+    "n_labels": 23,
+    "pRMSD": 2.65
+  },
+  {
+    "uniprot": "Q91XB0",
+    "apo": "6w10_A",
+    "n_labels": 13,
+    "pRMSD": 2.16
+  },
+  {
+    "uniprot": "O75460",
+    "apo": "6w3c_C",
+    "n_labels": 28,
+    "pRMSD": 2.53
+  },
+  {
+    "uniprot": "F5B5W8",
+    "apo": "6x41_B",
+    "n_labels": 16,
+    "pRMSD": 2.72
+  },
+  {
+    "uniprot": "P0AG80",
+    "apo": "6x84_A",
+    "n_labels": 14,
+    "pRMSD": 2.15
+  },
+  {
+    "uniprot": "P00533",
+    "apo": "6xl4_C",
+    "n_labels": 58,
+    "pRMSD": 6.67
+  },
+  {
+    "uniprot": "P08149",
+    "apo": "6xqx_B",
+    "n_labels": 27,
+    "pRMSD": 4.13
+  },
+  {
+    "uniprot": "P49366",
+    "apo": "6xxh_A",
+    "n_labels": 30,
+    "pRMSD": 3.63
+  },
+  {
+    "uniprot": "P71447",
+    "apo": "6ydk_A",
+    "n_labels": 16,
+    "pRMSD": 2.36
+  },
+  {
+    "uniprot": "P53396",
+    "apo": "6z2h_B",
+    "n_labels": 24,
+    "pRMSD": 2.3
+  },
+  {
+    "uniprot": "P80188",
+    "apo": "6z6z_A",
+    "n_labels": 24,
+    "pRMSD": 2.78
+  },
+  {
+    "uniprot": "Q5SRI9",
+    "apo": "6zdc_A",
+    "n_labels": 12,
+    "pRMSD": 3.01
+  },
+  {
+    "uniprot": "Q16659",
+    "apo": "7aqb_B",
+    "n_labels": 16,
+    "pRMSD": 2.35
+  },
+  {
+    "uniprot": "Q00610",
+    "apo": "7bn2_BBB",
+    "n_labels": 12,
+    "pRMSD": 2.2
+  },
+  {
+    "uniprot": "N1S495",
+    "apo": "7bp1_B",
+    "n_labels": 12,
+    "pRMSD": 2.18
+  },
+  {
+    "uniprot": "Q15382",
+    "apo": "7btc_B",
+    "n_labels": 13,
+    "pRMSD": 2.24
+  },
+  {
+    "uniprot": "E5ATN9",
+    "apo": "7c1u_A",
+    "n_labels": 32,
+    "pRMSD": 4.07
+  },
+  {
+    "uniprot": "P96356",
+    "apo": "7c48_A",
+    "n_labels": 23,
+    "pRMSD": 2.67
+  },
+  {
+    "uniprot": "Q53W80",
+    "apo": "7c63_A",
+    "n_labels": 14,
+    "pRMSD": 3.14
+  },
+  {
+    "uniprot": "W0TJ64",
+    "apo": "7ceh_A",
+    "n_labels": 10,
+    "pRMSD": 3.06
+  },
+  {
+    "uniprot": "A0A0G4DBU7",
+    "apo": "7cif_B",
+    "n_labels": 18,
+    "pRMSD": 3.77
+  },
+  {
+    "uniprot": "Q9W469",
+    "apo": "7ciu_A",
+    "n_labels": 28,
+    "pRMSD": 2.98
+  },
+  {
+    "uniprot": "Q5W249",
+    "apo": "7clu_A",
+    "n_labels": 30,
+    "pRMSD": 2.77
+  },
+  {
+    "uniprot": "P94968",
+    "apo": "7crm_C",
+    "n_labels": 19,
+    "pRMSD": 4.22
+  },
+  {
+    "uniprot": "Q9WZL1",
+    "apo": "7ctd_A",
+    "n_labels": 43,
+    "pRMSD": 2.76
+  },
+  {
+    "uniprot": "A0QTT2",
+    "apo": "7cyr_A",
+    "n_labels": 18,
+    "pRMSD": 2.52
+  },
+  {
+    "uniprot": "P0DSP4",
+    "apo": "7d48_A",
+    "n_labels": 20,
+    "pRMSD": 3.94
+  },
+  {
+    "uniprot": "P02768",
+    "apo": "7djn_A",
+    "n_labels": 76,
+    "pRMSD": 3.38
+  },
+  {
+    "uniprot": "B0VJ11",
+    "apo": "7dl7_F",
+    "n_labels": 28,
+    "pRMSD": 3.5
+  },
+  {
+    "uniprot": "P32664",
+    "apo": "7e44_B",
+    "n_labels": 15,
+    "pRMSD": 2.1
+  },
+  {
+    "uniprot": "P40261",
+    "apo": "7egu_A",
+    "n_labels": 34,
+    "pRMSD": 4.33
+  },
+  {
+    "uniprot": "G3XCV0",
+    "apo": "7ejw_D",
+    "n_labels": 19,
+    "pRMSD": 2.26
+  },
+  {
+    "uniprot": "P9WFT3",
+    "apo": "7el8_A",
+    "n_labels": 23,
+    "pRMSD": 2.12
+  },
+  {
+    "uniprot": "Q9C0D3",
+    "apo": "7ep1_A",
+    "n_labels": 13,
+    "pRMSD": 2.86
+  },
+  {
+    "uniprot": "Q0DPB7",
+    "apo": "7ery_A",
+    "n_labels": 37,
+    "pRMSD": 3.79
+  },
+  {
+    "uniprot": "P06560",
+    "apo": "7etx_A",
+    "n_labels": 22,
+    "pRMSD": 3.54
+  },
+  {
+    "uniprot": "A0A2I1C3W8",
+    "apo": "7f0o_A",
+    "n_labels": 19,
+    "pRMSD": 4.64
+  },
+  {
+    "uniprot": "O00560",
+    "apo": "7ft3_A",
+    "n_labels": 20,
+    "pRMSD": 3.82
+  },
+  {
+    "uniprot": "Q68T42",
+    "apo": "7gos_B",
+    "n_labels": 23,
+    "pRMSD": 3.94
+  },
+  {
+    "uniprot": "Q9NY97",
+    "apo": "7jhk_D",
+    "n_labels": 11,
+    "pRMSD": 2.13
+  },
+  {
+    "uniprot": "Q53728",
+    "apo": "7jrb_A",
+    "n_labels": 20,
+    "pRMSD": 2.15
+  },
+  {
+    "uniprot": "Q5NEJ8",
+    "apo": "7js3_D",
+    "n_labels": 13,
+    "pRMSD": 3.66
+  },
+  {
+    "uniprot": "P23360",
+    "apo": "7k4w_A",
+    "n_labels": 17,
+    "pRMSD": 3.33
+  },
+  {
+    "uniprot": "A0A0D6GJV1",
+    "apo": "7kay_A",
+    "n_labels": 36,
+    "pRMSD": 2.45
+  },
+  {
+    "uniprot": "Q8TDQ0",
+    "apo": "7kql_T",
+    "n_labels": 14,
+    "pRMSD": 4.77
+  },
+  {
+    "uniprot": "A0ACD6B907",
+    "apo": "7l1z_B",
+    "n_labels": 12,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "P0A901",
+    "apo": "7l5l_B",
+    "n_labels": 20,
+    "pRMSD": 3.82
+  },
+  {
+    "uniprot": "P60568",
+    "apo": "7m2g_A",
+    "n_labels": 28,
+    "pRMSD": 3.04
+  },
+  {
+    "uniprot": "P50405",
+    "apo": "7mbk_A",
+    "n_labels": 14,
+    "pRMSD": 3.14
+  },
+  {
+    "uniprot": "P48426",
+    "apo": "7n6z_A",
+    "n_labels": 18,
+    "pRMSD": 2.62
+  },
+  {
+    "uniprot": "Q9GZT4",
+    "apo": "7nbc_CCC",
+    "n_labels": 19,
+    "pRMSD": 2.92
+  },
+  {
+    "uniprot": "A9CEY9",
+    "apo": "7nbz_B",
+    "n_labels": 26,
+    "pRMSD": 4.3
+  },
+  {
+    "uniprot": "B0Y813",
+    "apo": "7nc8_D",
+    "n_labels": 11,
+    "pRMSD": 2.21
+  },
+  {
+    "uniprot": "Q06210",
+    "apo": "7ndl_B",
+    "n_labels": 19,
+    "pRMSD": 2.01
+  },
+  {
+    "uniprot": "P9WQ01",
+    "apo": "7nlx_A",
+    "n_labels": 15,
+    "pRMSD": 2.53
+  },
+  {
+    "uniprot": "Q1R0W5",
+    "apo": "7nte_B",
+    "n_labels": 18,
+    "pRMSD": 2.41
+  },
+  {
+    "uniprot": "O53872",
+    "apo": "7o1i_A",
+    "n_labels": 29,
+    "pRMSD": 2.76
+  },
+  {
+    "uniprot": "P51159",
+    "apo": "7opp_C",
+    "n_labels": 10,
+    "pRMSD": 2.47
+  },
+  {
+    "uniprot": "Q9UZY0",
+    "apo": "7oue_A",
+    "n_labels": 15,
+    "pRMSD": 2.38
+  },
+  {
+    "uniprot": "P31224",
+    "apo": "7oum_C",
+    "n_labels": 52,
+    "pRMSD": 3.84
+  },
+  {
+    "uniprot": "A5H660",
+    "apo": "7p2t_C",
+    "n_labels": 10,
+    "pRMSD": 2.01
+  },
+  {
+    "uniprot": "P0A6L0",
+    "apo": "7p75_AAA",
+    "n_labels": 16,
+    "pRMSD": 2.49
+  },
+  {
+    "uniprot": "A0A1D8PSA9",
+    "apo": "7piz_C",
+    "n_labels": 14,
+    "pRMSD": 2.42
+  },
+  {
+    "uniprot": "Q39VG1",
+    "apo": "7pxp_G",
+    "n_labels": 25,
+    "pRMSD": 3.39
+  },
+  {
+    "uniprot": "O23254",
+    "apo": "7q00_A",
+    "n_labels": 15,
+    "pRMSD": 3.47
+  },
+  {
+    "uniprot": "A9CG24",
+    "apo": "7q91_A",
+    "n_labels": 10,
+    "pRMSD": 2.26
+  },
+  {
+    "uniprot": "P11838",
+    "apo": "7qlu_A",
+    "n_labels": 28,
+    "pRMSD": 2.69
+  },
+  {
+    "uniprot": "K5B7Z4",
+    "apo": "7qoq_A",
+    "n_labels": 10,
+    "pRMSD": 2.18
+  },
+  {
+    "uniprot": "B2RID1",
+    "apo": "7r51_B",
+    "n_labels": 16,
+    "pRMSD": 2.2
+  },
+  {
+    "uniprot": "Q86U44",
+    "apo": "7rx7_A",
+    "n_labels": 29,
+    "pRMSD": 3.15
+  },
+  {
+    "uniprot": "Q4E4E1",
+    "apo": "7s2n_A",
+    "n_labels": 25,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "P22087",
+    "apo": "7se6_A",
+    "n_labels": 14,
+    "pRMSD": 2.12
+  },
+  {
+    "uniprot": "Q9IK90",
+    "apo": "7skt_B",
+    "n_labels": 26,
+    "pRMSD": 4.22
+  },
+  {
+    "uniprot": "P18177",
+    "apo": "7so5_A",
+    "n_labels": 34,
+    "pRMSD": 4.16
+  },
+  {
+    "uniprot": "Q9I2N2",
+    "apo": "7t4z_B",
+    "n_labels": 15,
+    "pRMSD": 2.02
+  },
+  {
+    "uniprot": "P50120",
+    "apo": "7ucv_A",
+    "n_labels": 20,
+    "pRMSD": 4.46
+  },
+  {
+    "uniprot": "Q9UQM7",
+    "apo": "7ujr_A",
+    "n_labels": 16,
+    "pRMSD": 2.1
+  },
+  {
+    "uniprot": "P00366",
+    "apo": "7vda_A",
+    "n_labels": 29,
+    "pRMSD": 2.25
+  },
+  {
+    "uniprot": "A0A0T5PCK9",
+    "apo": "7vvv_A",
+    "n_labels": 23,
+    "pRMSD": 2.98
+  },
+  {
+    "uniprot": "A5Y459",
+    "apo": "7w19_A",
+    "n_labels": 23,
+    "pRMSD": 2.01
+  },
+  {
+    "uniprot": "A0R6S0",
+    "apo": "7wmy_A",
+    "n_labels": 22,
+    "pRMSD": 5.1
+  },
+  {
+    "uniprot": "E7E815",
+    "apo": "7wyo_B",
+    "n_labels": 12,
+    "pRMSD": 2.92
+  },
+  {
+    "uniprot": "Q9I1H0",
+    "apo": "7x0f_A",
+    "n_labels": 13,
+    "pRMSD": 2.02
+  },
+  {
+    "uniprot": "A3DCF2",
+    "apo": "7x0g_B",
+    "n_labels": 18,
+    "pRMSD": 2.7
+  },
+  {
+    "uniprot": "A3DE73",
+    "apo": "7x0i_B",
+    "n_labels": 32,
+    "pRMSD": 3.27
+  },
+  {
+    "uniprot": "Q07817",
+    "apo": "7xgf_E",
+    "n_labels": 46,
+    "pRMSD": 4.78
+  },
+  {
+    "uniprot": "A0A379CIH2",
+    "apo": "7xzn_C",
+    "n_labels": 16,
+    "pRMSD": 2.03
+  },
+  {
+    "uniprot": "Q9Y6W6",
+    "apo": "7y4c_B",
+    "n_labels": 16,
+    "pRMSD": 5.12
+  },
+  {
+    "uniprot": "O00571",
+    "apo": "7ymf_A",
+    "n_labels": 23,
+    "pRMSD": 2.38
+  },
+  {
+    "uniprot": "G8HX37",
+    "apo": "7yv0_A",
+    "n_labels": 27,
+    "pRMSD": 2.19
+  },
+  {
+    "uniprot": "P09095",
+    "apo": "7ywj_A",
+    "n_labels": 28,
+    "pRMSD": 2.7
+  },
+  {
+    "uniprot": "B3VI58",
+    "apo": "7yx7_A",
+    "n_labels": 16,
+    "pRMSD": 4.15
+  },
+  {
+    "uniprot": "A0A0L0P1H8",
+    "apo": "7zzx_B",
+    "n_labels": 29,
+    "pRMSD": 2.11
+  },
+  {
+    "uniprot": "M1JS91",
+    "apo": "8a74_A",
+    "n_labels": 16,
+    "pRMSD": 3.33
+  },
+  {
+    "uniprot": "Q2G4I2",
+    "apo": "8abu_B",
+    "n_labels": 19,
+    "pRMSD": 3.37
+  },
+  {
+    "uniprot": "Q9GV45",
+    "apo": "8aqi_B",
+    "n_labels": 14,
+    "pRMSD": 3.8
+  },
+  {
+    "uniprot": "P26906",
+    "apo": "8azb_A",
+    "n_labels": 30,
+    "pRMSD": 3.13
+  },
+  {
+    "uniprot": "P37595",
+    "apo": "8bp9_BBB",
+    "n_labels": 12,
+    "pRMSD": 2.45
+  },
+  {
+    "uniprot": "Q9I5Q5",
+    "apo": "8bre_B",
+    "n_labels": 17,
+    "pRMSD": 3.08
+  },
+  {
+    "uniprot": "P01584",
+    "apo": "8c3u_A",
+    "n_labels": 13,
+    "pRMSD": 4.38
+  },
+  {
+    "uniprot": "P0ABE7",
+    "apo": "8den_D",
+    "n_labels": 20,
+    "pRMSD": 3.53
+  },
+  {
+    "uniprot": "P27282",
+    "apo": "8duf_A",
+    "n_labels": 18,
+    "pRMSD": 6.09
+  },
+  {
+    "uniprot": "O74429",
+    "apo": "8e1j_B",
+    "n_labels": 21,
+    "pRMSD": 4.56
+  },
+  {
+    "uniprot": "P30043",
+    "apo": "8elm_A",
+    "n_labels": 23,
+    "pRMSD": 2.49
+  },
+  {
+    "uniprot": "Q9HWI0",
+    "apo": "8evv_A",
+    "n_labels": 36,
+    "pRMSD": 3.66
+  },
+  {
+    "uniprot": "Q5ZSZ6",
+    "apo": "8ezs_B",
+    "n_labels": 22,
+    "pRMSD": 4.1
+  },
+  {
+    "uniprot": "O15178",
+    "apo": "8fmu_B",
+    "n_labels": 18,
+    "pRMSD": 3.7
+  },
+  {
+    "uniprot": "P18054",
+    "apo": "8ghc_B",
+    "n_labels": 15,
+    "pRMSD": 5.43
+  },
+  {
+    "uniprot": "O43318",
+    "apo": "8gw3_A",
+    "n_labels": 40,
+    "pRMSD": 4.83
+  },
+  {
+    "uniprot": "Q9HYX1",
+    "apo": "8gxj_B",
+    "n_labels": 20,
+    "pRMSD": 3.59
+  },
+  {
+    "uniprot": "Q9UBP6",
+    "apo": "8h0n_B",
+    "n_labels": 21,
+    "pRMSD": 3.69
+  },
+  {
+    "uniprot": "Q2FXG9",
+    "apo": "8h27_A",
+    "n_labels": 27,
+    "pRMSD": 5.19
+  },
+  {
+    "uniprot": "A0A6I7U6Y2",
+    "apo": "8h49_B",
+    "n_labels": 14,
+    "pRMSD": 4.66
+  },
+  {
+    "uniprot": "P24941",
+    "apo": "8h6p_A",
+    "n_labels": 44,
+    "pRMSD": 3.27
+  },
+  {
+    "uniprot": "P24864",
+    "apo": "8h6p_B",
+    "n_labels": 17,
+    "pRMSD": 3.27
+  },
+  {
+    "uniprot": "P69996",
+    "apo": "8hc1_d",
+    "n_labels": 16,
+    "pRMSD": 3.23
+  },
+  {
+    "uniprot": "Q8YIN7",
+    "apo": "8hs6_H",
+    "n_labels": 28,
+    "pRMSD": 2.89
+  },
+  {
+    "uniprot": "E4TDY5",
+    "apo": "8hyn_A",
+    "n_labels": 13,
+    "pRMSD": 3.5
+  },
+  {
+    "uniprot": "Q16740",
+    "apo": "8i7x_C",
+    "n_labels": 13,
+    "pRMSD": 3.32
+  },
+  {
+    "uniprot": "D2B3F1",
+    "apo": "8i84_B",
+    "n_labels": 19,
+    "pRMSD": 2.23
+  },
+  {
+    "uniprot": "Q8DQ84",
+    "apo": "8ias_B",
+    "n_labels": 18,
+    "pRMSD": 2.56
+  },
+  {
+    "uniprot": "A9Y8T1",
+    "apo": "8ixp_A",
+    "n_labels": 29,
+    "pRMSD": 2.58
+  },
+  {
+    "uniprot": "A0A1C8HPQ3",
+    "apo": "8iy0_B",
+    "n_labels": 14,
+    "pRMSD": 2.65
+  },
+  {
+    "uniprot": "Q9GZT9",
+    "apo": "8j1k_A",
+    "n_labels": 14,
+    "pRMSD": 2.83
+  },
+  {
+    "uniprot": "P43220",
+    "apo": "8jis_R",
+    "n_labels": 25,
+    "pRMSD": 4.62
+  },
+  {
+    "uniprot": "Q9UUN9",
+    "apo": "8jqk_A",
+    "n_labels": 12,
+    "pRMSD": 2.53
+  },
+  {
+    "uniprot": "Q9K5E4",
+    "apo": "8jzi_D",
+    "n_labels": 13,
+    "pRMSD": 2.43
+  },
+  {
+    "uniprot": "Q45589",
+    "apo": "8ogr_B",
+    "n_labels": 12,
+    "pRMSD": 2.47
+  },
+  {
+    "uniprot": "D5EHC5",
+    "apo": "8onn_E",
+    "n_labels": 22,
+    "pRMSD": 3.93
+  },
+  {
+    "uniprot": "Q14191",
+    "apo": "8pfp_A",
+    "n_labels": 22,
+    "pRMSD": 4.03
+  },
+  {
+    "uniprot": "K9TVX3",
+    "apo": "8pqs_A",
+    "n_labels": 12,
+    "pRMSD": 2.99
+  },
+  {
+    "uniprot": "Q02RY8",
+    "apo": "8pzm_A",
+    "n_labels": 16,
+    "pRMSD": 3.33
+  },
+  {
+    "uniprot": "A0A0H3FXS4",
+    "apo": "8sc0_A",
+    "n_labels": 11,
+    "pRMSD": 2.64
+  },
+  {
+    "uniprot": "Q9WZ31",
+    "apo": "8slb_A",
+    "n_labels": 32,
+    "pRMSD": 3.65
+  },
+  {
+    "uniprot": "Q72KY0",
+    "apo": "8sxw_A",
+    "n_labels": 35,
+    "pRMSD": 3.38
+  },
+  {
+    "uniprot": "P39265",
+    "apo": "8wl5_A",
+    "n_labels": 14,
+    "pRMSD": 2.38
+  },
+  {
+    "uniprot": "P0A786",
+    "apo": "9atc_A",
+    "n_labels": 21,
+    "pRMSD": 2.98
+  },
+  {
+    "uniprot": "Q9Y4B6",
+    "apo": "9bhr_B",
+    "n_labels": 15,
+    "pRMSD": 2.8
+  }
+]

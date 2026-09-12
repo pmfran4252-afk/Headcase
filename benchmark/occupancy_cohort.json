@@ -1,0 +1,86 @@
+[
+  {
+    "uniprot": "Q02763",
+    "apo": "1fvr_A",
+    "n_labels": 35,
+    "pRMSD": 5.65
+  },
+  {
+    "uniprot": "P32099",
+    "apo": "1x2g_C",
+    "n_labels": 15,
+    "pRMSD": 2.04
+  },
+  {
+    "uniprot": "Q13153",
+    "apo": "1yhv_A",
+    "n_labels": 26,
+    "pRMSD": 3.78
+  },
+  {
+    "uniprot": "Q7KZI7",
+    "apo": "3iec_B",
+    "n_labels": 23,
+    "pRMSD": 2.39
+  },
+  {
+    "uniprot": "Q67PI3",
+    "apo": "3wb9_C",
+    "n_labels": 28,
+    "pRMSD": 2.12
+  },
+  {
+    "uniprot": "P09142",
+    "apo": "4j2p_A",
+    "n_labels": 12,
+    "pRMSD": 2.75
+  },
+  {
+    "uniprot": "O96445",
+    "apo": "4uum_A",
+    "n_labels": 34,
+    "pRMSD": 2.43
+  },
+  {
+    "uniprot": "Q0P864",
+    "apo": "4xmq_B",
+    "n_labels": 17,
+    "pRMSD": 3.03
+  },
+  {
+    "uniprot": "P09960",
+    "apo": "5nia_A",
+    "n_labels": 24,
+    "pRMSD": 2.46
+  },
+  {
+    "uniprot": "Q92918",
+    "apo": "6cqe_B",
+    "n_labels": 26,
+    "pRMSD": 2.96
+  },
+  {
+    "uniprot": "Q9KL03",
+    "apo": "6dau_E",
+    "n_labels": 35,
+    "pRMSD": 6.1
+  },
+  {
+    "uniprot": "P32890",
+    "apo": "6ial_F",
+    "n_labels": 14,
+    "pRMSD": 3.46
+  },
+  {
+    "uniprot": "O14733",
+    "apo": "6qfl_A",
+    "n_labels": 54,
+    "pRMSD": 3.25
+  },
+  {
+    "uniprot": "Q9I1H0",
+    "apo": "7x0f_A",
+    "n_labels": 13,
+    "pRMSD": 2.02
+  }
+]
