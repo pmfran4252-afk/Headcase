@@ -29,15 +29,25 @@ import openmm.unit as u
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from cosolvent.probe import place_probes
 
+class _AsPDB:
+    """Minimal stand-in exposing the two attributes build() reads."""
+
+    def __init__(self, topology, positions):
+        self.topology = topology
+        self.positions = positions
+
+
 PAD = 1.2 * u.nanometer
 TEMP = 310 * u.kelvin
 DT = 4 * u.femtosecond          # safe with hydrogen mass repartitioning
 REPORT_PS = 20.0
 
 
-def build(pdb_path, conc_M=0.25, seed=0):
+def build(pdb_path, conc_M=0.25, seed=0, prepared=None):
+    """``prepared`` is an optional (topology, positions) pair from prepare.py,
+    used when the structure comes from the PDB rather than an ATLAS archive."""
     rng = np.random.default_rng(seed)
-    pdb = app.PDBFile(str(pdb_path))
+    pdb = app.PDBFile(str(pdb_path)) if prepared is None else _AsPDB(*prepared)
     ff = app.ForceField("charmm36.xml", "charmm36/water.xml")
 
     # Box from protein extent plus padding, then probe count from its volume.
@@ -64,11 +74,20 @@ def build(pdb_path, conc_M=0.25, seed=0):
     return mod, system, placed, achieved
 
 
-def run(tag, extracted, out_dir, ns=20.0, conc_M=0.25, seed=0):
+def run(tag, extracted, out_dir, ns=20.0, conc_M=0.25, seed=0, from_pdb=False,
+        work=None):
     out_dir = pathlib.Path(out_dir); out_dir.mkdir(parents=True, exist_ok=True)
-    pdb_path = pathlib.Path(extracted) / tag / f"{tag}.pdb"
     print(f"[{tag}] building", flush=True)
-    mod, system, placed, achieved = build(pdb_path, conc_M, seed)
+    if from_pdb:
+        from cosolvent.prepare import prepare
+        pid, ch = tag.split("_")
+        top, pos, n_rebuilt = prepare(pid, ch, pathlib.Path(work or extracted))
+        print(f"  prepared from RCSB: {top.getNumAtoms()} atoms, "
+              f"{n_rebuilt} rebuilt residues", flush=True)
+        mod, system, placed, achieved = build(None, conc_M, seed, prepared=(top, pos))
+    else:
+        pdb_path = pathlib.Path(extracted) / tag / f"{tag}.pdb"
+        mod, system, placed, achieved = build(pdb_path, conc_M, seed)
 
     integ = openmm.LangevinMiddleIntegrator(TEMP, 1 / u.picosecond, DT)
     try:
@@ -122,5 +141,6 @@ if __name__ == "__main__":
     a = sys.argv[1:]
     r = run(a[0], a[1], a[2],
             ns=float(a[3]) if len(a) > 3 else 20.0,
-            conc_M=float(a[4]) if len(a) > 4 else 0.25)
+            conc_M=float(a[4]) if len(a) > 4 else 0.25,
+            from_pdb=(len(a) > 5 and a[5] == "pdb"))
     print(r)
